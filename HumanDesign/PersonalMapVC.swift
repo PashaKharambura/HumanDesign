@@ -72,11 +72,11 @@ class PersonalMapVC: UIViewController {
     }
 
     @IBAction func buttonAtion(_ sender: Any) {
-//        if viewState == .getReport {
-//            viewState = .vaitReport
-//        } else {
-//            viewState = .getReport
-//        }
-//        setViewElementsActive(state: viewState)
+        if viewState == .getReport {
+            viewState = .vaitReport
+        } else {
+            viewState = .getReport
+        }
+        setViewElementsActive(state: viewState)
     }
 }
