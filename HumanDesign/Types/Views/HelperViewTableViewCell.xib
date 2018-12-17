@@ -22,6 +22,10 @@
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noH-eq-gqm">
                         <rect key="frame" x="15" y="20" width="320" height="211.5"/>
                         <subviews>
+                            <view clipsSubviews="YES" alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drE-Md-dg8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="211.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-Ku-bjA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="211.5"/>
                             </imageView>
@@ -53,21 +57,25 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vdh-Bh-TXi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="noH-eq-gqm" secondAttribute="top" constant="25" id="0GB-DY-3rS"/>
                             <constraint firstAttribute="trailing" secondItem="vdh-Bh-TXi" secondAttribute="trailing" constant="30" id="4t6-xU-4hi"/>
                             <constraint firstItem="ubD-Ku-bjA" firstAttribute="top" secondItem="noH-eq-gqm" secondAttribute="top" id="Cr8-xr-6Nq"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vdh-Bh-TXi" secondAttribute="bottom" constant="25" id="EY4-AM-xok"/>
+                            <constraint firstAttribute="trailing" secondItem="drE-Md-dg8" secondAttribute="trailing" id="Edt-B8-Vqf"/>
                             <constraint firstItem="ubD-Ku-bjA" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" id="Eox-6Z-T2E"/>
                             <constraint firstAttribute="bottom" secondItem="ubD-Ku-bjA" secondAttribute="bottom" id="Ii2-G4-HHB"/>
                             <constraint firstAttribute="trailing" secondItem="Rmg-eH-1fr" secondAttribute="trailing" id="KTJ-88-yzW"/>
                             <constraint firstAttribute="trailing" secondItem="ubD-Ku-bjA" secondAttribute="trailing" id="XfF-ID-ibC"/>
                             <constraint firstAttribute="bottom" secondItem="Rmg-eH-1fr" secondAttribute="bottom" id="csn-3i-WD4"/>
+                            <constraint firstItem="drE-Md-dg8" firstAttribute="top" secondItem="noH-eq-gqm" secondAttribute="top" id="gJd-cV-OIi"/>
                             <constraint firstItem="vdh-Bh-TXi" firstAttribute="centerY" secondItem="noH-eq-gqm" secondAttribute="centerY" id="gP5-UD-edX"/>
+                            <constraint firstAttribute="bottom" secondItem="drE-Md-dg8" secondAttribute="bottom" id="lFv-45-VH3"/>
                             <constraint firstItem="vdh-Bh-TXi" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" constant="30" id="lov-NX-Nnr"/>
                             <constraint firstItem="Rmg-eH-1fr" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" id="mHd-ZM-FRL"/>
                             <constraint firstItem="Rmg-eH-1fr" firstAttribute="top" secondItem="noH-eq-gqm" secondAttribute="top" id="olV-wG-Lvo"/>
+                            <constraint firstItem="drE-Md-dg8" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" id="wf8-xz-4vr"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -82,6 +90,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bgImage" destination="ubD-Ku-bjA" id="VjD-cI-GnU"/>
                 <outlet property="button" destination="s8i-Kj-XRZ" id="zoN-1r-2aW"/>
                 <outlet property="headerLabel" destination="myy-cw-RaP" id="xPh-cr-t9Q"/>
                 <outlet property="mainView" destination="noH-eq-gqm" id="4He-je-nfG"/>

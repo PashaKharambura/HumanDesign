@@ -1,5 +1,5 @@
 //
-//  HelperViewTableViewCell.swift
+//  TypeViewTableViewCell.swift
 //  HumanDesign
 //
 //  Created by Pavlo Kharambura on 12/17/18.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class HelperViewTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var bgImage: UIImageView!
-    @IBOutlet weak var mainView: UIView! {didSet{mainView.layer.cornerRadius = 10}}
-    @IBOutlet weak var headerLabel: UILabel!
-    @IBOutlet weak var button: UIButton!{didSet{button.layer.cornerRadius = 25}}
-
+class TypeViewTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var bgView: UIView! {didSet{bgView.layer.cornerRadius=20}}
+    @IBOutlet weak var typeImage: UIImageView! {didSet{typeImage.layer.cornerRadius=20}}
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var personalLabel: UILabel!
+    @IBOutlet weak var notifyButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

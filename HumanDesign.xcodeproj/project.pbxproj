@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */; };
+		2935924321C8035900BD0E82 /* TypeViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */; };
 		294694AE21C6BFD200720049 /* PersonalMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294694AD21C6BFD200720049 /* PersonalMapVC.swift */; };
 		294694B021C6BFE300720049 /* TypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294694AF21C6BFE300720049 /* TypesVC.swift */; };
 		294694B221C6BFFC00720049 /* DailyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294694B121C6BFFC00720049 /* DailyVC.swift */; };
@@ -25,6 +27,8 @@
 		294738E221C7D32500DE262C /* TypeInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294738E121C7D32500DE262C /* TypeInfoVC.swift */; };
 		294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294738E321C7E2D800DE262C /* TextInfoTableViewCell.swift */; };
 		294738E621C7E2D800DE262C /* TextInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */; };
+		294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */; };
+		294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */; };
 		29D6753621C56B920059A398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753521C56B920059A398 /* AppDelegate.swift */; };
 		29D6753821C56B920059A398 /* ComputationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753721C56B920059A398 /* ComputationVC.swift */; };
 		29D6753B21C56B920059A398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753921C56B920059A398 /* Main.storyboard */; };
@@ -33,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewTableViewCell.swift; sourceTree = "<group>"; };
+		2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeViewTableViewCell.xib; sourceTree = "<group>"; };
 		294694AD21C6BFD200720049 /* PersonalMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMapVC.swift; sourceTree = "<group>"; };
 		294694AF21C6BFE300720049 /* TypesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesVC.swift; sourceTree = "<group>"; };
 		294694B121C6BFFC00720049 /* DailyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVC.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		294738E121C7D32500DE262C /* TypeInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeInfoVC.swift; sourceTree = "<group>"; };
 		294738E321C7E2D800DE262C /* TextInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInfoTableViewCell.swift; sourceTree = "<group>"; };
 		294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInfoTableViewCell.xib; sourceTree = "<group>"; };
+		294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageTableViewCell.swift; sourceTree = "<group>"; };
+		294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyImageTableViewCell.xib; sourceTree = "<group>"; };
 		29D6753221C56B920059A398 /* HumanDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D6753521C56B920059A398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D6753721C56B920059A398 /* ComputationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationVC.swift; sourceTree = "<group>"; };
@@ -100,6 +108,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		294738E721C7F5D300DE262C /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				294694B121C6BFFC00720049 /* DailyVC.swift */,
+				294738E821C7F5EB00DE262C /* Views */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		294738E821C7F5EB00DE262C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */,
+				294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */,
+				2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */,
+				2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		29D6752921C56B920059A398 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +151,7 @@
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				294694AD21C6BFD200720049 /* PersonalMapVC.swift */,
 				294738C721C7A9FB00DE262C /* Types */,
-				294694B121C6BFFC00720049 /* DailyVC.swift */,
+				294738E721C7F5D300DE262C /* Daily */,
 				294694B321C6C01200720049 /* FindLoveVC.swift */,
 				29D6753921C56B920059A398 /* Main.storyboard */,
 				29D6753C21C56B940059A398 /* Assets.xcassets */,
@@ -192,9 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2935924321C8035900BD0E82 /* TypeViewTableViewCell.xib in Resources */,
 				294738E621C7E2D800DE262C /* TextInfoTableViewCell.xib in Resources */,
 				294738D221C7B4C700DE262C /* TypesCollectionTableViewCell.xib in Resources */,
 				29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */,
+				294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */,
 				29D6753D21C56B940059A398 /* Assets.xcassets in Resources */,
 				294738E021C7CF6300DE262C /* DetailedTypeImageTableViewCell.xib in Resources */,
 				29D6753B21C56B920059A398 /* Main.storyboard in Resources */,
@@ -217,12 +247,14 @@
 				294694B421C6C01200720049 /* FindLoveVC.swift in Sources */,
 				294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */,
 				294738CA21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.swift in Sources */,
+				2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */,
 				294738D121C7B4C700DE262C /* TypesCollectionTableViewCell.swift in Sources */,
 				29D6753821C56B920059A398 /* ComputationVC.swift in Sources */,
 				294738CD21C7B31C00DE262C /* Extentions.swift in Sources */,
 				294738E221C7D32500DE262C /* TypeInfoVC.swift in Sources */,
 				294694B021C6BFE300720049 /* TypesVC.swift in Sources */,
 				294694B221C6BFFC00720049 /* DailyVC.swift in Sources */,
+				294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */,
 				29D6753621C56B920059A398 /* AppDelegate.swift in Sources */,
 				294738DF21C7CF6300DE262C /* DetailedTypeImageTableViewCell.swift in Sources */,
 			);

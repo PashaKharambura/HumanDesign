@@ -532,15 +532,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bgdark" translatesAutoresizingMaskIntoConstraints="NO" id="2M2-nr-8Uv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bgdark" translatesAutoresizingMaskIntoConstraints="NO" id="2M2-nr-8Uv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="5IA-K6-3Mm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-iA-zjT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="-21" width="375" height="639"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -549,7 +549,7 @@
                             <constraint firstItem="5IA-K6-3Mm" firstAttribute="top" secondItem="1kj-DH-PIp" secondAttribute="top" id="B3K-IU-GZ2"/>
                             <constraint firstItem="qeA-Y4-sp1" firstAttribute="trailing" secondItem="BOq-iA-zjT" secondAttribute="trailing" id="NVz-1S-BQE"/>
                             <constraint firstAttribute="bottom" secondItem="2M2-nr-8Uv" secondAttribute="bottom" id="Xih-ZB-0bv"/>
-                            <constraint firstItem="BOq-iA-zjT" firstAttribute="top" secondItem="1kj-DH-PIp" secondAttribute="top" id="ZQ6-Zz-V95"/>
+                            <constraint firstItem="BOq-iA-zjT" firstAttribute="top" secondItem="1kj-DH-PIp" secondAttribute="top" constant="-21" id="ZQ6-Zz-V95"/>
                             <constraint firstItem="qeA-Y4-sp1" firstAttribute="bottom" secondItem="BOq-iA-zjT" secondAttribute="bottom" id="aJc-j0-FFC"/>
                             <constraint firstAttribute="bottom" secondItem="5IA-K6-3Mm" secondAttribute="bottom" id="aWj-RB-qoD"/>
                             <constraint firstItem="2M2-nr-8Uv" firstAttribute="trailing" secondItem="qeA-Y4-sp1" secondAttribute="trailing" id="cbM-TT-5yy"/>
@@ -562,6 +562,9 @@
                         <viewLayoutGuide key="safeArea" id="qeA-Y4-sp1"/>
                     </view>
                     <navigationItem key="navigationItem" id="L8w-8n-H0W"/>
+                    <connections>
+                        <outlet property="tableView" destination="BOq-iA-zjT" id="XXr-hz-HLL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXE-PO-vd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
