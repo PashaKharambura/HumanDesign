@@ -42,6 +42,18 @@ class TypesVC: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "ShowTypeInfoSegue":
+            guard let vc = segue.destination as? TypeInfoVC else {return}
+            
+            return
+        default:
+            
+            return
+        }
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -56,7 +68,7 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}
-            
+            cell.delegate = self
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}
@@ -82,4 +94,12 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
+}
+
+extension TypesVC: TypesCollectionViewDelegate {
+  
+    func selectType(index: Int) {
+        self.performSegue(withIdentifier: "ShowTypeInfoSegue", sender: index)
+    }
+    
 }
