@@ -34,6 +34,10 @@ class ComputationVC: UIViewController {
         
         initialViewConfigurations()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+    }
 
     private func initialViewConfigurations() {
         configureBgViews()
@@ -49,6 +53,11 @@ class ComputationVC: UIViewController {
     @IBAction func ButtonAction(_ sender: Any) {
         
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
 }
 

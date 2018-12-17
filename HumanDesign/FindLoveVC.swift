@@ -33,6 +33,10 @@ class FindLoveVC: UIViewController {
         setInitialViewConfigurations()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+    }
+    
     private func setInitialViewConfigurations() {
         tfBgView.layer.cornerRadius = 25
         getReportButton.layer.cornerRadius = 25
@@ -67,6 +71,10 @@ class FindLoveVC: UIViewController {
                 viewState = .getReport
             }
             setViewElementsActive(state: viewState)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 }

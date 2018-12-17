@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TypesHeaderTextInfoTableViewCell" rowHeight="168" id="KGk-i7-Jjw" customClass="TypesHeaderTextInfoTableViewCell" customModule="HumanDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Типы личностей" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQC-nE-QGs">
+                        <rect key="frame" x="16" y="21" width="305" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="wsb-6U-OSa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Последний расчет: проектор" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zC3-Q3-zEC">
+                        <rect key="frame" x="16" y="56" width="305" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="dAb-6m-l5W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип является одним из ключевых понятий дизайна человека. Каждый генетический тип имеет свою уникальную стратегию в жизни." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IBc-nQ-5Si">
+                        <rect key="frame" x="16" y="86" width="305" height="71"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="gQC-nE-QGs" secondAttribute="trailing" id="3Qd-U3-MWy"/>
+                    <constraint firstItem="gQC-nE-QGs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="5tX-kA-GbX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zC3-Q3-zEC" secondAttribute="trailing" id="IZL-7C-Dea"/>
+                    <constraint firstItem="IBc-nQ-5Si" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JyH-iU-H0i"/>
+                    <constraint firstItem="zC3-Q3-zEC" firstAttribute="top" secondItem="gQC-nE-QGs" secondAttribute="bottom" id="LK0-gU-rd7"/>
+                    <constraint firstItem="gQC-nE-QGs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NXC-pO-Yl2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="IBc-nQ-5Si" secondAttribute="trailing" id="Wap-Ta-KiQ"/>
+                    <constraint firstItem="IBc-nQ-5Si" firstAttribute="top" secondItem="zC3-Q3-zEC" secondAttribute="bottom" constant="10" id="jRy-yA-Cmt"/>
+                    <constraint firstItem="zC3-Q3-zEC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oNx-V7-jdS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IBc-nQ-5Si" secondAttribute="bottom" id="uag-fb-3s2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TitleLabel" destination="gQC-nE-QGs" id="w0D-wL-BbC"/>
+                <outlet property="additionalInfoLabel" destination="IBc-nQ-5Si" id="Qtx-NY-h0y"/>
+                <outlet property="lastCalculationLabel" destination="zC3-Q3-zEC" id="oNz-ZJ-tyE"/>
+            </connections>
+            <point key="canvasLocation" x="90.400000000000006" y="104.34782608695653"/>
+        </tableViewCell>
+    </objects>
+</document>

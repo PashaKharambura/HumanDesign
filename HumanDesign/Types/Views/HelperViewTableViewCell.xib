@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelperViewTableViewCell" rowHeight="252" id="KGk-i7-Jjw" customClass="HelperViewTableViewCell" customModule="HumanDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="251.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noH-eq-gqm">
+                        <rect key="frame" x="15" y="20" width="320" height="211.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ubD-Ku-bjA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="211.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaskStarsAndMoon" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-eH-1fr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="211.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-Bh-TXi">
+                                <rect key="frame" x="30" y="40" width="260" height="131.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myy-cw-RaP">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="51.5"/>
+                                        <string key="text">Хотите персональный
+расчет карты?</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-Kj-XRZ">
+                                        <rect key="frame" x="0.0" y="81.5" width="260" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8OQ-GC-fHh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Заполните анкету">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vdh-Bh-TXi" firstAttribute="top" relation="greaterThanOrEqual" secondItem="noH-eq-gqm" secondAttribute="top" constant="25" id="0GB-DY-3rS"/>
+                            <constraint firstAttribute="trailing" secondItem="vdh-Bh-TXi" secondAttribute="trailing" constant="30" id="4t6-xU-4hi"/>
+                            <constraint firstItem="ubD-Ku-bjA" firstAttribute="top" secondItem="noH-eq-gqm" secondAttribute="top" id="Cr8-xr-6Nq"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vdh-Bh-TXi" secondAttribute="bottom" constant="25" id="EY4-AM-xok"/>
+                            <constraint firstItem="ubD-Ku-bjA" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" id="Eox-6Z-T2E"/>
+                            <constraint firstAttribute="bottom" secondItem="ubD-Ku-bjA" secondAttribute="bottom" id="Ii2-G4-HHB"/>
+                            <constraint firstAttribute="trailing" secondItem="Rmg-eH-1fr" secondAttribute="trailing" id="KTJ-88-yzW"/>
+                            <constraint firstAttribute="trailing" secondItem="ubD-Ku-bjA" secondAttribute="trailing" id="XfF-ID-ibC"/>
+                            <constraint firstAttribute="bottom" secondItem="Rmg-eH-1fr" secondAttribute="bottom" id="csn-3i-WD4"/>
+                            <constraint firstItem="vdh-Bh-TXi" firstAttribute="centerY" secondItem="noH-eq-gqm" secondAttribute="centerY" id="gP5-UD-edX"/>
+                            <constraint firstItem="vdh-Bh-TXi" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" constant="30" id="lov-NX-Nnr"/>
+                            <constraint firstItem="Rmg-eH-1fr" firstAttribute="leading" secondItem="noH-eq-gqm" secondAttribute="leading" id="mHd-ZM-FRL"/>
+                            <constraint firstItem="Rmg-eH-1fr" firstAttribute="top" secondItem="noH-eq-gqm" secondAttribute="top" id="olV-wG-Lvo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="noH-eq-gqm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Jgs-fc-jdb"/>
+                    <constraint firstAttribute="trailing" secondItem="noH-eq-gqm" secondAttribute="trailing" constant="15" id="KLa-zw-0Z6"/>
+                    <constraint firstItem="noH-eq-gqm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Rla-Ys-Wva"/>
+                    <constraint firstAttribute="bottom" secondItem="noH-eq-gqm" secondAttribute="bottom" constant="20" id="nzt-kx-0Lm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="s8i-Kj-XRZ" id="zoN-1r-2aW"/>
+                <outlet property="headerLabel" destination="myy-cw-RaP" id="xPh-cr-t9Q"/>
+                <outlet property="mainView" destination="noH-eq-gqm" id="4He-je-nfG"/>
+            </connections>
+            <point key="canvasLocation" x="124.8" y="87.256371814092958"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Background" width="320" height="568"/>
+        <image name="MaskStarsAndMoon" width="293" height="185"/>
+    </resources>
+</document>

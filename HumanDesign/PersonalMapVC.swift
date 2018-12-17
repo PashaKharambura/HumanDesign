@@ -38,6 +38,10 @@ class PersonalMapVC: UIViewController {
         setInitialViewConfigurations()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+    }
+    
     private func setInitialViewConfigurations() {
         tfBgView.layer.cornerRadius = 25
         getReportButton.layer.cornerRadius = 25
