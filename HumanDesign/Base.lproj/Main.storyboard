@@ -365,47 +365,99 @@
             </objects>
             <point key="canvasLocation" x="1888.8" y="-1210.344827586207"/>
         </scene>
-        <!--View Controller-->
+        <!--Human DesignVC-->
         <scene sceneID="2NG-Y1-w5A">
             <objects>
-                <viewController id="CBr-Wa-DJn" sceneMemberID="viewController">
+                <viewController id="CBr-Wa-DJn" customClass="HumanDesignVC" customModule="HumanDesign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u9I-GZ-P0a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bgdark" translatesAutoresizingMaskIntoConstraints="NO" id="5eG-1w-rXF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bgdark" translatesAutoresizingMaskIntoConstraints="NO" id="5eG-1w-rXF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="xeW-uj-Ows">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bxN-2n-uwo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-bd-3fg">
+                                <rect key="frame" x="0.0" y="-21" width="375" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-5k-84P">
+                                        <rect key="frame" x="10" y="32.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8Oy-UR-JOg"/>
+                                            <constraint firstAttribute="height" constant="50" id="YVz-eQ-ijv"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="CBr-Wa-DJn" eventType="touchUpInside" id="sEO-QF-DKu"/>
+                                        </connections>
+                                    </button>
+                                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOh-w9-Si3">
+                                        <rect key="frame" x="315" y="32.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2SN-99-Jrb"/>
+                                            <constraint firstAttribute="height" constant="50" id="9ec-VE-lzf"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="shareGrey"/>
+                                        <connections>
+                                            <action selector="shareAction:" destination="CBr-Wa-DJn" eventType="touchUpInside" id="hhu-QM-i9l"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш бодиграф" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A89-tG-Tfh">
+                                        <rect key="frame" x="70" y="46" width="235" height="23"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b9c-5k-84P" firstAttribute="centerY" secondItem="R3o-bd-3fg" secondAttribute="centerY" constant="15" id="9Hp-kX-xFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="vOh-w9-Si3" secondAttribute="trailing" constant="10" id="Ej5-Yb-Yy3"/>
+                                    <constraint firstItem="vOh-w9-Si3" firstAttribute="leading" secondItem="A89-tG-Tfh" secondAttribute="trailing" constant="10" id="Q1J-Fo-o2w"/>
+                                    <constraint firstItem="vOh-w9-Si3" firstAttribute="centerY" secondItem="R3o-bd-3fg" secondAttribute="centerY" constant="15" id="SMI-bt-sP6"/>
+                                    <constraint firstItem="b9c-5k-84P" firstAttribute="leading" secondItem="R3o-bd-3fg" secondAttribute="leading" constant="10" id="bHK-xs-dMu"/>
+                                    <constraint firstItem="A89-tG-Tfh" firstAttribute="centerY" secondItem="R3o-bd-3fg" secondAttribute="centerY" constant="15" id="nE4-DX-42P"/>
+                                    <constraint firstItem="A89-tG-Tfh" firstAttribute="leading" secondItem="b9c-5k-84P" secondAttribute="trailing" constant="10" id="tXn-wn-Vf1"/>
+                                    <constraint firstAttribute="height" constant="85" id="yeJ-vE-dkW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bxN-2n-uwo" firstAttribute="bottom" secondItem="eKk-HA-8oT" secondAttribute="bottom" id="01Z-eT-3jK"/>
+                            <constraint firstItem="R3o-bd-3fg" firstAttribute="trailing" secondItem="eKk-HA-8oT" secondAttribute="trailing" id="5gQ-hv-5lx"/>
                             <constraint firstItem="5eG-1w-rXF" firstAttribute="top" secondItem="u9I-GZ-P0a" secondAttribute="top" id="8nB-YJ-Cs1"/>
                             <constraint firstItem="xeW-uj-Ows" firstAttribute="leading" secondItem="eKk-HA-8oT" secondAttribute="leading" id="Hwz-fT-Wzj"/>
                             <constraint firstItem="xeW-uj-Ows" firstAttribute="bottom" secondItem="eKk-HA-8oT" secondAttribute="bottom" id="IUA-dn-REb"/>
                             <constraint firstItem="5eG-1w-rXF" firstAttribute="bottom" secondItem="eKk-HA-8oT" secondAttribute="bottom" id="Icf-7y-wGj"/>
+                            <constraint firstItem="bxN-2n-uwo" firstAttribute="top" secondItem="R3o-bd-3fg" secondAttribute="bottom" id="KbH-6U-raT"/>
                             <constraint firstItem="bxN-2n-uwo" firstAttribute="trailing" secondItem="eKk-HA-8oT" secondAttribute="trailing" id="PMk-CS-DJJ"/>
+                            <constraint firstItem="R3o-bd-3fg" firstAttribute="top" secondItem="u9I-GZ-P0a" secondAttribute="top" constant="-21" id="PdA-0Y-ax8"/>
                             <constraint firstItem="5eG-1w-rXF" firstAttribute="leading" secondItem="eKk-HA-8oT" secondAttribute="leading" id="QKn-Hz-uus"/>
                             <constraint firstItem="xeW-uj-Ows" firstAttribute="trailing" secondItem="eKk-HA-8oT" secondAttribute="trailing" id="RlT-fG-K4a"/>
                             <constraint firstItem="xeW-uj-Ows" firstAttribute="top" secondItem="u9I-GZ-P0a" secondAttribute="top" id="eaC-49-dV2"/>
                             <constraint firstItem="5eG-1w-rXF" firstAttribute="trailing" secondItem="eKk-HA-8oT" secondAttribute="trailing" id="fzE-pw-VHh"/>
-                            <constraint firstItem="bxN-2n-uwo" firstAttribute="top" secondItem="u9I-GZ-P0a" secondAttribute="top" id="qxi-gs-k0h"/>
+                            <constraint firstItem="R3o-bd-3fg" firstAttribute="leading" secondItem="eKk-HA-8oT" secondAttribute="leading" id="mHD-yW-zi4"/>
                             <constraint firstItem="bxN-2n-uwo" firstAttribute="leading" secondItem="eKk-HA-8oT" secondAttribute="leading" id="rdC-XF-EfR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eKk-HA-8oT"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bxN-2n-uwo" id="S5k-o5-Fz4"/>
+                        <segue destination="U5D-fs-wq5" kind="show" identifier="showMyTypeInfoSegue" id="Vvq-Ci-9ny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uok-nM-a3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="-1216"/>
+            <point key="canvasLocation" x="2792.8000000000002" y="-1216.6416791604199"/>
         </scene>
         <!--Find LoveVC-->
         <scene sceneID="zXd-It-2gX">
@@ -933,6 +985,7 @@
         <image name="#4" width="64" height="49"/>
         <image name="#5" width="64" height="49"/>
         <image name="ArrowBottom" width="10" height="6"/>
+        <image name="Back" width="10" height="18"/>
         <image name="Background" width="320" height="568"/>
         <image name="Bgdark" width="320" height="1359"/>
         <image name="Charts" width="320" height="531"/>
@@ -940,6 +993,10 @@
         <image name="body" width="273" height="471"/>
         <image name="ok" width="123" height="90"/>
         <image name="peoplesSearching" width="280" height="185"/>
+        <image name="shareGrey" width="18" height="20.5"/>
         <image name="stars" width="320" height="568"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vvq-Ci-9ny"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -51,7 +51,7 @@ class ComputationVC: UIViewController {
     }
     
     @IBAction func ButtonAction(_ sender: Any) {
-        
+        performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
