@@ -145,12 +145,13 @@ class HumanDesignDataSource {
         return ["Украина", "Россия"]
     }
     func getUaPlaces() -> [String] {
-        return CityManager.ukrainianPlaces
+        return CityManager.ukrainianPlaces.map {"(UTC:+2)-\($0)"}
     }
     func getRuPlaces() -> [String] {
         var data = [String]()
         for item in CityManager.russianPlaces {
-            data.append(contentsOf: item.value)
+            let places = item.value.map {"(UTC:+\(item.key)-\($0)"}
+            data.append(contentsOf: places)
         }
         return data
     }

@@ -392,10 +392,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <pickerView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5h-ZL-S9X">
-                                        <rect key="frame" x="63" y="184" width="250" height="250"/>
+                                        <rect key="frame" x="30" y="184" width="315" height="250"/>
                                         <color key="backgroundColor" white="1" alpha="0.49568400349650349" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="Ax2-6n-IQv"/>
                                             <constraint firstAttribute="height" constant="250" id="MeH-Nc-AcB"/>
                                         </constraints>
                                     </pickerView>
@@ -417,10 +416,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.59999999999999998" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="G5h-ZL-S9X" firstAttribute="leading" secondItem="pfe-Bb-zHt" secondAttribute="leading" constant="30" id="7Gn-h0-EIf"/>
                                     <constraint firstItem="WZx-6m-p70" firstAttribute="centerX" secondItem="pfe-Bb-zHt" secondAttribute="centerX" id="ASF-RI-ZYa"/>
                                     <constraint firstItem="G5h-ZL-S9X" firstAttribute="centerY" secondItem="pfe-Bb-zHt" secondAttribute="centerY" id="YXD-Kd-ghE"/>
                                     <constraint firstItem="WZx-6m-p70" firstAttribute="top" secondItem="G5h-ZL-S9X" secondAttribute="bottom" constant="10" id="fn0-LL-AHS"/>
                                     <constraint firstItem="G5h-ZL-S9X" firstAttribute="centerX" secondItem="pfe-Bb-zHt" secondAttribute="centerX" id="gCO-WB-nm7"/>
+                                    <constraint firstAttribute="trailing" secondItem="G5h-ZL-S9X" secondAttribute="trailing" constant="30" id="rwh-OV-hmc"/>
                                 </constraints>
                             </view>
                         </subviews>

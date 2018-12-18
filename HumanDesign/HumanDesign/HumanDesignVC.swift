@@ -21,6 +21,8 @@ class HumanDesignVC: UIViewController {
         case WhiteButtonTableViewCell = "WhiteButtonTableViewCell"
     }
     
+    var presenter: HumanDesignPresenter?
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

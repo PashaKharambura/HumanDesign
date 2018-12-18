@@ -67,6 +67,16 @@ class ComputationVC: UIViewController {
         performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "HumanDesignSegue":
+            guard let vc = segue.destination as? HumanDesignVC else {return}
+            vc.presenter = self.presenter
+        default:
+            return
+        }
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
