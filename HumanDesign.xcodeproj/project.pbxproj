@@ -33,6 +33,9 @@
 		294738E621C7E2D800DE262C /* TextInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */; };
 		294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */; };
 		294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */; };
+		298E546E21C8FB8E00DF30E4 /* HumanDesingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */; };
+		298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546F21C8FC6F00DF30E4 /* UserModel.swift */; };
+		298E547221C9201A00DF30E4 /* UACities.json in Resources */ = {isa = PBXBuildFile; fileRef = 298E547121C9201900DF30E4 /* UACities.json */; };
 		29A8446521C8213D00D24DBA /* HumanDesingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446321C8213D00D24DBA /* HumanDesingTableViewCell.swift */; };
 		29A8446621C8213D00D24DBA /* HumanDesingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A8446421C8213D00D24DBA /* HumanDesingTableViewCell.xib */; };
 		29A8446821C822FD00D24DBA /* HumanDesignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446721C822FD00D24DBA /* HumanDesignVC.swift */; };
@@ -72,6 +75,9 @@
 		294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInfoTableViewCell.xib; sourceTree = "<group>"; };
 		294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageTableViewCell.swift; sourceTree = "<group>"; };
 		294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyImageTableViewCell.xib; sourceTree = "<group>"; };
+		298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesingPresenter.swift; sourceTree = "<group>"; };
+		298E546F21C8FC6F00DF30E4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		298E547121C9201900DF30E4 /* UACities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UACities.json; sourceTree = "<group>"; };
 		29A8446321C8213D00D24DBA /* HumanDesingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesingTableViewCell.swift; sourceTree = "<group>"; };
 		29A8446421C8213D00D24DBA /* HumanDesingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanDesingTableViewCell.xib; sourceTree = "<group>"; };
 		29A8446721C822FD00D24DBA /* HumanDesignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesignVC.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 		29A8446221C8211100D24DBA /* HumanDesign */ = {
 			isa = PBXGroup;
 			children = (
+				298E547121C9201900DF30E4 /* UACities.json */,
+				298E546F21C8FC6F00DF30E4 /* UserModel.swift */,
+				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				29A8446721C822FD00D24DBA /* HumanDesignVC.swift */,
 				29A8446921C8233200D24DBA /* Views */,
@@ -291,6 +300,7 @@
 				294738D821C7B73800DE262C /* TypeCollectionViewCell.xib in Resources */,
 				2937D69D21C83D0600A8189A /* WhiteButtonTableViewCell.xib in Resources */,
 				294738DC21C7C2C700DE262C /* HelperViewTableViewCell.xib in Resources */,
+				298E547221C9201A00DF30E4 /* UACities.json in Resources */,
 				294738CB21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.xib in Resources */,
 				29A8446621C8213D00D24DBA /* HumanDesingTableViewCell.xib in Resources */,
 				29A8447021C8343C00D24DBA /* TripleSpecificationTableViewCell.xib in Resources */,
@@ -312,6 +322,7 @@
 				294738DB21C7C2C700DE262C /* HelperViewTableViewCell.swift in Sources */,
 				294694B421C6C01200720049 /* FindLoveVC.swift in Sources */,
 				294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */,
+				298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */,
 				294738CA21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.swift in Sources */,
 				2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */,
 				29A8446F21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift in Sources */,
@@ -324,6 +335,7 @@
 				294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */,
 				29A8446521C8213D00D24DBA /* HumanDesingTableViewCell.swift in Sources */,
 				29D6753621C56B920059A398 /* AppDelegate.swift in Sources */,
+				298E546E21C8FB8E00DF30E4 /* HumanDesingPresenter.swift in Sources */,
 				294738DF21C7CF6300DE262C /* DetailedTypeImageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
