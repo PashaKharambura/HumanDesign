@@ -25,14 +25,11 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzc-uW-sbS">
                                 <rect key="frame" x="5" y="5" width="165" height="231"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeImage1" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-dt-JSC">
-                                        <rect key="frame" x="0.0" y="0.0" width="165" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Sai-0i-bZ1"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeImage1" translatesAutoresizingMaskIntoConstraints="NO" id="fjQ-dt-JSC">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="115.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проектор" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odf-jC-Esr">
-                                        <rect key="frame" x="0.0" y="107" width="165" height="20"/>
+                                        <rect key="frame" x="0.0" y="122.5" width="165" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="d1w-rF-4ze"/>
                                         </constraints>
@@ -41,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бред Питт, Леонардо Ди Каприо..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-9W-vab">
-                                        <rect key="frame" x="0.0" y="127" width="165" height="104"/>
+                                        <rect key="frame" x="0.0" y="142.5" width="165" height="88.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -57,6 +54,7 @@
                                     <constraint firstItem="fjQ-dt-JSC" firstAttribute="top" secondItem="rzc-uW-sbS" secondAttribute="top" id="ZqO-oD-vNS"/>
                                     <constraint firstAttribute="bottom" secondItem="lOB-9W-vab" secondAttribute="bottom" id="dhR-ff-gGq"/>
                                     <constraint firstItem="Odf-jC-Esr" firstAttribute="top" secondItem="fjQ-dt-JSC" secondAttribute="bottom" constant="7" id="e5d-i0-g7U"/>
+                                    <constraint firstItem="fjQ-dt-JSC" firstAttribute="height" secondItem="rzc-uW-sbS" secondAttribute="height" multiplier="1/2" id="nSN-LT-9kP"/>
                                     <constraint firstItem="Odf-jC-Esr" firstAttribute="leading" secondItem="rzc-uW-sbS" secondAttribute="leading" id="u9P-IE-DqV"/>
                                     <constraint firstAttribute="trailing" secondItem="fjQ-dt-JSC" secondAttribute="trailing" id="xis-P5-FnJ"/>
                                 </constraints>
