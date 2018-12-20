@@ -29,12 +29,13 @@ class DetailedTypeImageTableViewCell: UITableViewCell {
     }
     
     func createGradientLayer() {
+        self.layoutIfNeeded()
+        self.layoutSubviews()
         let gradientLayer = CAGradientLayer()
-        
         gradientLayer.frame = self.typeImage.frame
-        
         gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor]
         self.gradientView.layer.addSublayer(gradientLayer)
+        
     }
     
 }

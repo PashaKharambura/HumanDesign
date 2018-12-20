@@ -46,6 +46,7 @@
 		29D6753B21C56B920059A398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753921C56B920059A398 /* Main.storyboard */; };
 		29D6753D21C56B940059A398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753C21C56B940059A398 /* Assets.xcassets */; };
 		29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753E21C56B940059A398 /* LaunchScreen.storyboard */; };
+		99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,9 @@
 		29D6753C21C56B940059A398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D6753F21C56B940059A398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D6754121C56B940059A398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.release.xcconfig"; sourceTree = "<group>"; };
+		BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +206,8 @@
 			children = (
 				29D6753421C56B920059A398 /* HumanDesign */,
 				29D6753321C56B920059A398 /* Products */,
+				DB645423249B7193A81F2324 /* Pods */,
+				489377F10C06DDA51B35E8E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +237,23 @@
 			path = HumanDesign;
 			sourceTree = "<group>";
 		};
+		489377F10C06DDA51B35E8E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB645423249B7193A81F2324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */,
+				87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29D6754421C56B940059A398 /* Build configuration list for PBXNativeTarget "HumanDesign" */;
 			buildPhases = (
+				87942C86EA6F959322CF0055 /* [CP] Check Pods Manifest.lock */,
 				29D6752E21C56B920059A398 /* Sources */,
 				29D6752F21C56B920059A398 /* Frameworks */,
 				29D6753021C56B920059A398 /* Resources */,
+				9C5181891BBF70C61CD8A2C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +334,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87942C86EA6F959322CF0055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumanDesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5181891BBF70C61CD8A2C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29D6752E21C56B920059A398 /* Sources */ = {
@@ -480,6 +555,7 @@
 		};
 		29D6754521C56B940059A398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +575,7 @@
 		};
 		29D6754621C56B940059A398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
