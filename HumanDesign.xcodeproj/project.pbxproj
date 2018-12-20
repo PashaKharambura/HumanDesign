@@ -46,6 +46,8 @@
 		29D6753B21C56B920059A398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753921C56B920059A398 /* Main.storyboard */; };
 		29D6753D21C56B940059A398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753C21C56B940059A398 /* Assets.xcassets */; };
 		29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753E21C56B940059A398 /* LaunchScreen.storyboard */; };
+		592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */; };
+		592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */; };
 		99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		29D6753F21C56B940059A398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D6754121C56B940059A398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumberView.swift; sourceTree = "<group>"; };
+		592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumberView.xib; sourceTree = "<group>"; };
 		87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.release.xcconfig"; sourceTree = "<group>"; };
 		BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +177,7 @@
 		29A8446921C8233200D24DBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				592B00D421CBF55000F4DBB1 /* VIews */,
 				29A8446321C8213D00D24DBA /* HumanDesingTableViewCell.swift */,
 				29A8446421C8213D00D24DBA /* HumanDesingTableViewCell.xib */,
 				29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */,
@@ -243,6 +248,15 @@
 				BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		592B00D421CBF55000F4DBB1 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */,
+				592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */,
+			);
+			path = VIews;
 			sourceTree = "<group>";
 		};
 		DB645423249B7193A81F2324 /* Pods */ = {
@@ -327,6 +341,7 @@
 				2937D69D21C83D0600A8189A /* WhiteButtonTableViewCell.xib in Resources */,
 				294738DC21C7C2C700DE262C /* HelperViewTableViewCell.xib in Resources */,
 				298E547221C9201A00DF30E4 /* UACities.json in Resources */,
+				592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */,
 				294738CB21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.xib in Resources */,
 				29A8446621C8213D00D24DBA /* HumanDesingTableViewCell.xib in Resources */,
 				29A8447021C8343C00D24DBA /* TripleSpecificationTableViewCell.xib in Resources */,
@@ -405,6 +420,7 @@
 				29D6753821C56B920059A398 /* ComputationVC.swift in Sources */,
 				294738CD21C7B31C00DE262C /* Extentions.swift in Sources */,
 				294738E221C7D32500DE262C /* TypeInfoVC.swift in Sources */,
+				592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */,
 				294694B021C6BFE300720049 /* TypesVC.swift in Sources */,
 				294694B221C6BFFC00720049 /* DailyVC.swift in Sources */,
 				294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */,

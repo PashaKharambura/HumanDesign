@@ -51,8 +51,6 @@ class HumanDesignVC: UIViewController {
         self.tableView.register(UINib(nibName: CellIDS.TitleTableViewCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIDS.TitleTableViewCell.rawValue)
         self.tableView.register(UINib(nibName: CellIDS.TypesCollectionTableViewCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue)
         self.tableView.register(UINib(nibName: CellIDS.WhiteButtonTableViewCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIDS.WhiteButtonTableViewCell.rawValue)
-
-
     }
 
     @IBAction func backAction(_ sender: Any) {
@@ -119,7 +117,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             return 100
         case 1:
-            return (self.view.frame.size.width)*(1.5)
+            return (self.view.frame.size.width)*(1.25)
         case 3:
             return 230
         case 4:

@@ -9,6 +9,8 @@
 import UIKit
 
 class HumanDesingTableViewCell: UITableViewCell {
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
