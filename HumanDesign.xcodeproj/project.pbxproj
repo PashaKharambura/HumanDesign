@@ -48,6 +48,8 @@
 		29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753E21C56B940059A398 /* LaunchScreen.storyboard */; };
 		592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */; };
 		592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */; };
+		592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */; };
+		592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */; };
 		99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.debug.xcconfig"; sourceTree = "<group>"; };
 		592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumberView.swift; sourceTree = "<group>"; };
 		592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumberView.xib; sourceTree = "<group>"; };
+		592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumericSymbolBar.xib; sourceTree = "<group>"; };
+		592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumericSymbolBar.swift; sourceTree = "<group>"; };
 		87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.release.xcconfig"; sourceTree = "<group>"; };
 		BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,6 +259,8 @@
 			children = (
 				592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */,
 				592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */,
+				592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */,
+				592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 				294738E621C7E2D800DE262C /* TextInfoTableViewCell.xib in Resources */,
 				294738D221C7B4C700DE262C /* TypesCollectionTableViewCell.xib in Resources */,
 				29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */,
+				592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */,
 				2946868321C83A88003227B9 /* TitleTableViewCell.xib in Resources */,
 				294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */,
 				29D6753D21C56B940059A398 /* Assets.xcassets in Resources */,
@@ -413,6 +420,7 @@
 				294694B421C6C01200720049 /* FindLoveVC.swift in Sources */,
 				294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */,
 				298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */,
+				592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */,
 				294738CA21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.swift in Sources */,
 				2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */,
 				29A8446F21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift in Sources */,
