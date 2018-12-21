@@ -8,13 +8,28 @@
 
 import UIKit
 
-class BodyGraphNumericSymbolBar: UIView {
+@IBDesignable class BodyGraphNumericSymbolBar: UIView {
 
     @IBOutlet var contentView: UIView!
     
+    enum BarPosition {
+        case left, right
+    }
+    
+    var barPosition: BarPosition = .left {
+        didSet {
+            changeSymbolsColor(toLeftPositionColor: barPosition == .left)
+        }
+    }
+    
+    @IBInspectable var barIsInLeftPosition: Bool = true {
+        didSet {
+            changeSymbolsColor(toLeftPositionColor: barIsInLeftPosition)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         loadFromXIB()
         initialPreparations()
     }
@@ -24,6 +39,17 @@ class BodyGraphNumericSymbolBar: UIView {
         
         loadFromXIB()
         initialPreparations()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        loadFromXIB()
+        contentView.prepareForInterfaceBuilder()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        loadFromXIB()
     }
     
     private func loadFromXIB() {
@@ -36,7 +62,10 @@ class BodyGraphNumericSymbolBar: UIView {
     
     private func initialPreparations() {
         contentView.layer.cornerRadius = 2
-        contentView.backgroundColor = UIColor.white
+    }
+    
+    private func changeSymbolsColor(toLeftPositionColor: Bool) {
+        
     }
     /*
     // Only override draw() if you perform custom drawing.

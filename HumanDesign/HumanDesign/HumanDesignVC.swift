@@ -133,6 +133,15 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        switch indexPath.row {
+        case 1:
+            return nil
+        default:
+            return indexPath
+        }
+    }
+    
 }
 
 

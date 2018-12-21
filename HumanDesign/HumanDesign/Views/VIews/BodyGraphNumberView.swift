@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BodyGraphNumberView: UIView {
+@IBDesignable class BodyGraphNumberView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var numberLabel: UILabel!
@@ -44,6 +44,17 @@ class BodyGraphNumberView: UIView {
         
         loadFromXIB()
         initialPreparations()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        loadFromXIB()
+        contentView.prepareForInterfaceBuilder()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        loadFromXIB()
     }
     
     private func loadFromXIB() {

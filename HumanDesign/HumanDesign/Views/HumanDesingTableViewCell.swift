@@ -8,10 +8,9 @@
 
 import UIKit
 
-class HumanDesingTableViewCell: UITableViewCell {
+@IBDesignable class HumanDesingTableViewCell: UITableViewCell {
     
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
