@@ -50,11 +50,13 @@ import UIKit
         super.prepareForInterfaceBuilder()
         loadFromXIB()
         contentView.prepareForInterfaceBuilder()
+        initialPreparations()
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         loadFromXIB()
+        initialPreparations()
     }
     
     private func loadFromXIB() {
@@ -66,15 +68,10 @@ import UIKit
     }
     
     private func initialPreparations() {
-        contentView.layer.cornerRadius = 2
-        contentView.backgroundColor = UIColor.white
+        self.layer.cornerRadius = 2
+        self.clipsToBounds = true
+        contentView.backgroundColor = .white
+        self.backgroundColor = .clear
+        self.numberLabel.text = String(labelsNumber)
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

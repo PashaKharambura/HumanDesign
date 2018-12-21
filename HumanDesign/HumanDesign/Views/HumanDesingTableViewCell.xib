@@ -28,8 +28,8 @@
                             <constraint firstAttribute="width" secondItem="CB9-md-my4" secondAttribute="height" multiplier="1.5:1" id="aiU-DL-rmX"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-uF-tWi" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="235" y="285" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-uF-tWi" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="234.5" y="286" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="tbh-jD-UTb"/>
@@ -41,8 +41,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-Bn-QOh" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="248" y="272" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-Bn-QOh" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="247.5" y="272" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="9LH-cZ-4bH"/>
@@ -54,8 +54,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vU8-63-38B" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="257" y="260" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vU8-63-38B" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="257.5" y="258" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="nDv-cq-r0o"/>
@@ -67,8 +67,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Bq-RyQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="276" y="285" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Bq-RyQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="282" y="286" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Wta-vO-uqG"/>
@@ -871,7 +871,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gz-3W-xXK" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="jpB-ID-Niz"/>
                                     <constraint firstAttribute="width" constant="10" id="sbP-RL-6il"/>
@@ -884,7 +884,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t79-F5-BOX" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="12" y="0.0" width="10" height="10"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="a93-Os-YnB"/>
                                     <constraint firstAttribute="width" constant="10" id="hyi-NS-Rwe"/>
@@ -897,7 +897,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-EV-bhY" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="24" y="0.0" width="10" height="10"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="1uJ-h5-jbq"/>
                                     <constraint firstAttribute="height" constant="10" id="SB6-pV-fnu"/>
@@ -1004,6 +1004,8 @@
                     <constraint firstItem="95N-6Z-KG1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5g6-hL-p3n"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="top" secondItem="ec0-cY-iz5" secondAttribute="bottom" constant="10" id="74Z-Wn-S37"/>
                     <constraint firstItem="a80-5Y-Tur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8EB-hn-LrO"/>
+                    <constraint firstItem="vU8-63-38B" firstAttribute="centerX" secondItem="CB9-md-my4" secondAttribute="centerX" id="9J6-6M-klu"/>
+                    <constraint firstItem="2PA-Bn-QOh" firstAttribute="trailing" secondItem="vU8-63-38B" secondAttribute="leading" id="9Rd-rz-cv5"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="9UE-f6-GXE"/>
                     <constraint firstItem="DS0-Dd-K4Q" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="bottom" constant="2" id="AQf-Ay-1o3"/>
                     <constraint firstItem="fV9-m3-KnZ" firstAttribute="centerY" secondItem="Af2-Bc-wb8" secondAttribute="centerY" constant="20" id="AY8-Br-N5h"/>
@@ -1011,10 +1013,13 @@
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="top" secondItem="G8u-n4-ozR" secondAttribute="bottom" constant="12" id="Bga-eQ-WzL"/>
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="C5Z-uj-OKn"/>
                     <constraint firstItem="DS0-Dd-K4Q" firstAttribute="trailing" secondItem="RZQ-Xe-pAz" secondAttribute="trailing" id="CWY-gk-fks"/>
+                    <constraint firstItem="4ay-uF-tWi" firstAttribute="top" secondItem="2PA-Bn-QOh" secondAttribute="bottom" constant="4" id="Cjk-uM-ft3"/>
                     <constraint firstItem="P8J-Wy-RPY" firstAttribute="centerX" secondItem="ec0-cY-iz5" secondAttribute="centerX" id="EDX-IQ-grM"/>
                     <constraint firstItem="fV9-m3-KnZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EFF-DN-aq3"/>
                     <constraint firstItem="PhI-0b-En3" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="EHV-rl-UA1"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Fbz-3L-H1U"/>
+                    <constraint firstItem="4ay-uF-tWi" firstAttribute="trailing" secondItem="2PA-Bn-QOh" secondAttribute="leading" constant="-3" id="Gns-om-T0t"/>
+                    <constraint firstItem="aSU-Bq-RyQ" firstAttribute="centerY" secondItem="4ay-uF-tWi" secondAttribute="centerY" id="HZh-m3-oYq"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="top" secondItem="weQ-i6-Jau" secondAttribute="bottom" id="IRS-Z1-8ba"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="Jmy-i4-Pe1"/>
                     <constraint firstItem="YTT-vF-zid" firstAttribute="centerX" secondItem="95N-6Z-KG1" secondAttribute="centerX" id="Kg0-59-ryA"/>
@@ -1023,9 +1028,11 @@
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="top" secondItem="95N-6Z-KG1" secondAttribute="bottom" constant="20" id="Lt1-gs-90b"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="MaR-H5-V9J"/>
                     <constraint firstItem="MZF-v1-og9" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="bottom" constant="2" id="NMz-Cr-Y6O"/>
+                    <constraint firstItem="2PA-Bn-QOh" firstAttribute="top" secondItem="vU8-63-38B" secondAttribute="bottom" constant="4" id="O5r-VZ-D5C"/>
                     <constraint firstAttribute="trailing" secondItem="PhI-0b-En3" secondAttribute="trailing" constant="10" id="OAD-0m-iEo"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ohr-sm-fjj"/>
                     <constraint firstItem="PhI-0b-En3" firstAttribute="centerY" secondItem="Af2-Bc-wb8" secondAttribute="centerY" constant="20" id="OiZ-WN-QZo"/>
+                    <constraint firstItem="aSU-Bq-RyQ" firstAttribute="trailing" secondItem="CB9-md-my4" secondAttribute="trailing" constant="-6" id="PWI-DP-zKd"/>
                     <constraint firstItem="mmO-aJ-pBP" firstAttribute="centerX" secondItem="YhB-N5-faH" secondAttribute="centerX" id="R69-Gp-0qw"/>
                     <constraint firstItem="p0U-eY-3hB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="RGq-Aa-5wM"/>
                     <constraint firstItem="RZQ-Xe-pAz" firstAttribute="centerX" secondItem="G8u-n4-ozR" secondAttribute="centerX" id="Sst-BB-2Vi"/>
@@ -1034,6 +1041,7 @@
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="leading" secondItem="wwS-eG-cUR" secondAttribute="leading" constant="-4" id="WkJ-n3-YC4"/>
                     <constraint firstItem="P8J-Wy-RPY" firstAttribute="bottom" secondItem="ec0-cY-iz5" secondAttribute="bottom" constant="-4" id="YBi-KB-wc3"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="top" secondItem="fle-SK-wMi" secondAttribute="top" constant="-4" id="YcJ-3H-1Ai"/>
+                    <constraint firstItem="CB9-md-my4" firstAttribute="top" secondItem="vU8-63-38B" secondAttribute="top" constant="-4" id="a0u-Hc-hKY"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="centerX" secondItem="Af2-Bc-wb8" secondAttribute="centerX" id="am0-yk-yQe"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="b5S-JY-pUH"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="leading" secondItem="oym-yv-YXe" secondAttribute="leading" constant="-4" id="bsN-sK-QZD"/>
