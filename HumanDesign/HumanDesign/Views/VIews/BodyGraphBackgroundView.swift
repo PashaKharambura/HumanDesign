@@ -47,15 +47,14 @@ class BodyGraphBackgroundView: UIView {
             drawLine(from: startCoordinate, to: endCoordinate, with: .white)
         } else {
             if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
-                drawLine(from: startCoordinate, to: endCoordinate, with: .magenta)
+                drawLine(from: startCoordinate, to: endCoordinate, with: ActiveBodyGraphNumber.NumberColor.violet.lineColor)
             } else {
-                //TODO: draw right color of parts
                 if firstNumberView.numberIsActive {
-                    drawLine(from: startCoordinate, to: middleOfLine, with: .red)
+                    drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
                     drawLine(from: middleOfLine, to: endCoordinate, with: .white)
                 } else {
                     drawLine(from: startCoordinate, to: middleOfLine, with: .white)
-                    drawLine(from: middleOfLine, to: endCoordinate, with: .blue)
+                    drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
                 }
             }
         }

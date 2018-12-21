@@ -29,12 +29,19 @@ import UIKit
     var activeRedNumbers: [Int] = []
     var activeBlueNumbers: [Int] = []
     
-    var activeNumbers: [Int] = [] {
+    var activeNumbers: [ActiveBodyGraphNumber] = [] {
         didSet {
             reloadCellData()
-//            lineView.setNeedsLayout()
+            //            lineView.setNeedsLayout()
         }
     }
+    
+//    var activeNumbers: [Int] = [] {
+//        didSet {
+//            reloadCellData()
+////            lineView.setNeedsLayout()
+//        }
+//    }
     
     private let connectedByLinesGraphNumbers: [Int:Int] = [
         64:47,
@@ -105,12 +112,18 @@ import UIKit
     
     private func reloadCellData() {
         reloadCellNumbers()
-//        drawGraphLines()
     }
     
     private func reloadCellNumbers() {
         for graphNumber in allBodyGraphNumbersCollection {
-            graphNumber.numberIsActive = activeNumbers.contains(graphNumber.labelsNumber)
+            if let activeNumber = activeNumbers.first(where: { (activeNumber) -> Bool in
+                activeNumber.number == graphNumber.labelsNumber
+            }) {
+                graphNumber.numberIsActive = true
+                graphNumber.activeLineColor = activeNumber.color
+            } else {
+                graphNumber.numberIsActive = false
+            }
         }
     }
 }

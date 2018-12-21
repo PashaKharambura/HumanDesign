@@ -32,6 +32,8 @@ import UIKit
         }
     }
     
+    var activeLineColor: ActiveBodyGraphNumber.NumberColor = .blue
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

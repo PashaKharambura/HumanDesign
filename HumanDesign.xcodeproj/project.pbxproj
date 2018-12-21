@@ -50,6 +50,7 @@
 		592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */; };
 		592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */; };
 		592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */; };
+		59564D0621CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */; };
 		5956C98021CD621200A7EC25 /* BodyGraphBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */; };
 		99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,7 @@
 		592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumberView.xib; sourceTree = "<group>"; };
 		592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumericSymbolBar.xib; sourceTree = "<group>"; };
 		592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumericSymbolBar.swift; sourceTree = "<group>"; };
+		59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveBodyGraphNumber.swift; sourceTree = "<group>"; };
 		5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphBackgroundView.swift; sourceTree = "<group>"; };
 		87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.release.xcconfig"; sourceTree = "<group>"; };
 		BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				29A8446721C822FD00D24DBA /* HumanDesignVC.swift */,
+				59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */,
 				29A8446921C8233200D24DBA /* Views */,
 			);
 			path = HumanDesign;
@@ -424,6 +427,7 @@
 				294694B421C6C01200720049 /* FindLoveVC.swift in Sources */,
 				294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */,
 				298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */,
+				59564D0621CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift in Sources */,
 				592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */,
 				294738CA21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.swift in Sources */,
 				2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */,

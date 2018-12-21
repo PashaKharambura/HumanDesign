@@ -82,9 +82,15 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HumanDesingTableViewCell.rawValue, for: indexPath) as? HumanDesingTableViewCell else {return UITableViewCell()}
-            cell.activeNumbers = [43,23,16,21]
+            cell.activeNumbers = [
+                ActiveBodyGraphNumber(number: 43, withColor: .blue),
+                ActiveBodyGraphNumber(number: 23, withColor: .red),
+                ActiveBodyGraphNumber(number: 16, withColor: .blue),
+                ActiveBodyGraphNumber(number: 50, withColor: .red),
+                ActiveBodyGraphNumber(number: 21, withColor: .blue)
+            ]
+//            cell.activeNumbers = [43,23,16,21]
 //            cell.layoutIfNeeded()
-            
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
