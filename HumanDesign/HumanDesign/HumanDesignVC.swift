@@ -82,6 +82,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HumanDesingTableViewCell.rawValue, for: indexPath) as? HumanDesingTableViewCell else {return UITableViewCell()}
+            cell.activeNumbers = [43,23,16,21]
 //            cell.layoutIfNeeded()
             
             return cell

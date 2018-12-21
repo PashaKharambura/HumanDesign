@@ -39,15 +39,15 @@ class BodyGraphBackgroundView: UIView {
         let startCoordinate = firstNumberView.superview?.convert(firstNumberView.center, to: self) ?? firstNumberView.center
         let endCoordinate = secondNumberView.superview?.convert(secondNumberView.center, to: self) ?? secondNumberView.center
         
-        let middleXCoordinate = (abs(firstNumberView.center.x - secondNumberView.center.x)/2)
-        let middleYCoordinate = (abs(firstNumberView.center.y - secondNumberView.center.y)/2)
+        let middleXCoordinate = (max(startCoordinate.x, endCoordinate.x) - (abs(startCoordinate.x - endCoordinate.x)/2))
+        let middleYCoordinate = (max(startCoordinate.y, endCoordinate.y) - (abs(startCoordinate.y - endCoordinate.y)/2))
         let middleOfLine = CGPoint(x: middleXCoordinate, y: middleYCoordinate)
         
         if !firstNumberView.numberIsActive && !secondNumberView.numberIsActive {
             drawLine(from: startCoordinate, to: endCoordinate, with: .white)
         } else {
             if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
-                drawLine(from: startCoordinate, to: endCoordinate, with: .greyPurple)
+                drawLine(from: startCoordinate, to: endCoordinate, with: .magenta)
             } else {
                 //TODO: draw right color of parts
                 if firstNumberView.numberIsActive {
@@ -63,7 +63,7 @@ class BodyGraphBackgroundView: UIView {
     
     private func drawLine(from firstPoint: CGPoint, to secondPoint: CGPoint, with color: UIColor) {
         let linePath = UIBezierPath()
-        linePath.lineWidth = 4.0
+        linePath.lineWidth = 6.0
         color.setStroke()
         linePath.move(to: firstPoint)
         linePath.addLine(to: secondPoint)
