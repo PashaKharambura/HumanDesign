@@ -39,30 +39,35 @@ class BodyGraphBackgroundView: UIView {
         let startCoordinate = firstNumberView.center
         let endCoordinate = secondNumberView.center
         
+        let middleXCoordinate = (abs(firstNumberView.center.x - secondNumberView.center.x)/2)
+        let middleYCoordinate = (abs(firstNumberView.center.y - secondNumberView.center.y)/2)
+        let middleOfLine = CGPoint(x: middleXCoordinate, y: middleYCoordinate)
+        
+        if !firstNumberView.numberIsActive && !secondNumberView.numberIsActive {
+            drawLine(from: startCoordinate, to: endCoordinate, with: .white)
+        } else {
+            if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
+                drawLine(from: startCoordinate, to: endCoordinate, with: .greyPurple)
+            } else {
+                //TODO: draw right color of parts
+                if firstNumberView.numberIsActive {
+                    drawLine(from: startCoordinate, to: middleOfLine, with: .red)
+                    drawLine(from: middleOfLine, to: endCoordinate, with: .white)
+                } else {
+                    drawLine(from: startCoordinate, to: middleOfLine, with: .white)
+                    drawLine(from: middleOfLine, to: endCoordinate, with: .blue)
+                }
+            }
+        }
+    }
+    
+    private func drawLine(from firstPoint: CGPoint, to secondPoint: CGPoint, with color: UIColor) {
         let linePath = UIBezierPath()
         linePath.lineWidth = 4.0
-        UIColor.white.setStroke()
-        linePath.move(to: startCoordinate)
-        linePath.addLine(to: endCoordinate)
+        color.setStroke()
+        linePath.move(to: firstPoint)
+        linePath.addLine(to: secondPoint)
         linePath.stroke()
-        
-//        let middleXCoordinate = abs(firstNumberView.center.x - secondNumberView.center.x)
-//        let middleYCoordinate = abs(firstNumberView.center.y - secondNumberView.center.y)
-//        let middleOfLine = CGPoint(x: middleXCoordinate, y: middleYCoordinate)
-//
-//        let firstPartLinePath = UIBezierPath()
-//        firstPartLinePath.lineWidth = 4.0
-//        UIColor.red.setStroke()
-//        firstPartLinePath.move(to: startCoordinate)
-//        firstPartLinePath.addLine(to: middleOfLine)
-//        firstPartLinePath.stroke()
-//
-//        let secondPartLinePath = UIBezierPath()
-//        secondPartLinePath.lineWidth = 4.0
-//        UIColor.blue.setStroke()
-//        secondPartLinePath.move(to: middleOfLine)
-//        secondPartLinePath.addLine(to: endCoordinate)
-//        secondPartLinePath.stroke()
     }
 
 }

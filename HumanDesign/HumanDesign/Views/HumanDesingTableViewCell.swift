@@ -94,6 +94,13 @@ import UIKit
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
         lineView.setNeedsLayout()
+        
+    }
+    
+    func drawGraphLines() {
+        lineView.numberViews = allBodyGraphNumbersCollection
+        lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
+        lineView.setNeedsLayout()
     }
     
     private func reloadCellData() {
