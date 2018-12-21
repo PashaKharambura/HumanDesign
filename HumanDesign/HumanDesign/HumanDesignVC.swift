@@ -82,7 +82,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HumanDesingTableViewCell.rawValue, for: indexPath) as? HumanDesingTableViewCell else {return UITableViewCell()}
-            cell.layoutIfNeeded()
+//            cell.layoutIfNeeded()
             
             return cell
         case 2:
@@ -147,10 +147,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 1:
             guard let graphCell = cell as? HumanDesingTableViewCell else { return }
-//            graphCell.layoutIfNeeded()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                graphCell.lineView.setNeedsDisplay()
-            }
+            graphCell.layoutIfNeeded()
         default:
             return
         }

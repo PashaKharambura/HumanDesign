@@ -12,28 +12,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HumanDesingTableViewCell" rowHeight="386" id="KGk-i7-Jjw" customClass="HumanDesingTableViewCell" customModule="HumanDesign" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="469"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HumanDesingTableViewCell" rowHeight="356" id="KGk-i7-Jjw" customClass="HumanDesingTableViewCell" customModule="HumanDesign" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="439"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="468.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="354" height="438.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-Q5-Rpe" userLabel="Body Graph Lines View" customClass="BodyGraphBackgroundView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="468.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="459.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphBackground" translatesAutoresizingMaskIntoConstraints="NO" id="a80-5Y-Tur">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="468.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="372.5" height="459.5"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphRedTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="CB9-md-my4">
-                        <rect key="frame" x="227" y="254" width="71" height="47.5"/>
+                        <rect key="frame" x="216.5" y="253" width="71" height="47"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="CB9-md-my4" secondAttribute="height" multiplier="1.5:1" id="aiU-DL-rmX"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-uF-tWi" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="234.5" y="286" width="10" height="10"/>
+                        <rect key="frame" x="224" y="285" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="tbh-jD-UTb"/>
@@ -46,7 +46,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-Bn-QOh" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="247.5" y="272" width="10" height="10"/>
+                        <rect key="frame" x="237" y="271" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="9LH-cZ-4bH"/>
@@ -59,7 +59,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vU8-63-38B" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="257.5" y="258" width="10" height="10"/>
+                        <rect key="frame" x="247" y="257" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="nDv-cq-r0o"/>
@@ -72,7 +72,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Bq-RyQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="282" y="286" width="10" height="10"/>
+                        <rect key="frame" x="271.5" y="285" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Wta-vO-uqG"/>
@@ -85,13 +85,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphBlueLeftTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-0b-En3">
-                        <rect key="frame" x="295.5" y="305" width="69.5" height="104.5"/>
+                        <rect key="frame" x="275" y="304" width="69" height="103.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="PhI-0b-En3" secondAttribute="height" multiplier="1:1.5" id="5Tw-k7-xrM"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-fu-CSk" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="349" y="393.5" width="10" height="10"/>
+                        <rect key="frame" x="328" y="391.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="21w-YE-3pD"/>
@@ -104,7 +104,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-YS-OBP" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="315.5" y="367.5" width="10" height="10"/>
+                        <rect key="frame" x="295" y="365.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="9gv-vf-LhG"/>
@@ -117,7 +117,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-cZ-xsR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="334" y="379.5" width="10" height="10"/>
+                        <rect key="frame" x="313" y="377.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="XHV-6r-gIU"/>
@@ -130,7 +130,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpX-fn-195" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="349" y="311" width="10" height="10"/>
+                        <rect key="frame" x="328" y="310" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="1jn-F4-srV"/>
@@ -143,7 +143,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J7-lo-IeL" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="300.5" y="352.5" width="10" height="10"/>
+                        <rect key="frame" x="280" y="350.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Vg2-dU-opM"/>
@@ -156,7 +156,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-9f-hR4" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="315.5" y="337.5" width="10" height="10"/>
+                        <rect key="frame" x="295" y="335.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="Pgc-G2-6EZ"/>
@@ -169,13 +169,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphBlueRightTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="fV9-m3-KnZ">
-                        <rect key="frame" x="10" y="305" width="69.5" height="104.5"/>
+                        <rect key="frame" x="10" y="304" width="69" height="103.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="fV9-m3-KnZ" secondAttribute="height" multiplier="1:1.5" id="ajJ-xv-baQ"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-DC-7FR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="16" y="310" width="10" height="10"/>
+                        <rect key="frame" x="16" y="309" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="2OG-t0-eiQ"/>
@@ -188,7 +188,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-KT-F7v" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="16" y="394.5" width="10" height="10"/>
+                        <rect key="frame" x="16" y="392.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="0d4-IB-P4t"/>
@@ -201,7 +201,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Gd-gJo" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="31" y="379.5" width="10" height="10"/>
+                        <rect key="frame" x="31" y="377.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="6Dk-Jc-toq"/>
@@ -214,7 +214,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pm-nx-ntB" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="48.5" y="337.5" width="10" height="10"/>
+                        <rect key="frame" x="48" y="335.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="2s9-jl-5sb"/>
@@ -227,7 +227,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZL-v0-yZ6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="63.5" y="352.5" width="10" height="10"/>
+                        <rect key="frame" x="63" y="350.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="10Z-VS-eEr"/>
@@ -240,13 +240,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphBlueRectangular" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-BA-mFY">
-                        <rect key="frame" x="153" y="388.5" width="69" height="69.5"/>
+                        <rect key="frame" x="142.5" y="380" width="69" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="PaG-BA-mFY" secondAttribute="height" multiplier="1:1" id="qZw-aF-sTp"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0qv-ZR-h1t">
-                        <rect key="frame" x="208" y="406.5" width="10" height="34"/>
+                        <rect key="frame" x="197.5" y="397.5" width="10" height="34"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VS-4C-fFQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -290,7 +290,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fiW-bX-zAq">
-                        <rect key="frame" x="170.5" y="392.5" width="34" height="10"/>
+                        <rect key="frame" x="160" y="384" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-ne-eQd" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -334,13 +334,13 @@
                         </subviews>
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyRectangular" translatesAutoresizingMaskIntoConstraints="NO" id="Af2-Bc-wb8">
-                        <rect key="frame" x="153" y="302.5" width="69" height="69.5"/>
+                        <rect key="frame" x="142.5" y="301" width="69" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Af2-Bc-wb8" secondAttribute="height" multiplier="1:1" id="as6-Zm-iMy"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weQ-i6-Jau" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="208" y="348" width="10" height="10"/>
+                        <rect key="frame" x="197.5" y="346" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="ByF-LT-03C"/>
@@ -353,7 +353,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HBN-YM-1L0">
-                        <rect key="frame" x="157" y="316.5" width="10" height="41.5"/>
+                        <rect key="frame" x="146.5" y="315" width="10" height="41"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmr-8u-Zis" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -369,7 +369,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-8z-ozN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="31.5" width="10" height="10"/>
+                                <rect key="frame" x="0.0" y="31" width="10" height="10"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="a1U-ff-35b"/>
@@ -384,7 +384,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fle-SK-wMi">
-                        <rect key="frame" x="170.5" y="306.5" width="34" height="10"/>
+                        <rect key="frame" x="160" y="305" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jup-Kf-Jgy" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -428,7 +428,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-FZ-JN4">
-                        <rect key="frame" x="170.5" y="358" width="34" height="10"/>
+                        <rect key="frame" x="160" y="356" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmA-0N-qlE" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -472,13 +472,13 @@
                         </subviews>
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphYelowRomb" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-dg-Obr">
-                        <rect key="frame" x="153" y="223" width="69" height="69.5"/>
+                        <rect key="frame" x="142.5" y="222" width="69" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="X5E-dg-Obr" secondAttribute="height" multiplier="1:1" id="ctL-7T-4EW"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-k5-J0b" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="194" y="241" width="10" height="10"/>
+                        <rect key="frame" x="183.5" y="239.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="Fdj-bl-JZi"/>
@@ -491,7 +491,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-96-CwJ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="207" y="253" width="10" height="10"/>
+                        <rect key="frame" x="196.5" y="251.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="4mY-3D-c9d"/>
@@ -504,7 +504,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-GJ-jfN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="194" y="265.5" width="10" height="10"/>
+                        <rect key="frame" x="183.5" y="264" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="QRs-Xz-44n"/>
@@ -517,7 +517,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vak-ma-nbQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="171" y="265.5" width="10" height="10"/>
+                        <rect key="frame" x="160.5" y="264" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Izi-yd-dFV"/>
@@ -530,7 +530,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxJ-72-zSF" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="182.5" y="277.5" width="10" height="10"/>
+                        <rect key="frame" x="172" y="276" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="5wg-A5-ojR"/>
@@ -543,7 +543,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-Ne-MHs" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="171" y="241" width="10" height="10"/>
+                        <rect key="frame" x="160.5" y="239.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="NOb-Cv-d7Z"/>
@@ -556,7 +556,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npO-Qo-e0q" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="182.5" y="228" width="10" height="10"/>
+                        <rect key="frame" x="172" y="227" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="XRf-cJ-YS7"/>
@@ -569,13 +569,13 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphBlueRectangular" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-cY-iz5">
-                        <rect key="frame" x="153" y="143.5" width="69" height="69.5"/>
+                        <rect key="frame" x="142.5" y="143" width="69" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ec0-cY-iz5" secondAttribute="height" multiplier="1:1" id="Gw8-CS-b0e"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wwS-eG-cUR">
-                        <rect key="frame" x="157" y="161.5" width="10" height="22"/>
+                        <rect key="frame" x="146.5" y="160.5" width="10" height="22"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKo-fM-x0V" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -606,7 +606,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ECM-xC-d28">
-                        <rect key="frame" x="208" y="161.5" width="10" height="34"/>
+                        <rect key="frame" x="197.5" y="160.5" width="10" height="34"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxp-QO-fSG" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -650,7 +650,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="P8J-Wy-RPY">
-                        <rect key="frame" x="170.5" y="199" width="34" height="10"/>
+                        <rect key="frame" x="160" y="198" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJu-0R-p5V" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -694,7 +694,7 @@
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2Z8-ab-7Bf">
-                        <rect key="frame" x="170.5" y="147.5" width="34" height="10"/>
+                        <rect key="frame" x="160" y="147" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-5b-S3J" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -749,7 +749,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WE-G4-7s3" customClass="BodyGraphNumericSymbolBar" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="325" y="40" width="40" height="170"/>
+                        <rect key="frame" x="304" y="40" width="40" height="170"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="3sc-7b-DdP"/>
@@ -760,19 +760,19 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyUpTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="95N-6Z-KG1">
-                        <rect key="frame" x="150" y="12" width="75" height="50"/>
+                        <rect key="frame" x="140" y="12" width="74" height="49.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="95N-6Z-KG1" secondAttribute="height" multiplier="1.5:1" id="5bx-pk-D7j"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyDownTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-n4-ozR">
-                        <rect key="frame" x="150" y="82" width="75" height="49.5"/>
+                        <rect key="frame" x="140" y="81.5" width="74" height="49.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="G8u-n4-ozR" secondAttribute="height" multiplier="1.5:1" id="ctP-V0-Aaf"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZF-v1-og9" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="170.5" y="98" width="10" height="10"/>
+                        <rect key="frame" x="160" y="97.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="C4f-YT-6Vc"/>
@@ -785,7 +785,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-aJ-pBP" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="182.5" y="110" width="10" height="10"/>
+                        <rect key="frame" x="172" y="109.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="M3x-R0-3JQ"/>
@@ -798,7 +798,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="RZQ-Xe-pAz">
-                        <rect key="frame" x="170.5" y="86" width="34" height="10"/>
+                        <rect key="frame" x="160" y="85.5" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEV-6Q-Vx9" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -842,7 +842,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-ta-UYN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="158" y="253" width="10" height="10"/>
+                        <rect key="frame" x="147.5" y="251.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Zeg-yp-tIB"/>
@@ -855,7 +855,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-vF-zid">
-                        <rect key="frame" x="170.5" y="48" width="34" height="10"/>
+                        <rect key="frame" x="160" y="47.5" width="34" height="10"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gz-3W-xXK" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -899,7 +899,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DS0-Dd-K4Q" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="194.5" y="98" width="10" height="10"/>
+                        <rect key="frame" x="184" y="97.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="5fc-qh-jQi"/>
@@ -912,7 +912,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oym-yv-YXe">
-                        <rect key="frame" x="157" y="406.5" width="10" height="34"/>
+                        <rect key="frame" x="146.5" y="397.5" width="10" height="34"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-F7-ASn" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -956,7 +956,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-dQ-bCE" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="334" y="325" width="10" height="10"/>
+                        <rect key="frame" x="313" y="324" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="2Lv-Dz-01e"/>
@@ -969,7 +969,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-lr-wN6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="48.5" y="367.5" width="10" height="10"/>
+                        <rect key="frame" x="48" y="365.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="g4h-cW-zNd"/>
@@ -982,7 +982,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-kU-eD9" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="31" y="325" width="10" height="10"/>
+                        <rect key="frame" x="31" y="324" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="GBd-CR-83G"/>
@@ -1257,7 +1257,7 @@
                 <outletCollection property="allBodyGraphNumbersCollection" destination="uzN-kU-eD9" collectionClass="NSMutableArray" id="gP7-zr-qrt"/>
                 <outletCollection property="allBodyGraphNumbersCollection" destination="PPs-DC-7FR" collectionClass="NSMutableArray" id="PyG-wM-Zyb"/>
             </connections>
-            <point key="canvasLocation" x="124" y="275.71214392803603"/>
+            <point key="canvasLocation" x="123.2" y="274.36281859070465"/>
         </tableViewCell>
     </objects>
     <resources>

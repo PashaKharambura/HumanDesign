@@ -36,8 +36,8 @@ class BodyGraphBackgroundView: UIView {
     }
     
     private func drawLine(from firstNumberView: BodyGraphNumberView, to secondNumberView: BodyGraphNumberView) {
-        let startCoordinate = firstNumberView.center
-        let endCoordinate = secondNumberView.center
+        let startCoordinate = firstNumberView.superview?.convert(firstNumberView.center, to: self) ?? firstNumberView.center
+        let endCoordinate = secondNumberView.superview?.convert(secondNumberView.center, to: self) ?? secondNumberView.center
         
         let middleXCoordinate = (abs(firstNumberView.center.x - secondNumberView.center.x)/2)
         let middleYCoordinate = (abs(firstNumberView.center.y - secondNumberView.center.y)/2)

@@ -93,7 +93,7 @@ import UIKit
         super.layoutSubviews()
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
-        lineView.setNeedsLayout()
+        lineView.setNeedsDisplay()
         
     }
     
