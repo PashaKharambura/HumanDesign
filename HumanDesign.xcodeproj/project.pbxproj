@@ -50,6 +50,7 @@
 		592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */; };
 		592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */; };
 		592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */; };
+		5956C98021CD621200A7EC25 /* BodyGraphBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */; };
 		99382CC4E2BD0184B90E585D /* Pods_HumanDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumberView.xib; sourceTree = "<group>"; };
 		592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumericSymbolBar.xib; sourceTree = "<group>"; };
 		592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumericSymbolBar.swift; sourceTree = "<group>"; };
+		5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphBackgroundView.swift; sourceTree = "<group>"; };
 		87EF27F7B30B331C68904B8C /* Pods-HumanDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.release.xcconfig"; sourceTree = "<group>"; };
 		BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -261,6 +263,7 @@
 				592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */,
 				592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */,
 				592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */,
+				5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2946868221C83A88003227B9 /* TitleTableViewCell.swift in Sources */,
+				5956C98021CD621200A7EC25 /* BodyGraphBackgroundView.swift in Sources */,
 				294738D721C7B73800DE262C /* TypeCollectionViewCell.swift in Sources */,
 				294694AE21C6BFD200720049 /* PersonalMapVC.swift in Sources */,
 				2937D69C21C83D0600A8189A /* WhiteButtonTableViewCell.swift in Sources */,

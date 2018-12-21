@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable class HumanDesingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var backgroungView: UIImageView!
+    @IBOutlet weak var lineView: BodyGraphBackgroundView!
     @IBOutlet var allBodyGraphNumbersCollection: [BodyGraphNumberView]!
     
     @IBOutlet var upTriangularNumberCollection: [BodyGraphNumberView]!
@@ -23,16 +24,18 @@ import UIKit
     @IBOutlet var rightBlueTriangularNumberCollection: [BodyGraphNumberView]!
     @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
     
-    private var lineView: UIView = UIView()
+//    private var lineView: BodyGraphBackgroundView = BodyGraphBackgroundView()
+    
+    var activeRedNumbers: [Int] = []
+    var activeBlueNumbers: [Int] = []
     
     var activeNumbers: [Int] = [] {
         didSet {
             reloadCellData()
-//            setNeedsLayout()
+//            lineView.setNeedsLayout()
         }
     }
     
-    //TODO: use this dictionary for drawing lines
     private let connectedByLinesGraphNumbers: [Int:Int] = [
         64:47,
         61:24,
@@ -56,13 +59,13 @@ import UIKit
         44:26,
         27:50,
         40:37,
-        3:6,
+        59:6,
         42:53,
         3:60,
         9:52,
         32:54,
         28:38,
-        17:58,
+        18:58,
         19:49,
         39:55,
         41:30
@@ -76,56 +79,31 @@ import UIKit
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        lineView.removeFromSuperview()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        lineView.removeFromSuperview()
-        
     }
     
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        drawGraphLines()
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        lineView.numberViews = allBodyGraphNumbersCollection
+        lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
+        lineView.setNeedsLayout()
+    }
     
     private func reloadCellData() {
         reloadCellNumbers()
-        drawGraphLines()
+//        drawGraphLines()
     }
     
     private func reloadCellNumbers() {
         for graphNumber in allBodyGraphNumbersCollection {
             graphNumber.numberIsActive = activeNumbers.contains(graphNumber.labelsNumber)
         }
-    }
-
-    func drawGraphLines() {
-        let lineView = UIView(frame: self.bounds)
-        for lineIndexes in connectedByLinesGraphNumbers {
-            guard let startOfLine = allBodyGraphNumbersCollection.first (where: { (numberView) -> Bool in
-                numberView.labelsNumber == lineIndexes.key
-            }) else { return }
-            guard let endOfLine = allBodyGraphNumbersCollection.first (where: { (numberView) -> Bool in
-                numberView.labelsNumber == lineIndexes.value
-            }) else { return }
-            drawLine(from: startOfLine, to: endOfLine)
-        }
-        self.insertSubview(lineView, aboveSubview: backgroungView)
-    }
-    
-    private func drawLine(from firstNumberView: BodyGraphNumberView, to secondNumberView: BodyGraphNumberView) {
-        let linePath = UIBezierPath()
-        linePath.lineWidth = 4.0
-        linePath.move(to: firstNumberView.center)
-        linePath.addLine(to: secondNumberView.center)
     }
 }

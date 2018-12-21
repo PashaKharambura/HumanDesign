@@ -142,15 +142,15 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        switch indexPath.row {
-//        case 1:
-//            guard let graphCell = cell as? HumanDesingTableViewCell else { return }
-//            graphCell.drawGraphLines()
-//        default:
-//            return
-//        }
-//    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 1:
+            guard let graphCell = cell as? HumanDesingTableViewCell else { return }
+            graphCell.setNeedsLayout()
+        default:
+            return
+        }
+    }
     
 }
 
