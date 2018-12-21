@@ -10,6 +10,23 @@ import UIKit
 
 @IBDesignable class HumanDesingTableViewCell: UITableViewCell {
     
+    @IBOutlet var allBodyGraphNumbersCollection: [BodyGraphNumberView]!
+    
+    @IBOutlet var upTriangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var downTriangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var middleBlueRectabgilarNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var yellowRombNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var middleGrayRectangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var bottomBlueRectangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var redTriangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var rightBlueTriangularNumberCollection: [BodyGraphNumberView]!
+    @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        contentView.prepareForInterfaceBuilder()
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

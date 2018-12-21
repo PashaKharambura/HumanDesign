@@ -48,8 +48,8 @@ import UIKit
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        loadFromXIB()
         contentView.prepareForInterfaceBuilder()
+        loadFromXIB()
         initialPreparations()
     }
     

@@ -37,7 +37,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="26"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -50,7 +50,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="51"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -63,7 +63,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="21"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -76,7 +76,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="40"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -86,8 +86,8 @@
                             <constraint firstAttribute="width" secondItem="PhI-0b-En3" secondAttribute="height" multiplier="1:1.5" id="5Tw-k7-xrM"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-fu-CSk" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="340" y="385" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-fu-CSk" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="349" y="393.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="21w-YE-3pD"/>
@@ -95,12 +95,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="30"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-YS-OBP" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="318" y="364" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-YS-OBP" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="315.5" y="367.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="9gv-vf-LhG"/>
@@ -108,12 +108,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="49"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-cZ-xsR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="328" y="374" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-cZ-xsR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="334" y="379.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="XHV-6r-gIU"/>
@@ -121,12 +121,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="55"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpX-fn-195" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="344" y="316" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpX-fn-195" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="349" y="311" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="1jn-F4-srV"/>
@@ -134,12 +134,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="36"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6J7-lo-IeL" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="307" y="352" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J7-lo-IeL" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="300.5" y="352.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Vg2-dU-opM"/>
@@ -147,12 +147,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-9f-hR4" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="318" y="340" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-9f-hR4" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="315.5" y="337.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="Pgc-G2-6EZ"/>
@@ -160,7 +160,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="37"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -170,8 +170,8 @@
                             <constraint firstAttribute="width" secondItem="fV9-m3-KnZ" secondAttribute="height" multiplier="1:1.5" id="ajJ-xv-baQ"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-DC-7FR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="20" y="315" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPs-DC-7FR" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="16" y="310" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="2OG-t0-eiQ"/>
@@ -179,12 +179,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="48"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-KT-F7v" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="18" y="388" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTc-KT-F7v" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="16" y="394.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="0d4-IB-P4t"/>
@@ -192,12 +192,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="17"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Gd-gJo" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="29" y="377" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Gd-gJo" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="31" y="379.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="6Dk-Jc-toq"/>
@@ -205,12 +205,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="28"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pm-nx-ntB" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="45" y="335" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pm-nx-ntB" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="48.5" y="337.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="2s9-jl-5sb"/>
@@ -218,12 +218,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="44"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ZL-v0-yZ6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="55" y="345" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZL-v0-yZ6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="63.5" y="352.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="10Z-VS-eEr"/>
@@ -231,20 +231,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-kU-eD9" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="31" y="325" width="10" height="10"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="10" id="GBd-CR-83G"/>
-                            <constraint firstAttribute="height" constant="10" id="Ud5-8l-HGh"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="50"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -266,7 +253,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="19"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -279,7 +266,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="39"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -292,7 +279,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="41"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -310,7 +297,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="53"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -323,7 +310,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="60"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -336,7 +323,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="52"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -344,7 +331,6 @@
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyRectangular" translatesAutoresizingMaskIntoConstraints="NO" id="Af2-Bc-wb8">
                         <rect key="frame" x="153" y="302.5" width="69" height="69.5"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Af2-Bc-wb8" secondAttribute="height" multiplier="1:1" id="as6-Zm-iMy"/>
                         </constraints>
@@ -358,7 +344,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="99"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -374,7 +360,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="34"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -387,7 +373,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="27"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -405,7 +391,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -418,7 +404,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -431,7 +417,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="29"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -449,7 +435,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="42"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -462,7 +448,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -475,7 +461,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="9"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -487,8 +473,8 @@
                             <constraint firstAttribute="width" secondItem="X5E-dg-Obr" secondAttribute="height" multiplier="1:1" id="ctL-7T-4EW"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-k5-J0b" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="194" y="239" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-k5-J0b" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="194" y="241" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="Fdj-bl-JZi"/>
@@ -496,12 +482,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="13"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-96-CwJ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="204" y="252" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-96-CwJ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="207" y="253" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="4mY-3D-c9d"/>
@@ -509,12 +495,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="25"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-GJ-jfN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="194" y="263" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-GJ-jfN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="194" y="265.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="10" id="QRs-Xz-44n"/>
@@ -522,12 +508,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="46"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vak-ma-nbQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="169" y="263" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vak-ma-nbQ" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="171" y="265.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Izi-yd-dFV"/>
@@ -535,12 +521,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="15"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxJ-72-zSF" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="182" y="276" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxJ-72-zSF" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="182.5" y="277.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="5wg-A5-ojR"/>
@@ -548,12 +534,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="2"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-Ne-MHs" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="172" y="241" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-Ne-MHs" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="171" y="241" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="NOb-Cv-d7Z"/>
@@ -561,12 +547,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="7"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npO-Qo-e0q" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="182" y="229" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npO-Qo-e0q" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="182.5" y="228" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="XRf-cJ-YS7"/>
@@ -596,7 +582,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -609,7 +595,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -627,7 +613,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -640,7 +626,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -653,7 +639,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -671,7 +657,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="31"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -684,7 +670,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -697,7 +683,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="33"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -715,7 +701,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="62"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -728,7 +714,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -741,7 +727,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="56"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -771,14 +757,12 @@
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyUpTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="95N-6Z-KG1">
                         <rect key="frame" x="150" y="12" width="75" height="50"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="95N-6Z-KG1" secondAttribute="height" multiplier="1.5:1" id="5bx-pk-D7j"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphGreyDownTriangular" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-n4-ozR">
                         <rect key="frame" x="150" y="82" width="75" height="49.5"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="G8u-n4-ozR" secondAttribute="height" multiplier="1.5:1" id="ctP-V0-Aaf"/>
                         </constraints>
@@ -853,8 +837,8 @@
                             </view>
                         </subviews>
                     </stackView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-ta-UYN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="159" y="252" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSO-ta-UYN" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="158" y="253" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="Zeg-yp-tIB"/>
@@ -862,7 +846,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="1"/>
+                                <integer key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -935,7 +919,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="47"/>
+                                        <integer key="value" value="54"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -948,7 +932,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="24"/>
+                                        <integer key="value" value="38"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -961,14 +945,14 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="58"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                     </stackView>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-dQ-bCE" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="328" y="332" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-dQ-bCE" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="334" y="325" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="2Lv-Dz-01e"/>
@@ -976,12 +960,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="22"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-lr-wN6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
-                        <rect key="frame" x="43" y="364" width="10" height="10"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-lr-wN6" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="48.5" y="367.5" width="10" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="g4h-cW-zNd"/>
@@ -989,7 +973,20 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
-                                <integer key="value" value="4"/>
+                                <integer key="value" value="32"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-kU-eD9" customClass="BodyGraphNumberView" customModule="HumanDesign" customModuleProvider="target">
+                        <rect key="frame" x="31" y="325" width="10" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="GBd-CR-83G"/>
+                            <constraint firstAttribute="height" constant="10" id="Ud5-8l-HGh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelsNumber">
+                                <integer key="value" value="57"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -997,69 +994,110 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="ECM-xC-d28" firstAttribute="trailing" secondItem="ec0-cY-iz5" secondAttribute="trailing" constant="-4" id="06v-Wr-g8d"/>
+                    <constraint firstItem="NSO-ta-UYN" firstAttribute="centerY" secondItem="X5E-dg-Obr" secondAttribute="centerY" id="0Gs-Pi-zC9"/>
                     <constraint firstItem="9WE-G4-7s3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="0Of-GA-0pC"/>
+                    <constraint firstItem="ugz-fu-CSk" firstAttribute="trailing" secondItem="PhI-0b-En3" secondAttribute="trailing" constant="-6" id="0da-NI-gDL"/>
                     <constraint firstItem="fV9-m3-KnZ" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="3P8-94-CXY"/>
                     <constraint firstItem="oym-yv-YXe" firstAttribute="centerY" secondItem="PaG-BA-mFY" secondAttribute="centerY" id="3mB-wu-O6y"/>
+                    <constraint firstItem="SQQ-k5-J0b" firstAttribute="trailing" secondItem="vUz-96-CwJ" secondAttribute="leading" constant="-3" id="4Ip-03-yHt"/>
                     <constraint firstItem="fiW-bX-zAq" firstAttribute="centerX" secondItem="PaG-BA-mFY" secondAttribute="centerX" id="4XB-ys-KZN"/>
+                    <constraint firstItem="PhI-0b-En3" firstAttribute="top" secondItem="wpX-fn-195" secondAttribute="top" constant="-6" id="5Yt-M7-uHD"/>
                     <constraint firstItem="95N-6Z-KG1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5g6-hL-p3n"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="top" secondItem="ec0-cY-iz5" secondAttribute="bottom" constant="10" id="74Z-Wn-S37"/>
                     <constraint firstItem="a80-5Y-Tur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8EB-hn-LrO"/>
+                    <constraint firstItem="bTc-KT-F7v" firstAttribute="top" secondItem="a04-Gd-gJo" secondAttribute="bottom" constant="5" id="8i9-Td-h6k"/>
+                    <constraint firstItem="mxJ-72-zSF" firstAttribute="top" secondItem="EZc-GJ-jfN" secondAttribute="bottom" constant="2" id="96w-rv-MjK"/>
                     <constraint firstItem="vU8-63-38B" firstAttribute="centerX" secondItem="CB9-md-my4" secondAttribute="centerX" id="9J6-6M-klu"/>
                     <constraint firstItem="2PA-Bn-QOh" firstAttribute="trailing" secondItem="vU8-63-38B" secondAttribute="leading" id="9Rd-rz-cv5"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="9UE-f6-GXE"/>
+                    <constraint firstItem="2kf-lr-wN6" firstAttribute="top" secondItem="3ZL-v0-yZ6" secondAttribute="bottom" constant="5" id="9ZI-K0-00X"/>
                     <constraint firstItem="DS0-Dd-K4Q" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="bottom" constant="2" id="AQf-Ay-1o3"/>
                     <constraint firstItem="fV9-m3-KnZ" firstAttribute="centerY" secondItem="Af2-Bc-wb8" secondAttribute="centerY" constant="20" id="AY8-Br-N5h"/>
+                    <constraint firstItem="3ZL-v0-yZ6" firstAttribute="top" secondItem="4pm-nx-ntB" secondAttribute="bottom" constant="5" id="Asb-eV-KHE"/>
                     <constraint firstItem="fle-SK-wMi" firstAttribute="centerX" secondItem="Af2-Bc-wb8" secondAttribute="centerX" id="BTd-LL-Yak"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="top" secondItem="G8u-n4-ozR" secondAttribute="bottom" constant="12" id="Bga-eQ-WzL"/>
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="C5Z-uj-OKn"/>
                     <constraint firstItem="DS0-Dd-K4Q" firstAttribute="trailing" secondItem="RZQ-Xe-pAz" secondAttribute="trailing" id="CWY-gk-fks"/>
                     <constraint firstItem="4ay-uF-tWi" firstAttribute="top" secondItem="2PA-Bn-QOh" secondAttribute="bottom" constant="4" id="Cjk-uM-ft3"/>
+                    <constraint firstItem="2kf-lr-wN6" firstAttribute="trailing" secondItem="3ZL-v0-yZ6" secondAttribute="leading" constant="-5" id="CtI-4G-EIB"/>
+                    <constraint firstItem="3ZL-v0-yZ6" firstAttribute="centerY" secondItem="fV9-m3-KnZ" secondAttribute="centerY" id="D6h-Rw-VRd"/>
+                    <constraint firstItem="vUz-96-CwJ" firstAttribute="centerY" secondItem="X5E-dg-Obr" secondAttribute="centerY" id="DTz-ad-poA"/>
                     <constraint firstItem="P8J-Wy-RPY" firstAttribute="centerX" secondItem="ec0-cY-iz5" secondAttribute="centerX" id="EDX-IQ-grM"/>
                     <constraint firstItem="fV9-m3-KnZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EFF-DN-aq3"/>
                     <constraint firstItem="PhI-0b-En3" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="EHV-rl-UA1"/>
+                    <constraint firstItem="fV9-m3-KnZ" firstAttribute="leading" secondItem="bTc-KT-F7v" secondAttribute="leading" constant="-6" id="FT3-Z2-Q2q"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Fbz-3L-H1U"/>
+                    <constraint firstItem="ugz-fu-CSk" firstAttribute="bottom" secondItem="PhI-0b-En3" secondAttribute="bottom" constant="-6" id="Fq1-7C-86I"/>
+                    <constraint firstItem="6J7-lo-IeL" firstAttribute="top" secondItem="VIM-9f-hR4" secondAttribute="bottom" constant="5" id="GFK-kD-rDz"/>
+                    <constraint firstItem="kqe-dQ-bCE" firstAttribute="trailing" secondItem="wpX-fn-195" secondAttribute="leading" constant="-5" id="GTl-mt-LGb"/>
+                    <constraint firstItem="uzN-kU-eD9" firstAttribute="leading" secondItem="PPs-DC-7FR" secondAttribute="trailing" constant="5" id="GUe-va-W3F"/>
                     <constraint firstItem="4ay-uF-tWi" firstAttribute="trailing" secondItem="2PA-Bn-QOh" secondAttribute="leading" constant="-3" id="Gns-om-T0t"/>
                     <constraint firstItem="aSU-Bq-RyQ" firstAttribute="centerY" secondItem="4ay-uF-tWi" secondAttribute="centerY" id="HZh-m3-oYq"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="top" secondItem="weQ-i6-Jau" secondAttribute="bottom" id="IRS-Z1-8ba"/>
+                    <constraint firstItem="mxJ-72-zSF" firstAttribute="bottom" secondItem="X5E-dg-Obr" secondAttribute="bottom" constant="-5" id="Jgr-nM-0WZ"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="Jmy-i4-Pe1"/>
                     <constraint firstItem="YTT-vF-zid" firstAttribute="centerX" secondItem="95N-6Z-KG1" secondAttribute="centerX" id="Kg0-59-ryA"/>
+                    <constraint firstItem="VIM-9f-hR4" firstAttribute="leading" secondItem="6J7-lo-IeL" secondAttribute="trailing" constant="5" id="L0J-6t-Y7H"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="top" secondItem="HBN-YM-1L0" secondAttribute="bottom" id="L3O-bJ-qvN"/>
+                    <constraint firstItem="X5E-dg-Obr" firstAttribute="top" secondItem="npO-Qo-e0q" secondAttribute="top" constant="-5" id="L91-mx-5Vj"/>
                     <constraint firstAttribute="trailing" secondItem="a80-5Y-Tur" secondAttribute="trailing" id="LWh-5Y-fcf"/>
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="top" secondItem="95N-6Z-KG1" secondAttribute="bottom" constant="20" id="Lt1-gs-90b"/>
+                    <constraint firstItem="mxJ-72-zSF" firstAttribute="top" secondItem="vak-ma-nbQ" secondAttribute="bottom" constant="2" id="MMG-VA-pLB"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="MaR-H5-V9J"/>
                     <constraint firstItem="MZF-v1-og9" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="bottom" constant="2" id="NMz-Cr-Y6O"/>
                     <constraint firstItem="2PA-Bn-QOh" firstAttribute="top" secondItem="vU8-63-38B" secondAttribute="bottom" constant="4" id="O5r-VZ-D5C"/>
                     <constraint firstAttribute="trailing" secondItem="PhI-0b-En3" secondAttribute="trailing" constant="10" id="OAD-0m-iEo"/>
+                    <constraint firstItem="fV9-m3-KnZ" firstAttribute="leading" secondItem="PPs-DC-7FR" secondAttribute="leading" constant="-6" id="ObQ-i5-Qc8"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ohr-sm-fjj"/>
                     <constraint firstItem="PhI-0b-En3" firstAttribute="centerY" secondItem="Af2-Bc-wb8" secondAttribute="centerY" constant="20" id="OiZ-WN-QZo"/>
                     <constraint firstItem="aSU-Bq-RyQ" firstAttribute="trailing" secondItem="CB9-md-my4" secondAttribute="trailing" constant="-6" id="PWI-DP-zKd"/>
+                    <constraint firstItem="EZc-GJ-jfN" firstAttribute="centerX" secondItem="SQQ-k5-J0b" secondAttribute="centerX" id="Qa3-AE-klo"/>
                     <constraint firstItem="mmO-aJ-pBP" firstAttribute="centerX" secondItem="YhB-N5-faH" secondAttribute="centerX" id="R69-Gp-0qw"/>
                     <constraint firstItem="p0U-eY-3hB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="RGq-Aa-5wM"/>
                     <constraint firstItem="RZQ-Xe-pAz" firstAttribute="centerX" secondItem="G8u-n4-ozR" secondAttribute="centerX" id="Sst-BB-2Vi"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SuY-7I-Mcw"/>
+                    <constraint firstItem="IvI-Ne-MHs" firstAttribute="leading" secondItem="NSO-ta-UYN" secondAttribute="trailing" constant="3" id="Tbx-X1-F1v"/>
                     <constraint firstAttribute="bottom" secondItem="a80-5Y-Tur" secondAttribute="bottom" id="Twz-cP-ssQ"/>
+                    <constraint firstItem="vak-ma-nbQ" firstAttribute="centerX" secondItem="IvI-Ne-MHs" secondAttribute="centerX" id="V36-hh-WP0"/>
+                    <constraint firstItem="Pgc-YS-OBP" firstAttribute="leading" secondItem="6J7-lo-IeL" secondAttribute="trailing" constant="5" id="VfW-1z-Ydh"/>
+                    <constraint firstItem="a04-Gd-gJo" firstAttribute="leading" secondItem="bTc-KT-F7v" secondAttribute="trailing" constant="5" id="WLc-47-Rcj"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="leading" secondItem="wwS-eG-cUR" secondAttribute="leading" constant="-4" id="WkJ-n3-YC4"/>
+                    <constraint firstItem="6J7-lo-IeL" firstAttribute="centerY" secondItem="PhI-0b-En3" secondAttribute="centerY" id="Xir-88-SzT"/>
+                    <constraint firstItem="Pgc-YS-OBP" firstAttribute="top" secondItem="6J7-lo-IeL" secondAttribute="bottom" constant="5" id="XwE-Om-H8U"/>
                     <constraint firstItem="P8J-Wy-RPY" firstAttribute="bottom" secondItem="ec0-cY-iz5" secondAttribute="bottom" constant="-4" id="YBi-KB-wc3"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="top" secondItem="fle-SK-wMi" secondAttribute="top" constant="-4" id="YcJ-3H-1Ai"/>
                     <constraint firstItem="CB9-md-my4" firstAttribute="top" secondItem="vU8-63-38B" secondAttribute="top" constant="-4" id="a0u-Hc-hKY"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="centerX" secondItem="Af2-Bc-wb8" secondAttribute="centerX" id="am0-yk-yQe"/>
                     <constraint firstItem="X5E-dg-Obr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="b5S-JY-pUH"/>
+                    <constraint firstItem="NSO-ta-UYN" firstAttribute="top" secondItem="IvI-Ne-MHs" secondAttribute="bottom" constant="2" id="bOX-1l-j3c"/>
+                    <constraint firstItem="yZF-cZ-xsR" firstAttribute="trailing" secondItem="ugz-fu-CSk" secondAttribute="leading" constant="-5" id="biK-T1-bBq"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="leading" secondItem="oym-yv-YXe" secondAttribute="leading" constant="-4" id="bsN-sK-QZD"/>
+                    <constraint firstItem="bTc-KT-F7v" firstAttribute="bottom" secondItem="fV9-m3-KnZ" secondAttribute="bottom" constant="-5" id="cVU-Ui-0zK"/>
                     <constraint firstItem="ECM-xC-d28" firstAttribute="centerY" secondItem="ec0-cY-iz5" secondAttribute="centerY" id="caw-9x-4zF"/>
                     <constraint firstItem="weQ-i6-Jau" firstAttribute="trailing" secondItem="Af2-Bc-wb8" secondAttribute="trailing" constant="-4" id="cd8-or-EDd"/>
+                    <constraint firstItem="ugz-fu-CSk" firstAttribute="top" secondItem="yZF-cZ-xsR" secondAttribute="bottom" constant="4" id="d7r-SW-lQe"/>
                     <constraint firstItem="2Z8-ab-7Bf" firstAttribute="centerX" secondItem="ec0-cY-iz5" secondAttribute="centerX" id="dot-mp-VIr"/>
                     <constraint firstItem="95N-6Z-KG1" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="70/351" id="fXi-gK-xh5"/>
+                    <constraint firstItem="mxJ-72-zSF" firstAttribute="centerX" secondItem="X5E-dg-Obr" secondAttribute="centerX" id="fxH-Xd-QoF"/>
                     <constraint firstItem="YTT-vF-zid" firstAttribute="bottom" secondItem="95N-6Z-KG1" secondAttribute="bottom" constant="-4" id="ghL-k7-WlR"/>
+                    <constraint firstItem="uzN-kU-eD9" firstAttribute="top" secondItem="PPs-DC-7FR" secondAttribute="bottom" constant="5" id="gnA-hp-beE"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="top" secondItem="fiW-bX-zAq" secondAttribute="top" constant="-4" id="hkM-I7-7KE"/>
                     <constraint firstItem="0qv-ZR-h1t" firstAttribute="trailing" secondItem="PaG-BA-mFY" secondAttribute="trailing" constant="-4" id="hoy-ah-2Ch"/>
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="top" constant="-4" id="iBj-mf-bqJ"/>
                     <constraint firstItem="mmO-aJ-pBP" firstAttribute="top" secondItem="RZQ-Xe-pAz" secondAttribute="bottom" constant="14" id="j6C-VK-44O"/>
                     <constraint firstItem="G8u-n4-ozR" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="70/351" id="jsR-e9-KPY"/>
+                    <constraint firstItem="wpX-fn-195" firstAttribute="trailing" secondItem="PhI-0b-En3" secondAttribute="trailing" constant="-6" id="kHj-rg-956"/>
+                    <constraint firstItem="X5E-dg-Obr" firstAttribute="leading" secondItem="NSO-ta-UYN" secondAttribute="leading" constant="-5" id="kQG-U9-mb6"/>
+                    <constraint firstItem="3ZL-v0-yZ6" firstAttribute="leading" secondItem="4pm-nx-ntB" secondAttribute="trailing" constant="5" id="lOs-dt-yLf"/>
                     <constraint firstAttribute="trailing" secondItem="9WE-G4-7s3" secondAttribute="trailing" constant="10" id="lYb-uq-xjf"/>
                     <constraint firstItem="0qv-ZR-h1t" firstAttribute="centerY" secondItem="PaG-BA-mFY" secondAttribute="centerY" id="m1g-Zg-RkV"/>
+                    <constraint firstItem="vUz-96-CwJ" firstAttribute="trailing" secondItem="X5E-dg-Obr" secondAttribute="trailing" constant="-5" id="n31-Kr-xq6"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="n8w-uS-Ui8"/>
+                    <constraint firstItem="fV9-m3-KnZ" firstAttribute="top" secondItem="PPs-DC-7FR" secondAttribute="top" constant="-5" id="nSX-NR-Ipo"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="top" secondItem="X5E-dg-Obr" secondAttribute="bottom" constant="10" id="oas-PF-7rn"/>
+                    <constraint firstItem="PhI-0b-En3" firstAttribute="leading" secondItem="6J7-lo-IeL" secondAttribute="leading" constant="-5" id="p4C-D1-zEg"/>
                     <constraint firstItem="HBN-YM-1L0" firstAttribute="top" secondItem="fle-SK-wMi" secondAttribute="bottom" id="pLN-m1-mYK"/>
+                    <constraint firstItem="vUz-96-CwJ" firstAttribute="top" secondItem="SQQ-k5-J0b" secondAttribute="bottom" constant="2" id="pUo-TZ-PB6"/>
                     <constraint firstItem="Mpr-FZ-JN4" firstAttribute="bottom" secondItem="Af2-Bc-wb8" secondAttribute="bottom" constant="-4" id="pwb-tM-CBJ"/>
                     <constraint firstItem="ec0-cY-iz5" firstAttribute="top" secondItem="2Z8-ab-7Bf" secondAttribute="top" constant="-4" id="rST-Ly-TRe"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="leading" secondItem="HBN-YM-1L0" secondAttribute="leading" constant="-4" id="sgL-Zv-NAH"/>
@@ -1067,15 +1105,148 @@
                     <constraint firstItem="95N-6Z-KG1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="uTO-KD-9aQ"/>
                     <constraint firstItem="a80-5Y-Tur" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vMN-IO-I1N"/>
                     <constraint firstItem="MZF-v1-og9" firstAttribute="leading" secondItem="RZQ-Xe-pAz" secondAttribute="leading" id="vql-3W-gJP"/>
+                    <constraint firstItem="kqe-dQ-bCE" firstAttribute="top" secondItem="wpX-fn-195" secondAttribute="bottom" constant="4" id="vwC-GZ-LtV"/>
                     <constraint firstItem="Af2-Bc-wb8" firstAttribute="width" secondItem="a80-5Y-Tur" secondAttribute="width" multiplier="65/351" id="we4-Ak-o6v"/>
                     <constraint firstItem="CB9-md-my4" firstAttribute="centerY" secondItem="X5E-dg-Obr" secondAttribute="centerY" constant="20" id="wnV-Nm-C2q"/>
                     <constraint firstItem="p0U-eY-3hB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yIR-kc-ccs"/>
+                    <constraint firstItem="3ZL-v0-yZ6" firstAttribute="trailing" secondItem="fV9-m3-KnZ" secondAttribute="trailing" constant="-6" id="yRK-Ue-bpM"/>
                     <constraint firstItem="wwS-eG-cUR" firstAttribute="top" secondItem="ECM-xC-d28" secondAttribute="top" id="yzk-NF-hpz"/>
                     <constraint firstItem="PaG-BA-mFY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Af2-Bc-wb8" secondAttribute="bottom" constant="10" id="z6v-Uh-nAS"/>
+                    <constraint firstItem="npO-Qo-e0q" firstAttribute="centerX" secondItem="X5E-dg-Obr" secondAttribute="centerX" id="zYL-be-xO4"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="upTriangularNumberCollection" destination="4gz-3W-xXK" collectionClass="NSMutableArray" id="cAo-JH-XDe"/>
+                <outletCollection property="redTriangularNumberCollection" destination="4ay-uF-tWi" collectionClass="NSMutableArray" id="kpH-Xh-2hM"/>
+                <outletCollection property="upTriangularNumberCollection" destination="t79-F5-BOX" collectionClass="NSMutableArray" id="RKY-eo-WkN"/>
+                <outletCollection property="upTriangularNumberCollection" destination="dsZ-EV-bhY" collectionClass="NSMutableArray" id="jc2-Wo-epn"/>
+                <outletCollection property="downTriangularNumberCollection" destination="mmO-aJ-pBP" collectionClass="NSMutableArray" id="2XX-Nw-3le"/>
+                <outletCollection property="downTriangularNumberCollection" destination="MZF-v1-og9" collectionClass="NSMutableArray" id="Vfv-a6-SVm"/>
+                <outletCollection property="downTriangularNumberCollection" destination="jEV-6Q-Vx9" collectionClass="NSMutableArray" id="AOo-xJ-qy5"/>
+                <outletCollection property="downTriangularNumberCollection" destination="YhB-N5-faH" collectionClass="NSMutableArray" id="AB2-oU-XmP"/>
+                <outletCollection property="downTriangularNumberCollection" destination="Ddb-hy-ThJ" collectionClass="NSMutableArray" id="Z3n-Bl-AuR"/>
+                <outletCollection property="downTriangularNumberCollection" destination="DS0-Dd-K4Q" collectionClass="NSMutableArray" id="uXq-GK-jNp"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="1gQ-mX-2gL" collectionClass="NSMutableArray" id="Xfo-Zq-4aq"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="lKo-fM-x0V" collectionClass="NSMutableArray" id="Q6X-lt-krH"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="9Tw-5b-S3J" collectionClass="NSMutableArray" id="icP-ib-7nm"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="irN-cX-bZ5" collectionClass="NSMutableArray" id="32Z-YG-pC3"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="UUl-Ze-ffj" collectionClass="NSMutableArray" id="ZH7-ff-W0h"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="hxp-QO-fSG" collectionClass="NSMutableArray" id="45r-dx-1xS"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="IqC-Bj-L3G" collectionClass="NSMutableArray" id="rLS-JR-xK9"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="8mE-FO-VA8" collectionClass="NSMutableArray" id="wXa-1C-4QM"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="DBc-S1-CVz" collectionClass="NSMutableArray" id="RSX-p1-Thp"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="DLm-Lu-FXs" collectionClass="NSMutableArray" id="Dzp-uo-eVv"/>
+                <outletCollection property="middleBlueRectabgilarNumberCollection" destination="dJu-0R-p5V" collectionClass="NSMutableArray" id="in8-Ch-IkU"/>
+                <outletCollection property="yellowRombNumberCollection" destination="NSO-ta-UYN" collectionClass="NSMutableArray" id="Xr7-6I-w2o"/>
+                <outletCollection property="yellowRombNumberCollection" destination="IvI-Ne-MHs" collectionClass="NSMutableArray" id="Tqy-ie-gbk"/>
+                <outletCollection property="yellowRombNumberCollection" destination="npO-Qo-e0q" collectionClass="NSMutableArray" id="i66-kj-r52"/>
+                <outletCollection property="yellowRombNumberCollection" destination="SQQ-k5-J0b" collectionClass="NSMutableArray" id="uw8-40-DdR"/>
+                <outletCollection property="yellowRombNumberCollection" destination="vUz-96-CwJ" collectionClass="NSMutableArray" id="Isr-VW-j2p"/>
+                <outletCollection property="yellowRombNumberCollection" destination="EZc-GJ-jfN" collectionClass="NSMutableArray" id="F9V-hO-jbE"/>
+                <outletCollection property="yellowRombNumberCollection" destination="mxJ-72-zSF" collectionClass="NSMutableArray" id="coS-Td-gbS"/>
+                <outletCollection property="yellowRombNumberCollection" destination="vak-ma-nbQ" collectionClass="NSMutableArray" id="fDk-lK-z6n"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="N4x-8z-ozN" collectionClass="NSMutableArray" id="AUw-Wm-toz"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="Gmr-8u-Zis" collectionClass="NSMutableArray" id="RFK-hc-aHD"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="Jup-Kf-Jgy" collectionClass="NSMutableArray" id="LjD-jX-uqr"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="gtC-0u-p8X" collectionClass="NSMutableArray" id="aNE-DF-pkX"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="ick-fl-xPa" collectionClass="NSMutableArray" id="K1s-q7-pR3"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="weQ-i6-Jau" collectionClass="NSMutableArray" id="qOU-Ab-k5e"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="2jk-Mp-gXU" collectionClass="NSMutableArray" id="X9W-iU-b05"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="LGX-fC-7bl" collectionClass="NSMutableArray" id="xpg-J4-7Uq"/>
+                <outletCollection property="middleGrayRectangularNumberCollection" destination="SmA-0N-qlE" collectionClass="NSMutableArray" id="GFB-4s-4TL"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="NBn-mA-jTg" collectionClass="NSMutableArray" id="WU1-fb-Yor"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="Ukd-Rd-Slw" collectionClass="NSMutableArray" id="ahS-yz-rNl"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="Mgd-F7-ASn" collectionClass="NSMutableArray" id="J27-va-Cao"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="aPW-ne-eQd" collectionClass="NSMutableArray" id="k7F-eg-S5W"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="Aga-YC-7IH" collectionClass="NSMutableArray" id="Uot-Yr-FXG"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="Oqx-vt-9sZ" collectionClass="NSMutableArray" id="Jlg-Qa-8g0"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="3VS-4C-fFQ" collectionClass="NSMutableArray" id="JhE-dK-HUe"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="dX0-55-LTD" collectionClass="NSMutableArray" id="qH3-ab-zbk"/>
+                <outletCollection property="bottomBlueRectangularNumberCollection" destination="kp6-c8-oBI" collectionClass="NSMutableArray" id="oR9-6E-Gxa"/>
+                <outletCollection property="redTriangularNumberCollection" destination="2PA-Bn-QOh" collectionClass="NSMutableArray" id="W5N-ny-RTd"/>
+                <outletCollection property="redTriangularNumberCollection" destination="vU8-63-38B" collectionClass="NSMutableArray" id="Xm8-hF-vfm"/>
+                <outletCollection property="redTriangularNumberCollection" destination="aSU-Bq-RyQ" collectionClass="NSMutableArray" id="XRw-yX-0Od"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="ugz-fu-CSk" collectionClass="NSMutableArray" id="Cir-aO-Myy"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="yZF-cZ-xsR" collectionClass="NSMutableArray" id="axh-T9-IaX"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="Pgc-YS-OBP" collectionClass="NSMutableArray" id="6ND-CW-ZR5"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="6J7-lo-IeL" collectionClass="NSMutableArray" id="GmO-pL-DSx"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="VIM-9f-hR4" collectionClass="NSMutableArray" id="CHh-0l-c98"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="kqe-dQ-bCE" collectionClass="NSMutableArray" id="t1o-eG-c0b"/>
+                <outletCollection property="rightBlueTriangularNumberCollection" destination="wpX-fn-195" collectionClass="NSMutableArray" id="HAi-aY-vdi"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="bTc-KT-F7v" collectionClass="NSMutableArray" id="xtp-i2-ZXq"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="a04-Gd-gJo" collectionClass="NSMutableArray" id="IVf-2G-DYn"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="2kf-lr-wN6" collectionClass="NSMutableArray" id="rog-Xg-L7a"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="3ZL-v0-yZ6" collectionClass="NSMutableArray" id="mGK-Iw-Yks"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="4pm-nx-ntB" collectionClass="NSMutableArray" id="MeQ-ii-FMq"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="uzN-kU-eD9" collectionClass="NSMutableArray" id="Rw5-Fm-jzF"/>
+                <outletCollection property="leftBlueTriangularNumberCollection" destination="PPs-DC-7FR" collectionClass="NSMutableArray" id="0B3-CM-NtG"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="4gz-3W-xXK" collectionClass="NSMutableArray" id="VGU-uE-Kui"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="t79-F5-BOX" collectionClass="NSMutableArray" id="jZ3-eH-TMM"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="dsZ-EV-bhY" collectionClass="NSMutableArray" id="UUD-3U-3sR"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="mmO-aJ-pBP" collectionClass="NSMutableArray" id="rsh-kB-x3k"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="MZF-v1-og9" collectionClass="NSMutableArray" id="c9O-hf-r0J"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="jEV-6Q-Vx9" collectionClass="NSMutableArray" id="BA2-Z2-CB2"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="YhB-N5-faH" collectionClass="NSMutableArray" id="FBk-Wd-kyV"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Ddb-hy-ThJ" collectionClass="NSMutableArray" id="jEz-vb-tJl"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="DS0-Dd-K4Q" collectionClass="NSMutableArray" id="s9Q-UF-klQ"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="1gQ-mX-2gL" collectionClass="NSMutableArray" id="e2n-6L-4pf"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="lKo-fM-x0V" collectionClass="NSMutableArray" id="gOC-s6-pv7"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="9Tw-5b-S3J" collectionClass="NSMutableArray" id="EFS-XV-eAd"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="irN-cX-bZ5" collectionClass="NSMutableArray" id="Jwk-tg-7An"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="UUl-Ze-ffj" collectionClass="NSMutableArray" id="haX-Gk-bHt"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="hxp-QO-fSG" collectionClass="NSMutableArray" id="72K-Jm-r4l"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="IqC-Bj-L3G" collectionClass="NSMutableArray" id="JzC-9H-OfT"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="8mE-FO-VA8" collectionClass="NSMutableArray" id="c6N-yc-QH9"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="DBc-S1-CVz" collectionClass="NSMutableArray" id="cF3-KI-nVV"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="DLm-Lu-FXs" collectionClass="NSMutableArray" id="dlN-YY-vvZ"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="dJu-0R-p5V" collectionClass="NSMutableArray" id="BDh-JO-JZ9"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="NSO-ta-UYN" collectionClass="NSMutableArray" id="ceL-kj-ecF"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="IvI-Ne-MHs" collectionClass="NSMutableArray" id="Et7-fX-a4r"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="npO-Qo-e0q" collectionClass="NSMutableArray" id="8iS-hg-7ki"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="SQQ-k5-J0b" collectionClass="NSMutableArray" id="hrc-8B-qQU"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="vUz-96-CwJ" collectionClass="NSMutableArray" id="XQn-8j-5ON"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="EZc-GJ-jfN" collectionClass="NSMutableArray" id="pZb-I8-HSk"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="mxJ-72-zSF" collectionClass="NSMutableArray" id="myt-Uh-nQb"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="vak-ma-nbQ" collectionClass="NSMutableArray" id="8zd-eq-hLW"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="N4x-8z-ozN" collectionClass="NSMutableArray" id="Der-ot-LPc"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Gmr-8u-Zis" collectionClass="NSMutableArray" id="LJ8-Ls-AXg"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Jup-Kf-Jgy" collectionClass="NSMutableArray" id="6xu-fu-AZm"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="gtC-0u-p8X" collectionClass="NSMutableArray" id="rCf-y0-kw5"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="ick-fl-xPa" collectionClass="NSMutableArray" id="NoI-lM-7JS"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="weQ-i6-Jau" collectionClass="NSMutableArray" id="ueR-6x-rmJ"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="2jk-Mp-gXU" collectionClass="NSMutableArray" id="gO7-3o-S6H"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="LGX-fC-7bl" collectionClass="NSMutableArray" id="Pk2-NL-op9"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="SmA-0N-qlE" collectionClass="NSMutableArray" id="rGO-xb-H6U"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="NBn-mA-jTg" collectionClass="NSMutableArray" id="7xC-fM-6HU"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Ukd-Rd-Slw" collectionClass="NSMutableArray" id="HVd-eC-aRk"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Mgd-F7-ASn" collectionClass="NSMutableArray" id="7wI-5a-jiW"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="aPW-ne-eQd" collectionClass="NSMutableArray" id="tsG-c3-E04"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Aga-YC-7IH" collectionClass="NSMutableArray" id="aDY-S9-Dqa"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Oqx-vt-9sZ" collectionClass="NSMutableArray" id="b0C-1E-L0X"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="3VS-4C-fFQ" collectionClass="NSMutableArray" id="UTX-2Q-Oaj"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="dX0-55-LTD" collectionClass="NSMutableArray" id="dfY-PF-7db"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="kp6-c8-oBI" collectionClass="NSMutableArray" id="wDL-p3-a4D"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="4ay-uF-tWi" collectionClass="NSMutableArray" id="cR1-MB-M7d"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="2PA-Bn-QOh" collectionClass="NSMutableArray" id="moN-LO-yHY"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="vU8-63-38B" collectionClass="NSMutableArray" id="hmM-72-d5l"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="aSU-Bq-RyQ" collectionClass="NSMutableArray" id="g0w-Wt-0NU"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="ugz-fu-CSk" collectionClass="NSMutableArray" id="144-mf-bhZ"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="yZF-cZ-xsR" collectionClass="NSMutableArray" id="y1i-Hy-Glm"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="Pgc-YS-OBP" collectionClass="NSMutableArray" id="udB-zm-uKc"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="6J7-lo-IeL" collectionClass="NSMutableArray" id="Fj7-Eo-qOd"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="VIM-9f-hR4" collectionClass="NSMutableArray" id="EIq-2Q-Jlw"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="kqe-dQ-bCE" collectionClass="NSMutableArray" id="pSE-S9-vWq"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="wpX-fn-195" collectionClass="NSMutableArray" id="RMo-Bv-P8P"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="bTc-KT-F7v" collectionClass="NSMutableArray" id="Dfv-Bw-WFD"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="a04-Gd-gJo" collectionClass="NSMutableArray" id="zCm-rx-ju3"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="2kf-lr-wN6" collectionClass="NSMutableArray" id="EnH-Ui-P0X"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="3ZL-v0-yZ6" collectionClass="NSMutableArray" id="RYb-3o-3yH"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="4pm-nx-ntB" collectionClass="NSMutableArray" id="ydB-J1-BfI"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="uzN-kU-eD9" collectionClass="NSMutableArray" id="gP7-zr-qrt"/>
+                <outletCollection property="allBodyGraphNumbersCollection" destination="PPs-DC-7FR" collectionClass="NSMutableArray" id="PyG-wM-Zyb"/>
+            </connections>
             <point key="canvasLocation" x="124" y="275.71214392803603"/>
         </tableViewCell>
     </objects>
