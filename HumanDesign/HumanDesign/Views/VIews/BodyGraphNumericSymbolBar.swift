@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable class BodyGraphNumericSymbolBar: UIView {
 
     @IBOutlet var contentView: UIView!
+    @IBOutlet var symbolsImageViews: [UIImageView]!
+    @IBOutlet var symbolNumbersLabels: [UILabel]!
     
     enum BarPosition {
         case left, right
@@ -25,6 +27,12 @@ import UIKit
     @IBInspectable var barIsInLeftPosition: Bool = true {
         didSet {
             changeSymbolsColor(toLeftPositionColor: barIsInLeftPosition)
+        }
+    }
+    
+    var symbolNumbers: [Double] = [] {
+        didSet {
+            populateBarWithNumbers(numbers: symbolNumbers)
         }
     }
     
@@ -51,6 +59,7 @@ import UIKit
     override func awakeFromNib() {
         super.awakeFromNib()
         loadFromXIB()
+        initialPreparations()
     }
     
     private func loadFromXIB() {
@@ -63,9 +72,22 @@ import UIKit
     
     private func initialPreparations() {
         contentView.layer.cornerRadius = 2
+        changeSymbolsColor(toLeftPositionColor: barIsInLeftPosition)
     }
     
-    private func changeSymbolsColor(toLeftPositionColor: Bool) {
-        
+    private func changeSymbolsColor(toLeftPositionColor tintColorIsRed: Bool) {
+        for symbolView in symbolsImageViews {
+            symbolView.tintColor  = tintColorIsRed ? .red : .blue
+        }
     }
+    
+    private func populateBarWithNumbers(numbers: [Double]) {
+        for (index, number) in numbers.enumerated() {
+            guard let concreteLabel = symbolNumbersLabels.first(where: { (label) -> Bool in
+                label.tag == index
+            }) else { continue }
+            concreteLabel.text = String(format: "%d.2", number)
+        }
+    }
+    
 }

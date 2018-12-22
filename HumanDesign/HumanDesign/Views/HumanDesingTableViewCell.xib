@@ -1127,7 +1127,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="backgroungView" destination="a80-5Y-Tur" id="VBl-gi-1hk"/>
+                <outlet property="leftGraphNumberBar" destination="p0U-eY-3hB" id="9Df-Pf-xmb"/>
                 <outlet property="lineView" destination="gd0-Q5-Rpe" id="diB-ve-CqG"/>
+                <outlet property="rightGraphNumberBar" destination="9WE-G4-7s3" id="wWI-If-qAl"/>
                 <outletCollection property="upTriangularNumberCollection" destination="4gz-3W-xXK" collectionClass="NSMutableArray" id="cAo-JH-XDe"/>
                 <outletCollection property="redTriangularNumberCollection" destination="4ay-uF-tWi" collectionClass="NSMutableArray" id="kpH-Xh-2hM"/>
                 <outletCollection property="upTriangularNumberCollection" destination="t79-F5-BOX" collectionClass="NSMutableArray" id="RKY-eo-WkN"/>

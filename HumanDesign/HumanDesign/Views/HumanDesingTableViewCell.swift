@@ -11,7 +11,12 @@ import UIKit
 class HumanDesingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var backgroungView: UIImageView!
+    
+    @IBOutlet weak var leftGraphNumberBar: BodyGraphNumericSymbolBar!
+    @IBOutlet weak var rightGraphNumberBar: BodyGraphNumericSymbolBar!
+    
     @IBOutlet weak var lineView: BodyGraphBackgroundView!
+    
     @IBOutlet var allBodyGraphNumbersCollection: [BodyGraphNumberView]!
     
     @IBOutlet var upTriangularNumberCollection: [BodyGraphNumberView]!
@@ -24,24 +29,24 @@ class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet var rightBlueTriangularNumberCollection: [BodyGraphNumberView]!
     @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
     
-//    private var lineView: BodyGraphBackgroundView = BodyGraphBackgroundView()
+    var activeRedNumbers: [Double] = [] {
+        didSet {
+            leftGraphNumberBar.symbolNumbers = activeRedNumbers
+        }
+    }
     
-    var activeRedNumbers: [Int] = []
-    var activeBlueNumbers: [Int] = []
+    var activeBlueNumbers: [Double] = []
+    {
+        didSet {
+            rightGraphNumberBar.symbolNumbers = activeBlueNumbers
+        }
+    }
     
     var activeNumbers: [ActiveBodyGraphNumber] = [] {
         didSet {
             reloadCellData()
-            //            lineView.setNeedsLayout()
         }
     }
-    
-//    var activeNumbers: [Int] = [] {
-//        didSet {
-//            reloadCellData()
-////            lineView.setNeedsLayout()
-//        }
-//    }
     
     private let connectedByLinesGraphNumbers: [Int:Int] = [
         64:47,
