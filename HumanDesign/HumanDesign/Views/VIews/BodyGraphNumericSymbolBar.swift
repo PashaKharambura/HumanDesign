@@ -86,7 +86,7 @@ import UIKit
             guard let concreteLabel = symbolNumbersLabels.first(where: { (label) -> Bool in
                 label.tag == index
             }) else { continue }
-            concreteLabel.text = String(format: "%d.2", number)
+            concreteLabel.text = String(format: "%.1f", number)
         }
     }
     
