@@ -10,8 +10,6 @@ import UIKit
 
 class BodyGraphBackgroundView: UIView {
     
-//    @IBOutlet var contentView: UIView!
-    
     var numberViews: [BodyGraphNumberView] = []
     var connectedByLinesGraphNumbers: [Int:Int] = [:]
     
@@ -71,6 +69,16 @@ class BodyGraphBackgroundView: UIView {
         return (max(firstPoint, secondPoint) - (abs(firstPoint - secondPoint)/2))
     }
     
+    private func getPoint(from firstPoint: CGFloat, to secondPoint: CGFloat, onPercentDistantFromSecondPoint percentDistant: CGFloat) -> CGFloat {
+        guard percentDistant <= 1 && percentDistant > 0 else { return 0 }
+        return (max(firstPoint, secondPoint) - (abs(firstPoint - secondPoint) * percentDistant))
+    }
+    
+    private func getPoint(from firstPoint: CGPoint, to secondPoint: CGPoint, onPercentDistantFromSecondPoint percentDistant: CGFloat) -> CGPoint {
+        guard percentDistant <= 1 && percentDistant > 0 else { return CGPoint.zero }
+        return CGPoint(x: getPoint(from: firstPoint.x, to: secondPoint.x, onPercentDistantFromSecondPoint: percentDistant), y: getPoint(from: firstPoint.y, to: secondPoint.y, onPercentDistantFromSecondPoint: (1 - percentDistant)))
+    }
+    
     private func drawLine(from firstPoint: CGPoint, to secondPoint: CGPoint, with color: UIColor) {
         let linePath = UIBezierPath()
         linePath.lineWidth = 6.0
@@ -83,24 +91,8 @@ class BodyGraphBackgroundView: UIView {
     private func drawSpecificLines() {
         guard let (baseLineFirstCoordinate, baseLineSecondCoordinate) = getBaseLineCoordonate() else { return }
         
-        guard let firstSpecificView = numberViews.first(where: { (numberView) -> Bool in
-            numberView.labelsNumber == drawLineFromSpecificPlace.first ?? 0
-        }), let firstSpecificViewCoordinate = firstSpecificView.superview?.convert(firstSpecificView.center, to: self) else { return }
-        guard let secondSpecificView = numberViews.first(where: { (numberView) -> Bool in
-            numberView.labelsNumber == drawLineFromSpecificPlace.last ?? 0
-        }), let secondSpecificViewCoordinate = secondSpecificView.superview?.convert(secondSpecificView.center, to: self) else { return }
-        
-        let middlePoint = CGPoint(x: getMiddlePoint(from: baseLineFirstCoordinate.x, to: baseLineSecondCoordinate.x), y: firstSpecificViewCoordinate.y)
-        
-        drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.numberIsActive ? firstSpecificView.activeLineColor.lineColor : .white)
-        
-        guard let bottomSpecificView = numberViews.first(where: { (numberView) -> Bool in
-            numberView.labelsNumber == 5
-        }), let bottomSpecificViewCoordinate = bottomSpecificView.superview?.convert(CGPoint(x: bottomSpecificView.center.x, y: bottomSpecificView.center.y - 15), to: self) else { return }
-        
-        let someBottomPointOnBaseLint = CGPoint(x: middlePoint.x - 15, y: bottomSpecificViewCoordinate.y)
-        
-        drawLine(from: secondSpecificViewCoordinate, to: someBottomPointOnBaseLint, with: secondSpecificView.numberIsActive ? secondSpecificView.activeLineColor.lineColor : .white)
+        drawFirstSpecificLine(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate)
+        drawSecondSpecificLine(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate)
         
     }
     
@@ -115,23 +107,24 @@ class BodyGraphBackgroundView: UIView {
         return (baseLineFirstCoordinate, baseLineSecondCoordinate)
     }
     
-    private func drawFirstSpecificLine() {
+    private func drawFirstSpecificLine(from baseLineFirstCoordinate: CGPoint, to baseLineSecondCoordinate: CGPoint) {
+        guard let firstSpecificView = numberViews.first(where: { (numberView) -> Bool in
+            numberView.labelsNumber == drawLineFromSpecificPlace.first ?? 0
+        }), let firstSpecificViewCoordinate = firstSpecificView.superview?.convert(firstSpecificView.center, to: self) else { return }
         
+        let middlePoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.5)
+        
+        drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.numberIsActive ? firstSpecificView.activeLineColor.lineColor : .white)
     }
     
-    private func drawSecondSpecificLine() {
+    private func drawSecondSpecificLine(from baseLineFirstCoordinate: CGPoint, to baseLineSecondCoordinate: CGPoint) {
+        guard let secondSpecificView = numberViews.first(where: { (numberView) -> Bool in
+            numberView.labelsNumber == drawLineFromSpecificPlace.last ?? 0
+        }), let secondSpecificViewCoordinate = secondSpecificView.superview?.convert(secondSpecificView.center, to: self) else { return }
         
+        let bottomSpecificPoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.7)
+        
+        drawLine(from: secondSpecificViewCoordinate, to: bottomSpecificPoint, with: secondSpecificView.numberIsActive ? secondSpecificView.activeLineColor.lineColor : .white)
     }
     
-//    private func getCoordinatesOfSpecificViews() -> [CGPoint]? {
-//        guard let firstSpecificView = numberViews.first(where: { (numberView) -> Bool in
-//            numberView.labelsNumber == drawLineFromSpecificPlace.first ?? 0
-//        }), let firstSpecificViewCoordinate = firstSpecificView.superview?.convert(firstSpecificView.center, to: self) else { return nil }
-//        guard let secondSpecificView = numberViews.first(where: { (numberView) -> Bool in
-//            numberView.labelsNumber == drawLineFromSpecificPlace.last ?? 0
-//        }), let secondSpecificViewCoordinate = secondSpecificView.superview?.convert(secondSpecificView.center, to: self) else { return nil }
-//
-//        return [firstSpecificViewCoordinate, secondSpecificViewCoordinate]
-//    }
-
 }
