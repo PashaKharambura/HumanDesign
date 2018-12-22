@@ -92,7 +92,7 @@ class BodyGraphBackgroundView: UIView {
         
         let middlePoint = CGPoint(x: getMiddlePoint(from: baseLineFirstCoordinate.x, to: baseLineSecondCoordinate.x), y: firstSpecificViewCoordinate.y)
         
-        drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.activeLineColor.lineColor)
+        drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.numberIsActive ? firstSpecificView.activeLineColor.lineColor : .white)
         
         guard let bottomSpecificView = numberViews.first(where: { (numberView) -> Bool in
             numberView.labelsNumber == 5
@@ -100,7 +100,7 @@ class BodyGraphBackgroundView: UIView {
         
         let someBottomPointOnBaseLint = CGPoint(x: middlePoint.x - 15, y: bottomSpecificViewCoordinate.y)
         
-        drawLine(from: secondSpecificViewCoordinate, to: someBottomPointOnBaseLint, with: secondSpecificView.activeLineColor.lineColor)
+        drawLine(from: secondSpecificViewCoordinate, to: someBottomPointOnBaseLint, with: secondSpecificView.numberIsActive ? secondSpecificView.activeLineColor.lineColor : .white)
         
     }
     
