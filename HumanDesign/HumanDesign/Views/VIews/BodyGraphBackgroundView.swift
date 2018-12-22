@@ -94,6 +94,14 @@ class BodyGraphBackgroundView: UIView {
         
         drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.activeLineColor.lineColor)
         
+        guard let bottomSpecificView = numberViews.first(where: { (numberView) -> Bool in
+            numberView.labelsNumber == 5
+        }), let bottomSpecificViewCoordinate = bottomSpecificView.superview?.convert(CGPoint(x: bottomSpecificView.center.x, y: bottomSpecificView.center.y - 15), to: self) else { return }
+        
+        let someBottomPointOnBaseLint = CGPoint(x: middlePoint.x - 15, y: bottomSpecificViewCoordinate.y)
+        
+        drawLine(from: secondSpecificViewCoordinate, to: someBottomPointOnBaseLint, with: secondSpecificView.activeLineColor.lineColor)
+        
     }
     
     private func getBaseLineCoordonate() -> (baseLineFirstCoordinate: CGPoint, baseLineSecondCoordinate: CGPoint)? {
@@ -105,6 +113,14 @@ class BodyGraphBackgroundView: UIView {
         }), let baseLineSecondCoordinate = baseLineSecondView.superview?.convert(baseLineSecondView.center, to: self) else { return nil }
         
         return (baseLineFirstCoordinate, baseLineSecondCoordinate)
+    }
+    
+    private func drawFirstSpecificLine() {
+        
+    }
+    
+    private func drawSecondSpecificLine() {
+        
     }
     
 //    private func getCoordinatesOfSpecificViews() -> [CGPoint]? {
