@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class HumanDesingTableViewCell: UITableViewCell {
+class HumanDesingTableViewCell: UITableViewCell {
     
     @IBOutlet weak var backgroungView: UIImageView!
     @IBOutlet weak var lineView: BodyGraphBackgroundView!
@@ -101,7 +101,6 @@ import UIKit
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
         lineView.setNeedsDisplay()
-        
     }
     
     func drawGraphLines() {
