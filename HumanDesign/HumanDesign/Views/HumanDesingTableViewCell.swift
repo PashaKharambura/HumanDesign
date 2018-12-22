@@ -58,7 +58,7 @@ class HumanDesingTableViewCell: UITableViewCell {
         35:36,
         12:22,
         45:21,
-        10:34,
+//        10:34,
         25:51,
         15:5,
         2:14,
@@ -77,6 +77,8 @@ class HumanDesingTableViewCell: UITableViewCell {
         39:55,
         41:30
     ]
+    
+    private let specificDots: [Int] = [10, 34]
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
@@ -100,12 +102,14 @@ class HumanDesingTableViewCell: UITableViewCell {
         super.layoutSubviews()
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
+        lineView.drawLineFromSpecificPlace = specificDots
         lineView.setNeedsDisplay()
     }
     
     func drawGraphLines() {
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
+        lineView.drawLineFromSpecificPlace = specificDots
         lineView.setNeedsLayout()
     }
     
