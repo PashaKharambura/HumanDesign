@@ -64,7 +64,13 @@ class ComputationVC: UIViewController {
     }
     
     @IBAction func ButtonAction(_ sender: Any) {
-        performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
+        presenter.getGraphInfo(success: {
+            self.performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
+        }, failure: { (error) in
+            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
+        }) {
+            self.showSimpleAlert(title: "Проверьте соединение", text: "")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

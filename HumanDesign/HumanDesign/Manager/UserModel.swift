@@ -17,5 +17,15 @@ class UserModel {
     var birthYear: Int = 0
     var birthMinute: Int = 0
     var birthHour: Int = 0
+    var info: UserInfo?
     
+}
+
+class UserInfo {
+    var profile: String = ""
+    var type: String = ""
+    var authority: String = ""
+    var definition: Int = 0
+    var personalGates: [Double] = []
+    var designGates: [Double] = []
 }

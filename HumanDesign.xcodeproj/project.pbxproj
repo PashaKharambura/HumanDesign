@@ -33,6 +33,13 @@
 		294738E621C7E2D800DE262C /* TextInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */; };
 		294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */; };
 		294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */; };
+		294B8FEB21CF920B00BA7CC5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FEA21CF920B00BA7CC5 /* NetworkService.swift */; };
+		294B8FED21CF928800BA7CC5 /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FEC21CF928800BA7CC5 /* BackendService.swift */; };
+		294B8FEF21CF92B400BA7CC5 /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FEE21CF92B400BA7CC5 /* BackendConfiguration.swift */; };
+		294B8FF121CF92E500BA7CC5 /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF021CF92E500BA7CC5 /* BackendAPIRequest.swift */; };
+		294B8FF521CF945900BA7CC5 /* BodyGraphAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */; };
+		294B8FF721CFA20900BA7CC5 /* GraphMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */; };
+		294B8FF921CFB0D100BA7CC5 /* InternetRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */; };
 		298E546E21C8FB8E00DF30E4 /* HumanDesingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */; };
 		298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546F21C8FC6F00DF30E4 /* UserModel.swift */; };
 		298E547221C9201A00DF30E4 /* UACities.json in Resources */ = {isa = PBXBuildFile; fileRef = 298E547121C9201900DF30E4 /* UACities.json */; };
@@ -82,6 +89,13 @@
 		294738E421C7E2D800DE262C /* TextInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInfoTableViewCell.xib; sourceTree = "<group>"; };
 		294738E921C7F60F00DE262C /* DailyImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyImageTableViewCell.swift; sourceTree = "<group>"; };
 		294738EA21C7F60F00DE262C /* DailyImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyImageTableViewCell.xib; sourceTree = "<group>"; };
+		294B8FEA21CF920B00BA7CC5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		294B8FEC21CF928800BA7CC5 /* BackendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		294B8FEE21CF92B400BA7CC5 /* BackendConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		294B8FF021CF92E500BA7CC5 /* BackendAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphAPIRequest.swift; sourceTree = "<group>"; };
+		294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMapper.swift; sourceTree = "<group>"; };
+		294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetRechability.swift; sourceTree = "<group>"; };
 		298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesingPresenter.swift; sourceTree = "<group>"; };
 		298E546F21C8FC6F00DF30E4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		298E547121C9201900DF30E4 /* UACities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UACities.json; sourceTree = "<group>"; };
@@ -169,12 +183,33 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		29A8446221C8211100D24DBA /* HumanDesign */ = {
+		294B8FF221CF93B500BA7CC5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				294B8FEA21CF920B00BA7CC5 /* NetworkService.swift */,
+				294B8FEC21CF928800BA7CC5 /* BackendService.swift */,
+				294B8FEE21CF92B400BA7CC5 /* BackendConfiguration.swift */,
+				294B8FF021CF92E500BA7CC5 /* BackendAPIRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		294B8FF321CF93E100BA7CC5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				298E547121C9201900DF30E4 /* UACities.json */,
 				298E546F21C8FC6F00DF30E4 /* UserModel.swift */,
 				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
+				294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */,
+				294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		29A8446221C8211100D24DBA /* HumanDesign */ = {
+			isa = PBXGroup;
+			children = (
+				294B8FF321CF93E100BA7CC5 /* Manager */,
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				29A8446721C822FD00D24DBA /* HumanDesignVC.swift */,
 				59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */,
@@ -242,6 +277,8 @@
 				29D6754121C56B940059A398 /* Info.plist */,
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
+				294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */,
+				294B8FF221CF93B500BA7CC5 /* Network */,
 				29A8446221C8211100D24DBA /* HumanDesign */,
 				29A8446A21C8234500D24DBA /* PersonalMap */,
 				294738E721C7F5D300DE262C /* Daily */,
@@ -420,26 +457,33 @@
 				2946868221C83A88003227B9 /* TitleTableViewCell.swift in Sources */,
 				5956C98021CD621200A7EC25 /* BodyGraphBackgroundView.swift in Sources */,
 				294738D721C7B73800DE262C /* TypeCollectionViewCell.swift in Sources */,
+				294B8FF721CFA20900BA7CC5 /* GraphMapper.swift in Sources */,
 				294694AE21C6BFD200720049 /* PersonalMapVC.swift in Sources */,
 				2937D69C21C83D0600A8189A /* WhiteButtonTableViewCell.swift in Sources */,
 				29A8446821C822FD00D24DBA /* HumanDesignVC.swift in Sources */,
+				294B8FEB21CF920B00BA7CC5 /* NetworkService.swift in Sources */,
 				294738DB21C7C2C700DE262C /* HelperViewTableViewCell.swift in Sources */,
 				294694B421C6C01200720049 /* FindLoveVC.swift in Sources */,
 				294738E521C7E2D800DE262C /* TextInfoTableViewCell.swift in Sources */,
 				298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */,
 				59564D0621CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift in Sources */,
+				294B8FED21CF928800BA7CC5 /* BackendService.swift in Sources */,
 				592B00DA21CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift in Sources */,
 				294738CA21C7AA3600DE262C /* TypesHeaderTextInfoTableViewCell.swift in Sources */,
 				2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */,
 				29A8446F21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift in Sources */,
 				294738D121C7B4C700DE262C /* TypesCollectionTableViewCell.swift in Sources */,
 				29D6753821C56B920059A398 /* ComputationVC.swift in Sources */,
+				294B8FF121CF92E500BA7CC5 /* BackendAPIRequest.swift in Sources */,
+				294B8FEF21CF92B400BA7CC5 /* BackendConfiguration.swift in Sources */,
 				294738CD21C7B31C00DE262C /* Extentions.swift in Sources */,
 				294738E221C7D32500DE262C /* TypeInfoVC.swift in Sources */,
+				294B8FF521CF945900BA7CC5 /* BodyGraphAPIRequest.swift in Sources */,
 				592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */,
 				294694B021C6BFE300720049 /* TypesVC.swift in Sources */,
 				294694B221C6BFFC00720049 /* DailyVC.swift in Sources */,
 				294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */,
+				294B8FF921CFB0D100BA7CC5 /* InternetRechability.swift in Sources */,
 				29A8446521C8213D00D24DBA /* HumanDesingTableViewCell.swift in Sources */,
 				29D6753621C56B920059A398 /* AppDelegate.swift in Sources */,
 				298E546E21C8FB8E00DF30E4 /* HumanDesingPresenter.swift in Sources */,

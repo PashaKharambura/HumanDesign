@@ -22,7 +22,9 @@ class HumanDesignPresenter {
 
     var dataSource = HumanDesignDataSource()
     private var pickerType: PickerDataType = .Day
-    
+
+    fileprivate let backendService = BackendService()
+
     func getPickerType() -> PickerDataType {
         return pickerType
     }
@@ -92,11 +94,39 @@ class HumanDesignPresenter {
         return getDataForPicker().count
     }
     
+    func getGraphInfo(success: @escaping ()->(), failure: @escaping (_ error: Error)-> (), internetError: @escaping ()->()) {
+        if InternetReachability.isConnectedToNetwork() {
+            let request = BodyGraphAPIRequest(day: dataSource.getUser().birthDay, month: dataSource.getUser().birthMonth, year: dataSource.getUser().birthYear, hour: dataSource.getUser().birthHour, minute: dataSource.getUser().birthMinute)
+            backendService.request(request: request, success: { (json) in
+                guard let json = json as? [String: Any] else {
+                    return
+                }
+                let userInfo = GraphMapper.mapJSON(json: json)
+                self.dataSource.setUserInfo(info: userInfo)
+                DispatchQueue.main.async {
+                    success()
+                }
+            }) { (error) in
+                DispatchQueue.main.async {
+                   failure(error)
+                }
+            }
+        } else {
+            DispatchQueue.main.async {
+                internetError()
+            }
+        }
+    }
+    
 }
 
 class HumanDesignDataSource {
     
     private var user = UserModel()
+
+    func setUserInfo(info: UserInfo) {
+        user.info = info
+    }
     
     func getUser() -> UserModel {
         return user
