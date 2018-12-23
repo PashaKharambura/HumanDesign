@@ -82,15 +82,21 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HumanDesingTableViewCell.rawValue, for: indexPath) as? HumanDesingTableViewCell else {return UITableViewCell()}
-            cell.activeNumbers = [
-                ActiveBodyGraphNumber(number: 43, withColor: .blue),
-                ActiveBodyGraphNumber(number: 23, withColor: .red),
-                ActiveBodyGraphNumber(number: 16, withColor: .blue),
-                ActiveBodyGraphNumber(number: 50, withColor: .red),
-                ActiveBodyGraphNumber(number: 21, withColor: .blue)
-            ]
-//            cell.activeNumbers = [43,23,16,21]
-//            cell.layoutIfNeeded()
+            
+            let red = [1.1, 2.1, 32.4, 47.1, 22.1, 1.4, 5.4, 47.6, 42.3, 13.2, 11.6, 52.5, 45.5]
+            let blue = [2.1, 3.1, 34.4, 48.1, 23.1, 2.4, 6.4, 48.6, 43.3, 14.2, 12.6, 53.5, 46.5]
+            cell.activeRedNumbers = red
+            cell.activeBlueNumbers = blue
+            var blueNumbers = [ActiveBodyGraphNumber]()
+            var redNumbers = [ActiveBodyGraphNumber]()
+            for i in red {
+                redNumbers.append(ActiveBodyGraphNumber(number: Int(i), withColor: .red))
+            }
+            for i in blue {
+                blueNumbers.append(ActiveBodyGraphNumber(number: Int(i), withColor: .blue))
+            }
+            cell.activeNumbers = redNumbers+blueNumbers
+            
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
