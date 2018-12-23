@@ -11,7 +11,7 @@ import UIKit
 
 struct ActiveBodyGraphNumber {
     enum NumberColor {
-        case red, blue, violet
+        case red, blue, violet, white
         
         var lineColor: UIColor {
             switch self {
@@ -21,6 +21,8 @@ struct ActiveBodyGraphNumber {
                 return UIColor.blue
             case .violet:
                 return UIColor.magenta
+            case .white:
+                return UIColor.white
             }
         }
     }

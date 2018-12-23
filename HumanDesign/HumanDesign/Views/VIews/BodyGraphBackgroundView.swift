@@ -44,21 +44,24 @@ class BodyGraphBackgroundView: UIView {
         let middleYCoordinate = getMiddlePoint(from: startCoordinate.y, to: endCoordinate.y)
         let middleOfLine = CGPoint(x: middleXCoordinate, y: middleYCoordinate)
         
-        if !firstNumberView.numberIsActive && !secondNumberView.numberIsActive {
-            drawLine(from: startCoordinate, to: endCoordinate, with: .white)
-        } else {
-            if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
-                drawLine(from: startCoordinate, to: endCoordinate, with: ActiveBodyGraphNumber.NumberColor.violet.lineColor)
-            } else {
-                if firstNumberView.numberIsActive {
-                    drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
-                    drawLine(from: middleOfLine, to: endCoordinate, with: .white)
-                } else {
-                    drawLine(from: startCoordinate, to: middleOfLine, with: .white)
-                    drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
-                }
-            }
-        }
+        drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
+        drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
+        
+//        if !firstNumberView.numberIsActive && !secondNumberView.numberIsActive {
+//            drawLine(from: startCoordinate, to: endCoordinate, with: .white)
+//        } else {
+//            if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
+//                drawLine(from: startCoordinate, to: endCoordinate, with: ActiveBodyGraphNumber.NumberColor.violet.lineColor)
+//            } else {
+//                if firstNumberView.numberIsActive {
+//                    drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
+//                    drawLine(from: middleOfLine, to: endCoordinate, with: .white)
+//                } else {
+//                    drawLine(from: startCoordinate, to: middleOfLine, with: .white)
+//                    drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
+//                }
+//            }
+//        }
     }
     
     private func getCoordinateOfCenter(of numberView: BodyGraphNumberView) -> CGPoint {

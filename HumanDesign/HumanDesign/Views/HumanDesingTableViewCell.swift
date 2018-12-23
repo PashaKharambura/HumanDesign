@@ -130,6 +130,7 @@ class HumanDesingTableViewCell: UITableViewCell {
                 graphNumber.numberIsActive = true
                 graphNumber.activeLineColor = activeNumber.color
             } else {
+                graphNumber.activeLineColor = .white
                 graphNumber.numberIsActive = false
             }
         }
