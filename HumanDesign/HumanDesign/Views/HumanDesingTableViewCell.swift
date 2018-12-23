@@ -124,11 +124,20 @@ class HumanDesingTableViewCell: UITableViewCell {
     
     private func reloadCellNumbers() {
         for graphNumber in allBodyGraphNumbersCollection {
+            let numbers = activeNumbers.filter {$0.number==graphNumber.labelsNumber}
+
             if let activeNumber = activeNumbers.first(where: { (activeNumber) -> Bool in
                 activeNumber.number == graphNumber.labelsNumber
             }) {
                 graphNumber.numberIsActive = true
                 graphNumber.activeLineColor = activeNumber.color
+                if numbers.count > 1 {
+                    let red = numbers.filter {$0.color == .red}
+                    let blue = numbers.filter {$0.color == .blue}
+                    if red.count > 0 && blue.count > 0 {
+                        graphNumber.activeLineColor = .violet
+                    }
+                }
             } else {
                 graphNumber.activeLineColor = .white
                 graphNumber.numberIsActive = false

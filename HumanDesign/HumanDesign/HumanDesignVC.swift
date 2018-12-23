@@ -85,6 +85,13 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             
             let red = [1.1, 2.1, 32.4, 47.1, 22.1, 1.4, 5.4, 47.6, 42.3, 13.2, 11.6, 52.5, 45.5]
             let blue = [2.1, 3.1, 34.4, 48.1, 23.1, 2.4, 6.4, 48.6, 43.3, 14.2, 12.6, 53.5, 46.5]
+            
+//            let red = [48.2]
+//            let blue = [48.4]
+            
+//            let red = [48.1, 16.1]
+//            let blue = [48.6, 35.3]
+            
             cell.activeRedNumbers = red
             cell.activeBlueNumbers = blue
             var blueNumbers = [ActiveBodyGraphNumber]()
