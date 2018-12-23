@@ -47,21 +47,6 @@ class BodyGraphBackgroundView: UIView {
         drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
         drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
         
-//        if !firstNumberView.numberIsActive && !secondNumberView.numberIsActive {
-//            drawLine(from: startCoordinate, to: endCoordinate, with: .white)
-//        } else {
-//            if firstNumberView.numberIsActive && secondNumberView.numberIsActive {
-//                drawLine(from: startCoordinate, to: endCoordinate, with: ActiveBodyGraphNumber.NumberColor.violet.lineColor)
-//            } else {
-//                if firstNumberView.numberIsActive {
-//                    drawLine(from: startCoordinate, to: middleOfLine, with: firstNumberView.activeLineColor.lineColor)
-//                    drawLine(from: middleOfLine, to: endCoordinate, with: .white)
-//                } else {
-//                    drawLine(from: startCoordinate, to: middleOfLine, with: .white)
-//                    drawLine(from: middleOfLine, to: endCoordinate, with: secondNumberView.activeLineColor.lineColor)
-//                }
-//            }
-//        }
     }
     
     private func getCoordinateOfCenter(of numberView: BodyGraphNumberView) -> CGPoint {
@@ -115,7 +100,7 @@ class BodyGraphBackgroundView: UIView {
             numberView.labelsNumber == drawLineFromSpecificPlace.first ?? 0
         }), let firstSpecificViewCoordinate = firstSpecificView.superview?.convert(firstSpecificView.center, to: self) else { return }
         
-        let middlePoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.5)
+        let middlePoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.33)
         
         drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.numberIsActive ? firstSpecificView.activeLineColor.lineColor : .white)
     }
@@ -125,7 +110,7 @@ class BodyGraphBackgroundView: UIView {
             numberView.labelsNumber == drawLineFromSpecificPlace.last ?? 0
         }), let secondSpecificViewCoordinate = secondSpecificView.superview?.convert(secondSpecificView.center, to: self) else { return }
         
-        let bottomSpecificPoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.7)
+        let bottomSpecificPoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.66)
         
         drawLine(from: secondSpecificViewCoordinate, to: bottomSpecificPoint, with: secondSpecificView.numberIsActive ? secondSpecificView.activeLineColor.lineColor : .white)
     }

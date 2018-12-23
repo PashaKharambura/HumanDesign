@@ -12,6 +12,7 @@ class UserModel {
     
     var country: String = ""
     var city: String = ""
+    var UTC: Int = 0
     var birthDay: Int = 0
     var birthMonth: Int = 0
     var birthYear: Int = 0

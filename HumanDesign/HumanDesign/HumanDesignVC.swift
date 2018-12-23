@@ -21,6 +21,8 @@ class HumanDesignVC: UIViewController {
         case WhiteButtonTableViewCell = "WhiteButtonTableViewCell"
     }
     
+    @IBOutlet weak var yourGraphTitle: UILabel!
+    
     var presenter: HumanDesignPresenter?
 
     @IBOutlet weak var tableView: UITableView!
@@ -86,7 +88,8 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             if let userInfo = presenter?.dataSource.getUser().info {
                 let red = userInfo.designGates
                 let blue = userInfo.personalGates
-
+//                let red = [34.3]
+//                let blue = [10.1]
                 cell.activeRedNumbers = red
                 cell.activeBlueNumbers = blue
                 var blueNumbers = [ActiveBodyGraphNumber]()

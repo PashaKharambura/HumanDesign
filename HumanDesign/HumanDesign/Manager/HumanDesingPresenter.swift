@@ -96,7 +96,24 @@ class HumanDesignPresenter {
     
     func getGraphInfo(success: @escaping ()->(), failure: @escaping (_ error: Error)-> (), internetError: @escaping ()->()) {
         if InternetReachability.isConnectedToNetwork() {
-            let request = BodyGraphAPIRequest(day: dataSource.getUser().birthDay, month: dataSource.getUser().birthMonth, year: dataSource.getUser().birthYear, hour: dataSource.getUser().birthHour, minute: dataSource.getUser().birthMinute)
+            
+            let day = dataSource.getUser().birthDay
+            let month = dataSource.getUser().birthMonth+1
+            let year = dataSource.getUser().birthYear
+            let hour = dataSource.getUser().birthHour
+            let minute = dataSource.getUser().birthMinute
+            let utc = dataSource.getUser().UTC
+            
+//            let formatter = DateFormatter()
+//            formatter.dateFormat = "yyyy/MM/dd HH:mm"
+//            var someDateTime = formatter.date(from: "\(year)/\(String(format: "%02d",month))/\(String(format: "%02d",day)) \(String(format: "%02d",hour)):\(String(format: "%02d", minute))")
+//            print(someDateTime)
+//            let timeInterval = someDateTime?.timeIntervalSinceNow ?? 0 + Double(utc*60*60)
+//            someDateTime = Date(timeIntervalSinceNow: timeInterval)
+//            print(someDateTime)
+
+            let request = BodyGraphAPIRequest(day: day, month: month, year: year, hour: hour, minute: minute)
+            
             backendService.request(request: request, success: { (json) in
                 guard let json = json as? [String: Any] else {
                     return
@@ -151,6 +168,12 @@ class HumanDesignDataSource {
         user.country = country
     }
     func setCity(city: String) {
+        user.UTC = 2
+        for city_ in CityManager.russianPlaces {
+            if city_.value.contains(city) {
+                user.UTC = Int(city_.key)!
+            }
+        }
         user.city = city
     }
     

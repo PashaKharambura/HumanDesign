@@ -424,18 +424,36 @@
                                     <constraint firstAttribute="trailing" secondItem="G5h-ZL-S9X" secondAttribute="trailing" constant="30" id="rwh-OV-hmc"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gg-f4-Fu1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="quG-ia-s9r">
+                                        <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                        <color key="color" red="1" green="0.22111248796129856" blue="0.80041236864524734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="quG-ia-s9r" firstAttribute="centerY" secondItem="2gg-f4-Fu1" secondAttribute="centerY" id="IYm-5w-KoM"/>
+                                    <constraint firstItem="quG-ia-s9r" firstAttribute="centerX" secondItem="2gg-f4-Fu1" secondAttribute="centerX" id="pmk-By-K0y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2gg-f4-Fu1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="02M-KW-2ky"/>
                             <constraint firstItem="pfe-Bb-zHt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Uw-V4-Z3d"/>
                             <constraint firstItem="pfe-Bb-zHt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="29i-4a-Y6Z"/>
                             <constraint firstAttribute="trailing" secondItem="mJG-cR-xzE" secondAttribute="trailing" id="52Q-cr-SpK"/>
                             <constraint firstItem="pfe-Bb-zHt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6hH-QY-hqU"/>
                             <constraint firstItem="UYz-xl-8uA" firstAttribute="top" secondItem="Ps4-Zs-dQZ" secondAttribute="bottom" constant="30" id="6xw-mN-Foe"/>
+                            <constraint firstAttribute="bottom" secondItem="2gg-f4-Fu1" secondAttribute="bottom" id="7sN-MR-M0U"/>
                             <constraint firstItem="ZYU-Kb-AgG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HCl-UA-Mg7"/>
                             <constraint firstItem="ZYU-Kb-AgG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JGL-ct-Arb"/>
                             <constraint firstAttribute="trailing" secondItem="PfY-3H-aze" secondAttribute="trailing" id="JR5-Sc-91o"/>
+                            <constraint firstItem="2gg-f4-Fu1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K7G-R4-Zea"/>
                             <constraint firstAttribute="bottom" secondItem="PfY-3H-aze" secondAttribute="bottom" id="Lz5-2P-rzw"/>
+                            <constraint firstItem="2gg-f4-Fu1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ro6-nu-uZ5"/>
                             <constraint firstItem="l3j-JV-dfp" firstAttribute="top" secondItem="UYz-xl-8uA" secondAttribute="bottom" constant="30" id="Y9h-dj-XVN"/>
                             <constraint firstAttribute="bottom" secondItem="mJG-cR-xzE" secondAttribute="bottom" id="YGG-VI-2fn"/>
                             <constraint firstItem="PfY-3H-aze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z6d-bo-dkz"/>
@@ -464,6 +482,7 @@
                         <outlet property="countryLabel" destination="eeD-kj-e5z" id="vuX-Fz-hif"/>
                         <outlet property="dayLabel" destination="H24-bs-IHy" id="zb9-x9-7TB"/>
                         <outlet property="doneButton" destination="WZx-6m-p70" id="AUG-UK-jaH"/>
+                        <outlet property="loaderView" destination="2gg-f4-Fu1" id="YBh-Z9-Nio"/>
                         <outlet property="month" destination="H2N-rz-jLA" id="XaX-qP-oMS"/>
                         <outlet property="pickerView" destination="G5h-ZL-S9X" id="2cd-rZ-OfC"/>
                         <outlet property="timeLabel" destination="7zM-Il-8P2" id="36M-D2-n7i"/>
@@ -569,6 +588,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="bxN-2n-uwo" id="S5k-o5-Fz4"/>
+                        <outlet property="yourGraphTitle" destination="A89-tG-Tfh" id="4Qp-XO-AA3"/>
                         <segue destination="U5D-fs-wq5" kind="show" identifier="showMyTypeInfoSegue" id="Vvq-Ci-9ny"/>
                     </connections>
                 </viewController>
@@ -1114,6 +1134,6 @@
         <image name="stars" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WDw-oa-15B"/>
+        <segue reference="Vvq-Ci-9ny"/>
     </inferredMetricsTieBreakers>
 </document>

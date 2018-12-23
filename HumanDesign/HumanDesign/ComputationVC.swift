@@ -32,6 +32,7 @@ class ComputationVC: UIViewController {
     @IBOutlet weak var viewOfPicker: UIView! {didSet{viewOfPicker.alpha = 0}}
     @IBOutlet weak var pickerView: UIPickerView! {didSet{pickerView.layer.cornerRadius = 25}}
     @IBOutlet weak var doneButton: UIButton! {didSet{doneButton.layer.cornerRadius = 25}}
+    @IBOutlet weak var loaderView: UIView!{didSet{loaderView.isHidden = true}}
     
     var presenter = HumanDesignPresenter()
     
@@ -64,13 +65,17 @@ class ComputationVC: UIViewController {
     }
     
     @IBAction func ButtonAction(_ sender: Any) {
-        presenter.getGraphInfo(success: {
+        loaderView.isHidden = false
+//        presenter.getGraphInfo(success: {
+//            self.loaderView.isHidden = true
             self.performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
-        }, failure: { (error) in
-            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
-        }) {
-            self.showSimpleAlert(title: "Проверьте соединение", text: "")
-        }
+//        }, failure: { (error) in
+//            self.loaderView.isHidden = true
+//            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
+//        }) {
+//            self.loaderView.isHidden = true
+//            self.showSimpleAlert(title: "Проверьте соединение", text: "")
+//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
