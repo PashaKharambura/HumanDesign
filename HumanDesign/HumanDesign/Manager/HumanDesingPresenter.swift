@@ -98,53 +98,55 @@ class HumanDesignPresenter {
         return dataSource.getUser()
     }
     
-    func getGraphInfo(success: @escaping ()->(), failure: @escaping (_ error: Error)-> (), internetError: @escaping ()->()) {
-        if InternetReachability.isConnectedToNetwork() {
-            
-            var day = dataSource.getUser().birthDay
-            var month = dataSource.getUser().birthMonth+1
-            var year = dataSource.getUser().birthYear
-            var hour = dataSource.getUser().birthHour
-            let minute = dataSource.getUser().birthMinute
-            let utc = dataSource.getUser().UTC
-            
-            let difference = hour - utc
-            if difference < 0 {
-                if day == 1 {
-                    if month == 1 {
-                        month = 12
-                        day = 31
-                        hour = 24+difference
-                        year -= 1
-                    } else {
-                        month -= 1
-                        switch month {
-                        case 4,6,9,11:
-                            day = 30
-                        case 2:
-                            day = 28
-                        default:
-                            day = 31
-                        }
-                        hour = 24+difference
-                    }
+    private func modifyDate(d:Int,m:Int,y:Int,h:Int,utc:Int) -> (Int,Int,Int,Int) {
+        var day = d
+        var month = m
+        var year = y
+        var hour = h
+        let utc = utc
+        
+        let difference = hour - utc
+        if difference < 0 {
+            if day == 1 {
+                if month == 1 {
+                    month = 12
+                    day = 31
+                    hour = 24+difference
+                    year -= 1
                 } else {
-                    day -= 1
+                    month -= 1
+                    switch month {
+                    case 4,6,9,11:
+                        day = 30
+                    case 2:
+                        if year % 4 == 0 {
+                            day = 29
+                        } else {
+                            day = 28
+                        }
+                    default:
+                        day = 31
+                    }
                     hour = 24+difference
                 }
             } else {
-                hour -= utc
+                day -= 1
+                hour = 24+difference
             }
-            
-            
-//            let formatter = DateFormatter()
-//            formatter.dateFormat = "yyyy/MM/dd HH:mm"
-//            var someDateTime = formatter.date(from: "\(year)/\(String(format: "%02d",month))/\(String(format: "%02d",day)) \(String(format: "%02d",hour)):\(String(format: "%02d", minute))")
-//            let timeInterval = (someDateTime?.timeIntervalSinceNow ?? 0) + Double(utc*60*60)
-//            someDateTime = Date(timeIntervalSinceNow: timeInterval)
+        } else {
+            hour -= utc
+        }
+        return (day,month,year,hour)
+    }
+    
+    func getGraphInfo(success: @escaping ()->(), failure: @escaping (_ error: Error)-> (), internetError: @escaping ()->()) {
+        if InternetReachability.isConnectedToNetwork() {
 
+            let minute = dataSource.getUser().birthMinute
             
-            let request = BodyGraphAPIRequest(day: day, month: month, year: year, hour: hour, minute: minute)
+            let dateComp = modifyDate(d: dataSource.getUser().birthDay, m: dataSource.getUser().birthMonth+1, y: dataSource.getUser().birthYear, h: dataSource.getUser().birthHour, utc: dataSource.getUser().UTC)
+
+            let request = BodyGraphAPIRequest(day: dateComp.0, month: dateComp.1, year: dateComp.2, hour: dateComp.3, minute: minute)
             
             backendService.request(request: request, success: { (json) in
                 guard let json = json as? [String: Any] else {
