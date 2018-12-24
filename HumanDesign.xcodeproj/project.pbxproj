@@ -40,6 +40,7 @@
 		294B8FF521CF945900BA7CC5 /* BodyGraphAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */; };
 		294B8FF721CFA20900BA7CC5 /* GraphMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */; };
 		294B8FF921CFB0D100BA7CC5 /* InternetRechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */; };
+		29770AA621D0FC7700160F2B /* GraphFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29770AA521D0FC7700160F2B /* GraphFigure.swift */; };
 		298E546E21C8FB8E00DF30E4 /* HumanDesingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */; };
 		298E547021C8FC6F00DF30E4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E546F21C8FC6F00DF30E4 /* UserModel.swift */; };
 		298E547221C9201A00DF30E4 /* UACities.json in Resources */ = {isa = PBXBuildFile; fileRef = 298E547121C9201900DF30E4 /* UACities.json */; };
@@ -96,6 +97,7 @@
 		294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphAPIRequest.swift; sourceTree = "<group>"; };
 		294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMapper.swift; sourceTree = "<group>"; };
 		294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetRechability.swift; sourceTree = "<group>"; };
+		29770AA521D0FC7700160F2B /* GraphFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFigure.swift; sourceTree = "<group>"; };
 		298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesingPresenter.swift; sourceTree = "<group>"; };
 		298E546F21C8FC6F00DF30E4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		298E547121C9201900DF30E4 /* UACities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UACities.json; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
 				294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */,
 				294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */,
+				29770AA521D0FC7700160F2B /* GraphFigure.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				294B8FEF21CF92B400BA7CC5 /* BackendConfiguration.swift in Sources */,
 				294738CD21C7B31C00DE262C /* Extentions.swift in Sources */,
 				294738E221C7D32500DE262C /* TypeInfoVC.swift in Sources */,
+				29770AA621D0FC7700160F2B /* GraphFigure.swift in Sources */,
 				294B8FF521CF945900BA7CC5 /* BodyGraphAPIRequest.swift in Sources */,
 				592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */,
 				294694B021C6BFE300720049 /* TypesVC.swift in Sources */,

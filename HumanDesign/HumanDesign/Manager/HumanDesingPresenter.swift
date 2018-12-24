@@ -94,24 +94,56 @@ class HumanDesignPresenter {
         return getDataForPicker().count
     }
     
+    func getUser() -> UserModel {
+        return dataSource.getUser()
+    }
+    
     func getGraphInfo(success: @escaping ()->(), failure: @escaping (_ error: Error)-> (), internetError: @escaping ()->()) {
         if InternetReachability.isConnectedToNetwork() {
             
-            let day = dataSource.getUser().birthDay
-            let month = dataSource.getUser().birthMonth+1
-            let year = dataSource.getUser().birthYear
-            let hour = dataSource.getUser().birthHour
+            var day = dataSource.getUser().birthDay
+            var month = dataSource.getUser().birthMonth+1
+            var year = dataSource.getUser().birthYear
+            var hour = dataSource.getUser().birthHour
             let minute = dataSource.getUser().birthMinute
             let utc = dataSource.getUser().UTC
+            
+            let difference = hour - utc
+            if difference < 0 {
+                if day == 1 {
+                    if month == 1 {
+                        month = 12
+                        day = 31
+                        hour = 24+difference
+                        year -= 1
+                    } else {
+                        month -= 1
+                        switch month {
+                        case 4,6,9,11:
+                            day = 30
+                        case 2:
+                            day = 28
+                        default:
+                            day = 31
+                        }
+                        hour = 24+difference
+                    }
+                } else {
+                    day -= 1
+                    hour = 24+difference
+                }
+            } else {
+                hour -= utc
+            }
+            
             
 //            let formatter = DateFormatter()
 //            formatter.dateFormat = "yyyy/MM/dd HH:mm"
 //            var someDateTime = formatter.date(from: "\(year)/\(String(format: "%02d",month))/\(String(format: "%02d",day)) \(String(format: "%02d",hour)):\(String(format: "%02d", minute))")
-//            print(someDateTime)
-//            let timeInterval = someDateTime?.timeIntervalSinceNow ?? 0 + Double(utc*60*60)
+//            let timeInterval = (someDateTime?.timeIntervalSinceNow ?? 0) + Double(utc*60*60)
 //            someDateTime = Date(timeIntervalSinceNow: timeInterval)
-//            print(someDateTime)
 
+            
             let request = BodyGraphAPIRequest(day: day, month: month, year: year, hour: hour, minute: minute)
             
             backendService.request(request: request, success: { (json) in
@@ -170,17 +202,19 @@ class HumanDesignDataSource {
     func setCity(city: String) {
         user.UTC = 2
         for city_ in CityManager.russianPlaces {
-            if city_.value.contains(city) {
-                user.UTC = Int(city_.key)!
+            let array = city.components(separatedBy: ")-")
+            if city_.value.contains(array.last ?? "") {
+                user.UTC = Int(city_.key) ?? 0
             }
         }
-        user.city = city
+        let array = city.components(separatedBy: ")-")
+        user.city = array.last ?? city
     }
     
     func getYears() -> [Int] {
         var years = [Int]()
         for i in 1930...2018 {
-            years.append(i)
+            years.insert(i, at: 0)
         }
         return years
     }

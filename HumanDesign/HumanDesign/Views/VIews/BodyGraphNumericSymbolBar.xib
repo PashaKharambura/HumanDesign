@@ -55,8 +55,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYH-8s-90f">
                             <rect key="frame" x="0.0" y="0.0" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="EcS-DF-K9t">
-                                    <rect key="frame" x="12.5" y="0.0" width="4" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="EcS-DF-K9t">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -81,13 +81,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uo-ow-cyS">
                             <rect key="frame" x="0.0" y="12" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="acP-bC-biU">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="acP-bC-biU">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="iCA-19-YY9">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric2Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="iCA-19-YY9">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="iCA-19-YY9" secondAttribute="height" multiplier="1:1" id="ZJd-j7-lg5"/>
@@ -107,13 +107,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYU-Xc-JDm">
                             <rect key="frame" x="0.0" y="24" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="bRu-Ul-VeK">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="bRu-Ul-VeK">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-06-iI6">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric3Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="9nM-06-iI6">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="9nM-06-iI6" secondAttribute="height" multiplier="1:1" id="MPG-QK-gEt"/>
@@ -133,14 +133,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lX-nw-rl1">
                             <rect key="frame" x="0.0" y="36" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="0SA-71-IJ3">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="0SA-71-IJ3">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-yY-RHk">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric4Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="rYP-yY-RHk">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="rYP-yY-RHk" secondAttribute="height" multiplier="1:1" id="4Vv-K9-bv5"/>
                                     </constraints>
@@ -159,14 +159,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzg-VN-NMh">
                             <rect key="frame" x="0.0" y="48" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-no-UV4">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="WU9-no-UV4">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="jRy-Qp-s6e">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric5Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="jRy-Qp-s6e">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="jRy-Qp-s6e" secondAttribute="height" multiplier="1:1" id="4q7-BA-4JQ"/>
                                     </constraints>
@@ -185,14 +185,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-Cd-TxX">
                             <rect key="frame" x="0.0" y="60" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-Jg-9jN">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-Jg-9jN">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-8N-P0I">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric6Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="P5J-8N-P0I">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="P5J-8N-P0I" secondAttribute="height" multiplier="1:1" id="onp-jY-Ogj"/>
                                     </constraints>
@@ -211,14 +211,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-o9-UlM">
                             <rect key="frame" x="0.0" y="72" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="plV-PU-OJi">
-                                    <rect key="frame" x="11.5" y="0.0" width="5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="plV-PU-OJi">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-t3-kWC">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric7Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="sDz-t3-kWC">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="sDz-t3-kWC" secondAttribute="height" multiplier="1:1" id="Zc7-cw-Khb"/>
                                     </constraints>
@@ -237,13 +237,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bik-mu-9rq">
                             <rect key="frame" x="0.0" y="84" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="NYI-Li-hE9">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="NYI-Li-hE9">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="2Gt-Cv-r1A">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric8Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="2Gt-Cv-r1A">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="2Gt-Cv-r1A" secondAttribute="height" multiplier="1:1" id="q2F-qn-b2w"/>
@@ -263,13 +263,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-xb-ut2">
                             <rect key="frame" x="0.0" y="96" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-b5-2Ja">
-                                    <rect key="frame" x="11" y="0.0" width="5.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-b5-2Ja">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="WKz-al-klL">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric9Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="WKz-al-klL">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="WKz-al-klL" secondAttribute="height" multiplier="1:1" id="KK2-JN-XFl"/>
@@ -289,14 +289,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlA-qd-Zy5">
                             <rect key="frame" x="0.0" y="108" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="yur-We-eZf">
-                                    <rect key="frame" x="7" y="0.0" width="9.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="yur-We-eZf">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="w5h-c9-aZf">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric10Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="w5h-c9-aZf">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="w5h-c9-aZf" secondAttribute="height" multiplier="1:1" id="ipP-8R-Sej"/>
                                     </constraints>
@@ -315,13 +315,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jR2-0C-dYD">
                             <rect key="frame" x="0.0" y="120" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-vd-OCu">
-                                    <rect key="frame" x="8.5" y="0.0" width="8" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="ndo-vd-OCu">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-LK-Zxe">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric11Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-LK-Zxe">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="EwZ-LK-Zxe" secondAttribute="height" multiplier="1:1" id="rwg-ty-VBG"/>
@@ -341,14 +341,14 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-yk-whL">
                             <rect key="frame" x="0.0" y="132" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cTh-dm-Inr">
-                                    <rect key="frame" x="7.5" y="0.0" width="9" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cTh-dm-Inr">
+                                    <rect key="frame" x="15.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="bt8-Ha-VKf">
-                                    <rect key="frame" x="21.5" y="1" width="8" height="8"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric12Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="bt8-Ha-VKf">
+                                    <rect key="frame" x="20.5" y="0.5" width="9" height="9"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="bt8-Ha-VKf" secondAttribute="height" multiplier="1:1" id="bwI-HE-58v"/>
                                     </constraints>
@@ -367,13 +367,13 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-kH-GsO">
                             <rect key="frame" x="0.0" y="144" width="29.5" height="10"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="blK-9z-08P">
-                                    <rect key="frame" x="7" y="0.0" width="9.5" height="10"/>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="blK-9z-08P">
+                                    <rect key="frame" x="16.5" y="5" width="0.0" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric1Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="iAh-ze-Ygl">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BodyGraphNumeric13Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="iAh-ze-Ygl">
                                     <rect key="frame" x="21.5" y="1" width="8" height="8"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="iAh-ze-Ygl" secondAttribute="height" multiplier="1:1" id="gkb-Xi-9LP"/>
@@ -428,7 +428,19 @@
         </view>
     </objects>
     <resources>
+        <image name="BodyGraphNumeric10Symbol" width="6" height="9"/>
+        <image name="BodyGraphNumeric11Symbol" width="7" height="8"/>
+        <image name="BodyGraphNumeric12Symbol" width="7" height="9"/>
+        <image name="BodyGraphNumeric13Symbol" width="5" height="8"/>
         <image name="BodyGraphNumeric1Symbol" width="7" height="8"/>
+        <image name="BodyGraphNumeric2Symbol" width="7" height="8"/>
+        <image name="BodyGraphNumeric3Symbol" width="6" height="8"/>
+        <image name="BodyGraphNumeric4Symbol" width="8" height="9"/>
+        <image name="BodyGraphNumeric5Symbol" width="8" height="9"/>
+        <image name="BodyGraphNumeric6Symbol" width="5" height="9"/>
+        <image name="BodyGraphNumeric7Symbol" width="6" height="9"/>
+        <image name="BodyGraphNumeric8Symbol" width="8" height="8"/>
+        <image name="BodyGraphNumeric9Symbol" width="6" height="8"/>
         <image name="BodyGraphNumericSymbolBarImage" width="45" height="173"/>
     </resources>
 </document>

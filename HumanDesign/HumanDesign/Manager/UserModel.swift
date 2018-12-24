@@ -29,4 +29,5 @@ class UserInfo {
     var definition: Int = 0
     var personalGates: [Double] = []
     var designGates: [Double] = []
+    var superActiveNumbers: [Int] = []
 }

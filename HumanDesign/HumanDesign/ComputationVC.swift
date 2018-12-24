@@ -66,16 +66,16 @@ class ComputationVC: UIViewController {
     
     @IBAction func ButtonAction(_ sender: Any) {
         loaderView.isHidden = false
-//        presenter.getGraphInfo(success: {
-//            self.loaderView.isHidden = true
+        presenter.getGraphInfo(success: {
+            self.loaderView.isHidden = true
             self.performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
-//        }, failure: { (error) in
-//            self.loaderView.isHidden = true
-//            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
-//        }) {
-//            self.loaderView.isHidden = true
-//            self.showSimpleAlert(title: "Проверьте соединение", text: "")
-//        }
+        }, failure: { (error) in
+            self.loaderView.isHidden = true
+            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
+        }) {
+            self.loaderView.isHidden = true
+            self.showSimpleAlert(title: "Проверьте соединение", text: "")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -121,6 +121,7 @@ class ComputationVC: UIViewController {
         openPicker()
     }
     @IBAction func doneAction(_ sender: Any) {
+        selectRowInPicker(row: pickerView.selectedRow(inComponent: 0))
         closePicker()
     }
     
@@ -141,6 +142,10 @@ extension ComputationVC: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectRowInPicker(row: row)
+    }
+    
+    private func selectRowInPicker(row: Int) {
         presenter.setDataFromPicker(index: row)
         switch presenter.getPickerType() {
         case .Day:
@@ -155,15 +160,15 @@ extension ComputationVC: UIPickerViewDelegate, UIPickerViewDataSource {
         case .Year:
             yearLabel.text = "\(presenter.dataSource.getUser().birthYear)"
         case .Approximately:
-            timeLabel.text = "\(presenter.dataSource.getUser().birthHour):\(presenter.dataSource.getUser().birthMinute)"
+            timeLabel.text = "\(String(format: "%02d",presenter.dataSource.getUser().birthHour)):\(String(format: "%02d", presenter.dataSource.getUser().birthMinute))"
         case .Time:
-            timeLabel.text = "\(presenter.dataSource.getUser().birthHour):\(presenter.dataSource.getUser().birthMinute)"
-
+            timeLabel.text = "\(String(format: "%02d",presenter.dataSource.getUser().birthHour)):\(String(format: "%02d", presenter.dataSource.getUser().birthMinute))"
         }
     }
     
     func openPicker() {
         pickerView.reloadAllComponents()
+        pickerView.selectRow(0, inComponent: 0, animated: true)
         viewOfPicker.alpha = 1
     }
     

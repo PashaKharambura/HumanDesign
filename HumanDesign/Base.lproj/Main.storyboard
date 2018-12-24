@@ -524,9 +524,9 @@
                                 <rect key="frame" x="0.0" y="-21" width="375" height="85"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-5k-84P">
-                                        <rect key="frame" x="10" y="32.5" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="32.5" width="60" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="8Oy-UR-JOg"/>
+                                            <constraint firstAttribute="width" constant="60" id="8Oy-UR-JOg"/>
                                             <constraint firstAttribute="height" constant="50" id="YVz-eQ-ijv"/>
                                         </constraints>
                                         <state key="normal" image="Back"/>
@@ -559,7 +559,7 @@
                                     <constraint firstAttribute="trailing" secondItem="vOh-w9-Si3" secondAttribute="trailing" constant="10" id="Ej5-Yb-Yy3"/>
                                     <constraint firstItem="vOh-w9-Si3" firstAttribute="leading" secondItem="A89-tG-Tfh" secondAttribute="trailing" constant="10" id="Q1J-Fo-o2w"/>
                                     <constraint firstItem="vOh-w9-Si3" firstAttribute="centerY" secondItem="R3o-bd-3fg" secondAttribute="centerY" constant="15" id="SMI-bt-sP6"/>
-                                    <constraint firstItem="b9c-5k-84P" firstAttribute="leading" secondItem="R3o-bd-3fg" secondAttribute="leading" constant="10" id="bHK-xs-dMu"/>
+                                    <constraint firstItem="b9c-5k-84P" firstAttribute="leading" secondItem="R3o-bd-3fg" secondAttribute="leading" id="bHK-xs-dMu"/>
                                     <constraint firstItem="A89-tG-Tfh" firstAttribute="centerY" secondItem="R3o-bd-3fg" secondAttribute="centerY" constant="15" id="nE4-DX-42P"/>
                                     <constraint firstItem="A89-tG-Tfh" firstAttribute="leading" secondItem="b9c-5k-84P" secondAttribute="trailing" constant="10" id="tXn-wn-Vf1"/>
                                     <constraint firstAttribute="height" constant="85" id="yeJ-vE-dkW"/>

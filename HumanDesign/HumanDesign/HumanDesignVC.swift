@@ -78,8 +78,13 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesHeaderTextInfoTableViewCell.rawValue, for: indexPath) as? TypesHeaderTextInfoTableViewCell else {return UITableViewCell()}
-            cell.TitleLabel.text = "Вы – Динамо-машина"
-            cell.lastCalculationLabel.text = "01.12.1980, 17:38, г. Санкт-Петербург"
+            
+            cell.TitleLabel.text = "Вы – \(presenter?.getUser().info?.authority ?? "")"
+            
+            let bInfo = "\(String(format: "%02d",presenter?.getUser().birthDay ?? 0)).\(String(format: "%02d",presenter?.getUser().birthMonth ?? 0)).\(String(format: "%04d",presenter?.getUser().birthYear ?? 0)), \(String(format: "%02d",presenter?.getUser().birthHour ?? 0)):\(String(format: "%02d", presenter?.getUser().birthMinute ?? 0)), \(presenter?.getUser().city ?? "")"
+            cell.lastCalculationLabel.text = bInfo
+            
+            
             cell.additionalInfoLabel.isHidden = true
             return cell
         case 1:
@@ -88,8 +93,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             if let userInfo = presenter?.dataSource.getUser().info {
                 let red = userInfo.designGates
                 let blue = userInfo.personalGates
-//                let red = [34.3]
-//                let blue = [10.1]
+
                 cell.activeRedNumbers = red
                 cell.activeBlueNumbers = blue
                 var blueNumbers = [ActiveBodyGraphNumber]()
@@ -101,7 +105,9 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
                     blueNumbers.append(ActiveBodyGraphNumber(number: Int(i), withColor: .blue))
                 }
                 cell.activeNumbers = redNumbers+blueNumbers
+                cell.superActiveNumbers = userInfo.superActiveNumbers
             }
+
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
@@ -109,7 +115,9 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TripleSpecificationTableViewCell.rawValue, for: indexPath) as? TripleSpecificationTableViewCell else {return UITableViewCell()}
-            
+            cell.yourTypeLabel.text = presenter?.getUser().info?.type
+            cell.yourProfileLabel.text = presenter?.getUser().info?.profile
+            cell.yourDefinitionLabel.text = "\(presenter?.getUser().info?.definition ?? 1)"
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}

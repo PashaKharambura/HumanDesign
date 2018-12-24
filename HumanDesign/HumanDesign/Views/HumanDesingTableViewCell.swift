@@ -9,6 +9,20 @@
 import UIKit
 
 class HumanDesingTableViewCell: UITableViewCell {
+    @IBOutlet weak var designTitleView: UIView! {didSet{designTitleView.layer.cornerRadius = 4 }}
+    @IBOutlet weak var personalityTitleView: UIView! {didSet{personalityTitleView.layer.cornerRadius = 4 }}
+    @IBOutlet weak var designTltleLabel: UILabel!
+    @IBOutlet weak var personalityTitleLabel: UILabel!
+    
+    @IBOutlet weak var firstFigure: UIImageView!  {didSet{firstFigure.setImageColor(color: .white)}}
+    @IBOutlet weak var figureSecond: UIImageView!  {didSet{figureSecond.setImageColor(color: .white)}}
+    @IBOutlet weak var figureThird: UIImageView!  {didSet{figureThird.setImageColor(color: .white)}}
+    @IBOutlet weak var figureFourth: UIImageView!  {didSet{figureFourth.setImageColor(color: .white)}}
+    @IBOutlet weak var figureFifth: UIImageView!  {didSet{figureFifth.setImageColor(color: .white)}}
+    @IBOutlet weak var figureSix: UIImageView!  {didSet{figureSix.setImageColor(color: .white)}}
+    @IBOutlet weak var figureSeventh: UIImageView!  {didSet{figureSeventh.setImageColor(color: .white)}}
+    @IBOutlet weak var figureEight: UIImageView!  {didSet{figureEight.setImageColor(color: .white)}}
+    @IBOutlet weak var figureNinth: UIImageView! {didSet{figureNinth.setImageColor(color: .white)}}
     
     @IBOutlet weak var backgroungView: UIImageView!
     
@@ -29,6 +43,8 @@ class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet var rightBlueTriangularNumberCollection: [BodyGraphNumberView]!
     @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
     
+    var figures: [GraphFigure] = []
+    
     var activeRedNumbers: [Double] = [] {
         didSet {
             leftGraphNumberBar.symbolNumbers = activeRedNumbers
@@ -45,6 +61,14 @@ class HumanDesingTableViewCell: UITableViewCell {
     var activeNumbers: [ActiveBodyGraphNumber] = [] {
         didSet {
             reloadCellData()
+            
+        }
+    }
+    
+    var superActiveNumbers: [Int] = [] {
+        didSet {
+            setFiguresObjects()
+            setViewsColor()
         }
     }
     
@@ -63,7 +87,6 @@ class HumanDesingTableViewCell: UITableViewCell {
         35:36,
         12:22,
         45:21,
-//        10:34,
         25:51,
         15:5,
         2:14,
@@ -111,6 +134,19 @@ class HumanDesingTableViewCell: UITableViewCell {
         lineView.setNeedsDisplay()
     }
     
+    private func setFiguresObjects() {
+        let first = GraphFigure(image: firstFigure, numbers: [64,63,61])
+        let second = GraphFigure(image: figureSecond, numbers: [47,24,4,17,11,43])
+        let third = GraphFigure(image: figureThird, numbers: [62,23,56,35,12,45,33,8,31,20,16])
+        let forth = GraphFigure(image: figureFourth, numbers: [1,13,25,46,2,15,10,7])
+        let fifth = GraphFigure(image: figureFifth, numbers: [21,51,26,40])
+        let sixth = GraphFigure(image: figureSix, numbers: [5,14,29,34,27,42,3,9,59])
+        let seventh = GraphFigure(image: figureSeventh, numbers: [48,57,44,50,32,28,18])
+        let eitht = GraphFigure(image: figureEight, numbers: [36,22,37,6,49,55,30])
+        let ninth = GraphFigure(image: figureNinth, numbers: [58,38,54,53,60,52,19,39,41])
+        figures = [first,second,third,forth,fifth,sixth,seventh,eitht,ninth]
+    }
+    
     func drawGraphLines() {
         lineView.numberViews = allBodyGraphNumbersCollection
         lineView.connectedByLinesGraphNumbers = connectedByLinesGraphNumbers
@@ -120,6 +156,32 @@ class HumanDesingTableViewCell: UITableViewCell {
     
     private func reloadCellData() {
         reloadCellNumbers()
+    }
+    
+    private func setViewsColor() {
+        let array = superActiveNumbers
+        for figure in figures {
+            for number in figure.numbers {
+                if array.contains(number) {
+                    redrawFigure(figure: figure)
+                }
+            }
+        }
+    }
+    
+    private func redrawFigure(figure: GraphFigure) {
+        switch figure.image {
+        case firstFigure,figureFourth:
+            figure.image.setImageColor(color: .yellowFigure)
+        case figureSecond:
+            figure.image.setImageColor(color: .greenFigure)
+        case figureThird,figureSeventh,figureEight,figureNinth:
+            figure.image.setImageColor(color: .brownFigure)
+        case figureFifth,figureSix:
+            figure.image.setImageColor(color: .redFigure)
+        default:
+            figure.image.setImageColor(color: .white)
+        }
     }
     
     private func reloadCellNumbers() {
@@ -145,3 +207,5 @@ class HumanDesingTableViewCell: UITableViewCell {
         }
     }
 }
+
+

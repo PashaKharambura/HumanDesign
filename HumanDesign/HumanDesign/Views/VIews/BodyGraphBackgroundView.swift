@@ -100,7 +100,7 @@ class BodyGraphBackgroundView: UIView {
             numberView.labelsNumber == drawLineFromSpecificPlace.first ?? 0
         }), let firstSpecificViewCoordinate = firstSpecificView.superview?.convert(firstSpecificView.center, to: self) else { return }
         
-        let middlePoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.33)
+        let middlePoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.5)
         
         drawLine(from: firstSpecificViewCoordinate, to: middlePoint, with: firstSpecificView.numberIsActive ? firstSpecificView.activeLineColor.lineColor : .white)
     }
@@ -110,7 +110,7 @@ class BodyGraphBackgroundView: UIView {
             numberView.labelsNumber == drawLineFromSpecificPlace.last ?? 0
         }), let secondSpecificViewCoordinate = secondSpecificView.superview?.convert(secondSpecificView.center, to: self) else { return }
         
-        let bottomSpecificPoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.66)
+        let bottomSpecificPoint = getPoint(from: baseLineFirstCoordinate, to: baseLineSecondCoordinate, onPercentDistantFromSecondPoint: 0.5)
         
         drawLine(from: secondSpecificViewCoordinate, to: bottomSpecificPoint, with: secondSpecificView.numberIsActive ? secondSpecificView.activeLineColor.lineColor : .white)
     }

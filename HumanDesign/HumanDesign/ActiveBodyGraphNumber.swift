@@ -20,7 +20,7 @@ struct ActiveBodyGraphNumber {
             case .blue:
                 return UIColor.blue
             case .violet:
-                return UIColor.magenta
+                return UIColor.purpleLine
             case .white:
                 return UIColor.white
             }
