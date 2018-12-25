@@ -24,7 +24,7 @@ class FindLoveVC: UIViewController {
     @IBOutlet weak var secondTitle: UILabel!
     @IBOutlet weak var secondSubtitle: UILabel!
     
-    
+    var presenter: HumanDesignPresenter!
     private var viewState: ViewState = .getReport
     
     override func viewDidLoad() {
@@ -35,6 +35,7 @@ class FindLoveVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+        self.presenter = HumanDesignPresenter.shared
     }
     
     private func setInitialViewConfigurations() {
@@ -65,12 +66,24 @@ class FindLoveVC: UIViewController {
     }
     
     @IBAction func buttonAtion(_ sender: Any) {
-            if viewState == .getReport {
-                viewState = .vaitReport
+        if viewState == .vaitReport {
+            self.tabBarController?.selectedIndex = 0
+        } else if viewState == .getReport {
+            if let email = emailTextField.text {
+                if isValidEmail(testStr: email) {
+                    presenter.sendEmailTo(type: .FindLove ,email: email, success: {
+                        self.viewState = .vaitReport
+                        self.setViewElementsActive(state: self.viewState)
+                    }) { (error) in
+                        self.showSimpleAlert(title: "Error", text: error.localizedDescription)
+                    }
+                } else {
+                    showSimpleAlert(title: "Ошибка", text: "Введите корректную почту!")
+                }
             } else {
-                viewState = .getReport
+                showSimpleAlert(title: "Ошибка", text: "Введите почту!")
             }
-            setViewElementsActive(state: viewState)
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

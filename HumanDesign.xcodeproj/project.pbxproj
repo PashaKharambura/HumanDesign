@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2913458221D2A9E8005C9758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2913458121D2A9E8005C9758 /* GoogleService-Info.plist */; };
 		2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */; };
 		2935924321C8035900BD0E82 /* TypeViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */; };
 		2937D69C21C83D0600A8189A /* WhiteButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937D69A21C83D0600A8189A /* WhiteButtonTableViewCell.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2913458121D2A9E8005C9758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewTableViewCell.swift; sourceTree = "<group>"; };
 		2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeViewTableViewCell.xib; sourceTree = "<group>"; };
 		2937D69A21C83D0600A8189A /* WhiteButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				29D6753E21C56B940059A398 /* LaunchScreen.storyboard */,
 				29D6753C21C56B940059A398 /* Assets.xcassets */,
 				29D6754121C56B940059A398 /* Info.plist */,
+				2913458121D2A9E8005C9758 /* GoogleService-Info.plist */,
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
 				294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */,
@@ -391,6 +394,7 @@
 				294738E021C7CF6300DE262C /* DetailedTypeImageTableViewCell.xib in Resources */,
 				29D6753B21C56B920059A398 /* Main.storyboard in Resources */,
 				294738D821C7B73800DE262C /* TypeCollectionViewCell.xib in Resources */,
+				2913458221D2A9E8005C9758 /* GoogleService-Info.plist in Resources */,
 				2937D69D21C83D0600A8189A /* WhiteButtonTableViewCell.xib in Resources */,
 				294738DC21C7C2C700DE262C /* HelperViewTableViewCell.xib in Resources */,
 				298E547221C9201A00DF30E4 /* UACities.json in Resources */,
@@ -435,15 +439,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

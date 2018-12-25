@@ -78,11 +78,24 @@ class PersonalMapVC: UIViewController {
     }
 
     @IBAction func buttonAtion(_ sender: Any) {
-        if viewState == .getReport {
-            viewState = .vaitReport
-        } else {
-            viewState = .getReport
+        if viewState == .vaitReport {
+            self.tabBarController?.selectedIndex = 0
+        } else if viewState == .getReport {
+            if let email = emailTextField.text {
+                if isValidEmail(testStr: email) {
+                    presenter.sendEmailTo(type: .PersonalMap ,email: email, success: {
+                        self.viewState = .vaitReport
+                        self.setViewElementsActive(state: self.viewState)
+                    }) { (error) in
+                        self.showSimpleAlert(title: "Error", text: error.localizedDescription)
+                    }
+                } else {
+                    showSimpleAlert(title: "Ошибка", text: "Введите корректную почту!")
+                }
+            } else {
+                showSimpleAlert(title: "Ошибка", text: "Введите почту!")
+            }
         }
-        setViewElementsActive(state: viewState)
+
     }
 }

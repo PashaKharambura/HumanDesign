@@ -9,5 +9,7 @@ target 'HumanDesign' do
 
   pod 'IQKeyboardManager'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
 enum PickerDataType {
     case Day
@@ -18,8 +19,13 @@ enum PickerDataType {
     case Approximately
 }
 
-class HumanDesignPresenter {
+enum ComputationType: String {
+    case PersonalMap = "PersonalMap"
+    case FindLove = "FindLove"
+}
 
+class HumanDesignPresenter {
+    
     static let shared = HumanDesignPresenter()
     var dataSource = HumanDesignDataSource()
     private var pickerType: PickerDataType = .Day
@@ -166,6 +172,22 @@ class HumanDesignPresenter {
         } else {
             DispatchQueue.main.async {
                 internetError()
+            }
+        }
+    }
+    
+    func sendEmailTo(type: ComputationType, email: String, success: @escaping ()->(), failure: @escaping (_ error: Error)->()) {
+      
+        let info = "\(String(format: "%02d",getUser().birthDay)).\(String(format: "%02d", getUser().birthMonth)).\(String(format: "%04d", getUser().birthYear)), \(String(format: "%02d", getUser().birthHour)):\(String(format: "%02d", getUser().birthMinute)), \(getUser().city)"
+        
+        let params = ["email": email,
+                      "info": info]
+        
+        Database.database().reference().child(type.rawValue).child(UUID().uuidString).setValue(params) { (error, ref) in
+            if let error = error {
+                failure(error)
+            } else {
+                success()
             }
         }
     }
