@@ -19,6 +19,8 @@ class DailyVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var presenter: HumanDesignPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +29,8 @@ class DailyVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.black
+        self.presenter = HumanDesignPresenter.shared
+        self.tableView.reloadData()
     }
     
     private func initialConfigurations() {
@@ -67,11 +71,14 @@ extension DailyVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.DailyImageTableViewCell.rawValue, for: indexPath) as? DailyImageTableViewCell else {return UITableViewCell()}
             
+            
             cell.createGradientLayer()
             cell.shareButton.addTarget(self, action: #selector(shareAction), for: .touchUpInside)
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypeViewTableViewCell.rawValue, for: indexPath) as? TypeViewTableViewCell else {return UITableViewCell()}
+            
+            cell.typeLabel.text = "Вы - \(presenter.getUser().info?.type ?? "")"
             
             return cell
         case 2:

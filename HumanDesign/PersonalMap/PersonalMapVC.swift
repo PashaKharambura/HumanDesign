@@ -29,8 +29,9 @@ class PersonalMapVC: UIViewController {
     @IBOutlet weak var secondTitle: UILabel!
     @IBOutlet weak var secondSubtitle: UILabel!
     
-    
     private var viewState: ViewState = .getReport
+    
+    var presenter: HumanDesignPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,7 @@ class PersonalMapVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+        self.presenter = HumanDesignPresenter.shared
     }
     
     private func setInitialViewConfigurations() {

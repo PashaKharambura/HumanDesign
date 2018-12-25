@@ -11,8 +11,21 @@ import UIKit
 class DailyImageTableViewCell: UITableViewCell {
 
  
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var dayView: UIView!{didSet{dayView.layer.cornerRadius=6}}
+    @IBOutlet weak var dayLabel: UILabel! {
+        didSet{
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale(identifier: "ru_RU")
+            dateFormatter.dateFormat = "dd MMMM yyyy"
+            let stringDate = dateFormatter.string(from: Date())
+            dayLabel.text = stringDate
+        }
+    }
+    @IBOutlet weak var dayView: UIView!{
+        didSet{
+            dayView.layer.cornerRadius = 6
+            dayView.isUserInteractionEnabled = false
+        }
+    }
     @IBOutlet weak var dailyImage: UIImageView!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!

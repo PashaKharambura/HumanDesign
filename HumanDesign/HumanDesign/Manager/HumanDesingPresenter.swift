@@ -20,6 +20,7 @@ enum PickerDataType {
 
 class HumanDesignPresenter {
 
+    static let shared = HumanDesignPresenter()
     var dataSource = HumanDesignDataSource()
     private var pickerType: PickerDataType = .Day
 

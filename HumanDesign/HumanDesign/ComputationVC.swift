@@ -34,7 +34,7 @@ class ComputationVC: UIViewController {
     @IBOutlet weak var doneButton: UIButton! {didSet{doneButton.layer.cornerRadius = 25}}
     @IBOutlet weak var loaderView: UIView!{didSet{loaderView.isHidden = true}}
     
-    var presenter = HumanDesignPresenter()
+    var presenter = HumanDesignPresenter.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
