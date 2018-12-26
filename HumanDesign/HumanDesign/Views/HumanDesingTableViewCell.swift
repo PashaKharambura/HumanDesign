@@ -48,7 +48,7 @@ class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
     
     var figures: [GraphFigure] = []
-    var delegate: BodyGraphProtocol?
+    weak var delegate: BodyGraphProtocol?
     
     var activeRedNumbers: [Double] = [] {
         didSet {
