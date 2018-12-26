@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol BodyGraphProtocol {
+    func getImage(image: UIImage)
+}
+
 class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet weak var designTitleView: UIView! {didSet{designTitleView.layer.cornerRadius = 4 }}
     @IBOutlet weak var personalityTitleView: UIView! {didSet{personalityTitleView.layer.cornerRadius = 4 }}
@@ -44,6 +48,7 @@ class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet var leftBlueTriangularNumberCollection: [BodyGraphNumberView]!
     
     var figures: [GraphFigure] = []
+    var delegate: BodyGraphProtocol?
     
     var activeRedNumbers: [Double] = [] {
         didSet {
@@ -61,7 +66,6 @@ class HumanDesingTableViewCell: UITableViewCell {
     var activeNumbers: [ActiveBodyGraphNumber] = [] {
         didSet {
             reloadCellData()
-            
         }
     }
     
@@ -69,6 +73,7 @@ class HumanDesingTableViewCell: UITableViewCell {
         didSet {
             setFiguresObjects()
             setViewsColor()
+            delegate?.getImage(image: self.asImage())
         }
     }
     

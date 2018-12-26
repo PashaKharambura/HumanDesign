@@ -24,7 +24,8 @@ class HumanDesignVC: UIViewController {
     @IBOutlet weak var yourGraphTitle: UILabel!
     
     var presenter: HumanDesignPresenter?
-
+    var image: UIImage?
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -39,7 +40,7 @@ class HumanDesignVC: UIViewController {
     
     private func initialConfigurations() {
         configureTableView()
-        yourGraphTitle.text = ""
+        yourGraphTitle.text = "Расчет бодиграфа"
     }
     
     private func configureTableView() {
@@ -61,11 +62,13 @@ class HumanDesignVC: UIViewController {
     }
     
     @IBAction func shareAction(_ sender: Any) {
-        let firstActivityItem = "Best Human Design App"
-        let secondActivityItem = URL(string: "http://astroapi.ru/doc.html")!
-        
+        let firstActivityItem = "Я - \(presenter?.getUser().info?.type ?? ""), профайл - \(presenter?.getUser().info?.profile ?? "") \nУзнай свой дизайн с помощью приложения - {URL будет позже} "
+        var items: [Any] = [firstActivityItem]
+        if let image = self.image {
+            items.insert(image, at: 0)
+        }
         let activityViewController : UIActivityViewController = UIActivityViewController(
-            activityItems: [firstActivityItem, secondActivityItem], applicationActivities: nil)
+            activityItems: items, applicationActivities: nil)
         
         self.present(activityViewController, animated: true, completion: nil)
     }
@@ -96,6 +99,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
                 let red = userInfo.designGates
                 let blue = userInfo.personalGates
 
+                cell.delegate = self
                 cell.activeRedNumbers = red
                 cell.activeBlueNumbers = blue
                 var blueNumbers = [ActiveBodyGraphNumber]()
@@ -183,6 +187,11 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+extension HumanDesignVC: BodyGraphProtocol {
+    func getImage(image: UIImage) {
+        self.image = image
+    }
+}
 
 extension HumanDesignVC: TypesCollectionViewDelegate {
 
