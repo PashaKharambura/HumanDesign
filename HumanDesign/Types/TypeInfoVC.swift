@@ -57,7 +57,10 @@ class TypeInfoVC: UIViewController {
         
         self.present(activityViewController, animated: true, completion: nil)
     }
-    
+    @objc
+    private func fillPersonalMap(_ sender: UIButton) {
+        self.tabBarController?.selectedIndex = 1
+    }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
@@ -81,6 +84,7 @@ extension TypeInfoVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}
             
+            cell.button.addTarget(self, action: #selector(fillPersonalMap(_:)), for: .touchUpInside)
             return cell
         default:
             return UITableViewCell()

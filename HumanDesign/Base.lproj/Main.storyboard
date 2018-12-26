@@ -728,7 +728,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-iA-zjT">
-                                <rect key="frame" x="0.0" y="-21" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="-21" width="375" height="688"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -774,7 +774,6 @@
                     <connections>
                         <segue destination="aTC-Ik-wKR" kind="relationship" relationship="viewControllers" id="fB3-aA-qWk"/>
                         <segue destination="q97-dP-AQW" kind="relationship" relationship="viewControllers" id="ETv-9L-97f"/>
-                        <segue destination="fA5-XU-51c" kind="relationship" relationship="viewControllers" id="EDW-cg-B6y"/>
                         <segue destination="ftO-9H-TNH" kind="relationship" relationship="viewControllers" id="3pi-rO-ggf"/>
                         <segue destination="ITZ-nb-xGY" kind="relationship" relationship="viewControllers" id="wuY-A8-ylP"/>
                     </connections>

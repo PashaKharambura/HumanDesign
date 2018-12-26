@@ -58,6 +58,11 @@ class TypesVC: UIViewController {
         return .lightContent
     }
 
+    @objc
+    private func fillPersonalMap(_ sender: UIButton) {
+        self.tabBarController?.selectedIndex = 1
+    }
+    
 }
 
 extension TypesVC: UITableViewDelegate, UITableViewDataSource {
@@ -73,6 +78,7 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}
             
+            cell.button.addTarget(self, action: #selector(fillPersonalMap(_:)), for: .touchUpInside)
             return cell
         default:
             return UITableViewCell()

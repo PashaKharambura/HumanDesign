@@ -11,5 +11,6 @@ target 'HumanDesign' do
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'FacebookSDK'
 
 end
