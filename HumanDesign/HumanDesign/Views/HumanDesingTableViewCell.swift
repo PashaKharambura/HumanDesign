@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BodyGraphProtocol {
+protocol BodyGraphProtocol: class {
     func getImage(image: UIImage)
 }
 
