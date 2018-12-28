@@ -51,7 +51,7 @@ class FindLoveVC: UIViewController {
             tfBgView.isHidden = false
             secondTitle.isHidden = true
             okImageView.isHidden = true
-            getReportButton.setTitle("Заказать расчет", for: .normal)
+            getReportButton.setTitle(NSLocalizedString("Заказать расчет", comment: ""), for: .normal)
             
             return
         case .vaitReport:
@@ -59,7 +59,7 @@ class FindLoveVC: UIViewController {
             tfBgView.isHidden = true
             secondTitle.isHidden = false
             okImageView.isHidden = false
-            getReportButton.setTitle("Рассчитать бодиграф", for: .normal)
+            getReportButton.setTitle(NSLocalizedString("Рассчитать бодиграф", comment: ""), for: .normal)
             
             return
         }
@@ -78,10 +78,10 @@ class FindLoveVC: UIViewController {
                         self.showSimpleAlert(title: "Error", text: error.localizedDescription)
                     }
                 } else {
-                    showSimpleAlert(title: "Ошибка", text: "Введите корректную почту!")
+                    showSimpleAlert(title: errorTitle, text: NSLocalizedString("Введите корректную почту!", comment: ""))
                 }
             } else {
-                showSimpleAlert(title: "Ошибка", text: "Введите почту!")
+                showSimpleAlert(title: errorTitle, text: NSLocalizedString("Введите почту!", comment: ""))
             }
         }
     }

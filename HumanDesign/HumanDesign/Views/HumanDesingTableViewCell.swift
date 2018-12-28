@@ -15,8 +15,8 @@ protocol BodyGraphProtocol: class {
 class HumanDesingTableViewCell: UITableViewCell {
     @IBOutlet weak var designTitleView: UIView! {didSet{designTitleView.layer.cornerRadius = 4 }}
     @IBOutlet weak var personalityTitleView: UIView! {didSet{personalityTitleView.layer.cornerRadius = 4 }}
-    @IBOutlet weak var designTltleLabel: UILabel!
-    @IBOutlet weak var personalityTitleLabel: UILabel!
+    @IBOutlet weak var designTltleLabel: UILabel! {didSet{designTltleLabel.text = NSLocalizedString("ДИЗАЙН", comment: "")}}
+    @IBOutlet weak var personalityTitleLabel: UILabel!{didSet{personalityTitleLabel.text = NSLocalizedString("ЛИЧНОСТЬ", comment: "")}}
     
     @IBOutlet weak var firstFigure: UIImageView!  {didSet{firstFigure.setImageColor(color: .white)}}
     @IBOutlet weak var figureSecond: UIImageView!  {didSet{figureSecond.setImageColor(color: .white)}}

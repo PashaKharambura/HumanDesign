@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let errorTitle = NSLocalizedString("Ошибка", comment: "")
+
 class ComputationVC: UIViewController {
     
     @IBOutlet weak var dayLabel: UILabel!
@@ -71,10 +73,12 @@ class ComputationVC: UIViewController {
             self.performSegue(withIdentifier: "HumanDesignSegue", sender: nil)
         }, failure: { (error) in
             self.loaderView.isHidden = true
-            self.showSimpleAlert(title: "Ошибка", text: "Проверьте введенные данные")
+            let checkInputData = NSLocalizedString("Проверьте введенные данные", comment: "")
+            self.showSimpleAlert(title: errorTitle, text: checkInputData)
         }) {
             self.loaderView.isHidden = true
-            self.showSimpleAlert(title: "Проверьте соединение", text: "")
+            let checkInternet = NSLocalizedString("Проверьте соединение", comment: "")
+            self.showSimpleAlert(title: checkInternet, text: "")
         }
     }
     

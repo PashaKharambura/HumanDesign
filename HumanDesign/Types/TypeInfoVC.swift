@@ -76,13 +76,13 @@ extension TypeInfoVC: UITableViewDelegate, UITableViewDataSource {
             case .profile:
                 if let profile = UserProfileTypeManager.selectedProfile {
                     cell.typeImage.image = profile.image
-                    cell.subtitleLabel.text = "Знаменитости: \(profile.peoples)"
+                    cell.subtitleLabel.text = "\(NSLocalizedString("Знаменитости", comment: "")): \(profile.peoples)"
                     cell.titleLabel.text = profile.name
                 }
             case .type:
                 if let type = UserProfileTypeManager.selectedType {
                     cell.typeImage.image = type.image
-                    cell.subtitleLabel.text = "Знаменитости: \(type.peoples)"
+                    cell.subtitleLabel.text = "\(NSLocalizedString("Знаменитости", comment: "")): \(type.peoples)"
                     cell.titleLabel.text = type.name
                 }
             }

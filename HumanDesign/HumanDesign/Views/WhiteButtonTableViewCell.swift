@@ -10,7 +10,10 @@ import UIKit
 
 class WhiteButtonTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var button: UIButton! {didSet{button.layer.cornerRadius = 25}}
+    @IBOutlet weak var button: UIButton! {didSet{
+        button.layer.cornerRadius = 25
+        button.setTitle(NSLocalizedString("Смотреть все", comment: ""), for: .normal)
+        }}
     
     override func awakeFromNib() {
         super.awakeFromNib()

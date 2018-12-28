@@ -251,10 +251,10 @@ class HumanDesignDataSource {
         return days
     }
     func getMonths() -> [String] {
-        return ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+        return [NSLocalizedString("Январь", comment: ""),NSLocalizedString("Февраль", comment: ""),NSLocalizedString("Март", comment: ""),NSLocalizedString("Апрель", comment: ""),NSLocalizedString("Май", comment: ""),NSLocalizedString("Июнь", comment: ""),NSLocalizedString("Июль", comment: ""),NSLocalizedString("Август", comment: ""),NSLocalizedString("Сентябрь", comment: ""),NSLocalizedString("Октябрь", comment: ""),NSLocalizedString("Ноябрь", comment: ""),NSLocalizedString("Декабрь", comment: "")]
     }
     func getContries() -> [String] {
-        return ["Украина", "Россия"]
+        return [NSLocalizedString("Украина", comment: ""),NSLocalizedString("Россия", comment: "")]
     }
     func getUaPlaces() -> [String] {
         return CityManager.ukrainianPlaces
@@ -318,11 +318,11 @@ class UserProfileTypeManager {
 
 class ProfilesTypes {
     static let types: [TypeModel] = [
-        TypeModel(id: "projector", name: "Проектор", image: UIImage(named: "Проектор")!, info: "Проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор", peoples: "Бред Пит,Бред Пит,Бред Пит,Бред Пит"),
-        TypeModel(id: "reflector", name: "Рефлектор", image: UIImage(named: "Рефлектор")!, info: "Рефлектор,Рефлектор,Рефлектор,Рефлектор,Рефлектор,Рефлектор", peoples: "Джони Депп,Джони Депп,Джони Депп,Джони Депп"),
-        TypeModel(id: "manifestor", name: "Манифестор", image: UIImage(named: "Манифестор")!, info: "Манифестор,Манифестор,Манифестор,Манифестор,Манифестор,Манифестор,Манифестор", peoples: "Анджелина Джоли,Анджелина Джоли,Анджелина Джоли,Анджелина Джоли"),
-        TypeModel(id: "generator", name: "Генератор", image: UIImage(named: "Генератор")!, info: "Генератор,Генератор,Генератор,Генератор,Генератор,Генератор", peoples: "Леонардо Дикаприо,Леонардо Дикаприо,Леонардо Дикаприо,Леонардо Дикаприо"),
-        TypeModel(id: "mangenerator", name: "Манифестирующий генератор", image: UIImage(named: "Манифестирующий генератор")!, info: "Манифестирующий генератор,Манифестирующий генератор,Манифестирующий генератор,Манифестирующий генератор", peoples: "Джимм Керри,Джимм Керри,Джимм Керри,Джимм Керри")
+        TypeModel(id: "projector", name: NSLocalizedString("Проектор", comment: ""), image: UIImage(named: "Проектор")!, info: "Проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор,проектор", peoples: "Бред Пит,Бред Пит,Бред Пит,Бред Пит"),
+        TypeModel(id: "reflector", name: NSLocalizedString("Рефлектор", comment: ""), image: UIImage(named: "Рефлектор")!, info: "Рефлектор,Рефлектор,Рефлектор,Рефлектор,Рефлектор,Рефлектор", peoples: "Джони Депп,Джони Депп,Джони Депп,Джони Депп"),
+        TypeModel(id: "manifestor", name: NSLocalizedString("Манифестор", comment: ""), image: UIImage(named: "Манифестор")!, info: "Манифестор,Манифестор,Манифестор,Манифестор,Манифестор,Манифестор,Манифестор", peoples: "Анджелина Джоли,Анджелина Джоли,Анджелина Джоли,Анджелина Джоли"),
+        TypeModel(id: "generator", name: NSLocalizedString("Генератор", comment: ""), image: UIImage(named: "Генератор")!, info: "Генератор,Генератор,Генератор,Генератор,Генератор,Генератор", peoples: "Леонардо Дикаприо,Леонардо Дикаприо,Леонардо Дикаприо,Леонардо Дикаприо"),
+        TypeModel(id: "mangenerator", name: NSLocalizedString("Манифестирующий генератор", comment: ""), image: UIImage(named: "Манифестирующий генератор")!, info: "Манифестирующий генератор,Манифестирующий генератор,Манифестирующий генератор,Манифестирующий генератор", peoples: "Джимм Керри,Джимм Керри,Джимм Керри,Джимм Керри")
     ]
 }
 

@@ -1,0 +1,72 @@
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "4AO-tU-wuQ"; */
+"4AO-tU-wuQ.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "ЧЧ:ММ"; ObjectID = "7zM-Il-8P2"; */
+"7zM-Il-8P2.text" = "ГГ:ММ";
+
+/* Class = "UILabel"; text = "Персональный расчет карты"; ObjectID = "482-BR-mST"; */
+"482-BR-mST.text" = "Персональний розрахунок карти";
+
+/* Class = "UILabel"; text = "Ваш бодиграф"; ObjectID = "A89-tG-Tfh"; */
+"A89-tG-Tfh.text" = "Ваш бодіграф";
+
+/* Class = "UILabel"; text = "Место"; ObjectID = "EdA-EB-ihm"; */
+"EdA-EB-ihm.text" = "Місце";
+
+/* Class = "UILabel"; text = "Страна"; ObjectID = "eeD-kj-e5z"; */
+"eeD-kj-e5z.text" = "Країна";
+
+/* Class = "UILabel"; text = "Заявка отправлена"; ObjectID = "F0G-5m-uJl"; */
+"F0G-5m-uJl.text" = "Заявка відправлена";
+
+/* Class = "UILabel"; text = "Месяц"; ObjectID = "H2N-rz-jLA"; */
+"H2N-rz-jLA.text" = "Місяць";
+
+/* Class = "UILabel"; text = "Город"; ObjectID = "h7M-TN-Jc4"; */
+"h7M-TN-Jc4.text" = "Локація";
+
+/* Class = "UILabel"; text = "Число"; ObjectID = "H24-bs-IHy"; */
+"H24-bs-IHy.text" = "Число";
+
+/* Class = "UILabel"; text = "Время"; ObjectID = "jdo-PQ-NO9"; */
+"jdo-PQ-NO9.text" = "Час";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "kNN-cg-jyJ"; */
+"kNN-cg-jyJ.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Знаю примерно"; ObjectID = "kzg-7C-NKu"; */
+"kzg-7C-NKu.text" = "Знаю приблизно";
+
+/* Class = "UIButton"; normalTitle = "Расчитать"; ObjectID = "l3j-JV-dfp"; */
+"l3j-JV-dfp.normalTitle" = "Розрахувати";
+
+/* Class = "UILabel"; text = "Дата рождения"; ObjectID = "mSg-gt-Hij"; */
+"mSg-gt-Hij.text" = "Дата народження";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "odK-b2-A5c"; */
+"odK-b2-A5c.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.";
+
+/* Class = "UILabel"; text = "Расчет бодиграфа"; ObjectID = "Ps4-Zs-dQZ"; */
+"Ps4-Zs-dQZ.text" = "Розрахунок бодіграфу";
+
+/* Class = "UIButton"; normalTitle = "Заказать расчет"; ObjectID = "S7f-sj-OBO"; */
+"S7f-sj-OBO.normalTitle" = "Замовити розрахунок";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "sz3-Yc-Xkz"; */
+"sz3-Yc-Xkz.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.";
+
+/* Class = "UIButton"; normalTitle = "Оповестить"; ObjectID = "t55-JA-TX5"; */
+"t55-JA-TX5.normalTitle" = "Оповістити";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "WZx-6m-p70"; */
+"WZx-6m-p70.normalTitle" = "Ок";
+
+/* Class = "UILabel"; text = "Год"; ObjectID = "x7P-pm-arI"; */
+"x7P-pm-arI.text" = "Рік";
+
+/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "y7e-MJ-OLv"; */
+"y7e-MJ-OLv.text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.";
+
+/* Class = "UILabel"; text = "Заявка отправлена"; ObjectID = "YO0-4t-nN5"; */
+"YO0-4t-nN5.text" = "Заявка Відправлена";
+

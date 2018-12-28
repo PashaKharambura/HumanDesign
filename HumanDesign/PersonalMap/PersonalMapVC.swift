@@ -64,7 +64,8 @@ class PersonalMapVC: UIViewController {
             secondTitle.isHidden = true
             secondSubtitle.isHidden = true
             okImageView.isHidden = true
-            getReportButton.setTitle("Заказать расчет", for: .normal)
+            let applyForComput = NSLocalizedString("Заказать расчет", comment: "")
+            getReportButton.setTitle(applyForComput, for: .normal)
             
             return
         case .vaitReport:
@@ -75,7 +76,8 @@ class PersonalMapVC: UIViewController {
             secondTitle.isHidden = false
             secondSubtitle.isHidden = false
             okImageView.isHidden = false
-            getReportButton.setTitle("Рассчитать бодиграф", for: .normal)
+            let compGraph = NSLocalizedString("Рассчитать бодиграф", comment: "")
+            getReportButton.setTitle(compGraph, for: .normal)
             
             return
         }
@@ -91,13 +93,13 @@ class PersonalMapVC: UIViewController {
                         self.viewState = .vaitReport
                         self.setViewElementsActive(state: self.viewState)
                     }) { (error) in
-                        self.showSimpleAlert(title: "Error", text: error.localizedDescription)
+                        self.showSimpleAlert(title: errorTitle, text: error.localizedDescription)
                     }
                 } else {
-                    showSimpleAlert(title: "Ошибка", text: "Введите корректную почту!")
+                    showSimpleAlert(title: errorTitle, text: NSLocalizedString("Введите корректную почту!", comment: ""))
                 }
             } else {
-                showSimpleAlert(title: "Ошибка", text: "Введите почту!")
+                showSimpleAlert(title: errorTitle, text: NSLocalizedString("Введите почту!", comment: ""))
             }
         }
 

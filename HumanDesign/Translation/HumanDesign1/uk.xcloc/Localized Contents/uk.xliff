@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="HumanDesign/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="uk">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="rNp-MT-zhD.text">
+        <source>Узнай какой вы на самом деле!</source>
+        <target>Дізнайся, який ти насправді!</target>
+        <note>Class = "UILabel"; text = "Узнай какой вы на самом деле!"; ObjectID = "rNp-MT-zhD";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="HumanDesign/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="uk">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="4AO-tU-wuQ.placeholder">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Class = "UITextField"; placeholder = "Email"; ObjectID = "4AO-tU-wuQ";</note>
+      </trans-unit>
+      <trans-unit id="7zM-Il-8P2.text">
+        <source>ЧЧ:ММ</source>
+        <target>ГГ:ММ</target>
+        <note>Class = "UILabel"; text = "ЧЧ:ММ"; ObjectID = "7zM-Il-8P2";</note>
+      </trans-unit>
+      <trans-unit id="482-BR-mST.text">
+        <source>Персональный расчет карты</source>
+        <target>Персональний розрахунок карти</target>
+        <note>Class = "UILabel"; text = "Персональный расчет карты"; ObjectID = "482-BR-mST";</note>
+      </trans-unit>
+      <trans-unit id="A89-tG-Tfh.text">
+        <source>Ваш бодиграф</source>
+        <target>Ваш бодіграф</target>
+        <note>Class = "UILabel"; text = "Ваш бодиграф"; ObjectID = "A89-tG-Tfh";</note>
+      </trans-unit>
+      <trans-unit id="EdA-EB-ihm.text">
+        <source>Место</source>
+        <target>Місце</target>
+        <note>Class = "UILabel"; text = "Место"; ObjectID = "EdA-EB-ihm";</note>
+      </trans-unit>
+      <trans-unit id="F0G-5m-uJl.text">
+        <source>Заявка отправлена</source>
+        <target>Заявка відправлена</target>
+        <note>Class = "UILabel"; text = "Заявка отправлена"; ObjectID = "F0G-5m-uJl";</note>
+      </trans-unit>
+      <trans-unit id="H2N-rz-jLA.text">
+        <source>Месяц</source>
+        <target>Місяць</target>
+        <note>Class = "UILabel"; text = "Месяц"; ObjectID = "H2N-rz-jLA";</note>
+      </trans-unit>
+      <trans-unit id="H24-bs-IHy.text">
+        <source>Число</source>
+        <target>Число</target>
+        <note>Class = "UILabel"; text = "Число"; ObjectID = "H24-bs-IHy";</note>
+      </trans-unit>
+      <trans-unit id="Ps4-Zs-dQZ.text">
+        <source>Расчет бодиграфа</source>
+        <target>Розрахунок бодіграфу</target>
+        <note>Class = "UILabel"; text = "Расчет бодиграфа"; ObjectID = "Ps4-Zs-dQZ";</note>
+      </trans-unit>
+      <trans-unit id="S7f-sj-OBO.normalTitle">
+        <source>Заказать расчет</source>
+        <target>Замовити розрахунок</target>
+        <note>Class = "UIButton"; normalTitle = "Заказать расчет"; ObjectID = "S7f-sj-OBO";</note>
+      </trans-unit>
+      <trans-unit id="WZx-6m-p70.normalTitle">
+        <source>Done</source>
+        <target>Ок</target>
+        <note>Class = "UIButton"; normalTitle = "Done"; ObjectID = "WZx-6m-p70";</note>
+      </trans-unit>
+      <trans-unit id="YO0-4t-nN5.text">
+        <source>Заявка отправлена</source>
+        <target>Заявка Відправлена</target>
+        <note>Class = "UILabel"; text = "Заявка отправлена"; ObjectID = "YO0-4t-nN5";</note>
+      </trans-unit>
+      <trans-unit id="eeD-kj-e5z.text">
+        <source>Страна</source>
+        <target>Країна</target>
+        <note>Class = "UILabel"; text = "Страна"; ObjectID = "eeD-kj-e5z";</note>
+      </trans-unit>
+      <trans-unit id="h7M-TN-Jc4.text">
+        <source>Город</source>
+        <target>Локація</target>
+        <note>Class = "UILabel"; text = "Город"; ObjectID = "h7M-TN-Jc4";</note>
+      </trans-unit>
+      <trans-unit id="jdo-PQ-NO9.text">
+        <source>Время</source>
+        <target>Час</target>
+        <note>Class = "UILabel"; text = "Время"; ObjectID = "jdo-PQ-NO9";</note>
+      </trans-unit>
+      <trans-unit id="kNN-cg-jyJ.placeholder">
+        <source>Email</source>
+        <target>Email</target>
+        <note>Class = "UITextField"; placeholder = "Email"; ObjectID = "kNN-cg-jyJ";</note>
+      </trans-unit>
+      <trans-unit id="kzg-7C-NKu.text">
+        <source>Знаю примерно</source>
+        <target>Знаю приблизно</target>
+        <note>Class = "UILabel"; text = "Знаю примерно"; ObjectID = "kzg-7C-NKu";</note>
+      </trans-unit>
+      <trans-unit id="l3j-JV-dfp.normalTitle">
+        <source>Расчитать</source>
+        <target>Розрахувати</target>
+        <note>Class = "UIButton"; normalTitle = "Расчитать"; ObjectID = "l3j-JV-dfp";</note>
+      </trans-unit>
+      <trans-unit id="mSg-gt-Hij.text">
+        <source>Дата рождения</source>
+        <target>Дата народження</target>
+        <note>Class = "UILabel"; text = "Дата рождения"; ObjectID = "mSg-gt-Hij";</note>
+      </trans-unit>
+      <trans-unit id="odK-b2-A5c.text">
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</source>
+        <target>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</target>
+        <note>Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "odK-b2-A5c";</note>
+      </trans-unit>
+      <trans-unit id="sz3-Yc-Xkz.text">
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</source>
+        <target>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</target>
+        <note>Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "sz3-Yc-Xkz";</note>
+      </trans-unit>
+      <trans-unit id="t55-JA-TX5.normalTitle">
+        <source>Оповестить</source>
+        <target>Оповістити</target>
+        <note>Class = "UIButton"; normalTitle = "Оповестить"; ObjectID = "t55-JA-TX5";</note>
+      </trans-unit>
+      <trans-unit id="x7P-pm-arI.text">
+        <source>Год</source>
+        <target>Рік</target>
+        <note>Class = "UILabel"; text = "Год"; ObjectID = "x7P-pm-arI";</note>
+      </trans-unit>
+      <trans-unit id="y7e-MJ-OLv.text">
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</source>
+        <target>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</target>
+        <note>Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."; ObjectID = "y7e-MJ-OLv";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="HumanDesign/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="uk">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="HumanDesign/en.lproj/Localizable.strings" source-language="en" datatype="plaintext" target-language="uk">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="Август">
+        <source>Август</source>
+        <target>Серпень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Апрель">
+        <source>Апрель</source>
+        <target>Квітень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ваш бодиграф">
+        <source>Ваш бодиграф</source>
+        <target>Ваш бодіграф</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ваш профиль">
+        <source>Ваш профиль</source>
+        <target>Ваш профіль</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ваш тип">
+        <source>Ваш тип</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Вашe определение">
+        <source>Вашe определение</source>
+        <target>Ваше визначення</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Введите корректную почту!">
+        <source>Введите корректную почту!</source>
+        <target>Введіть правильну пошту</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Введите почту!">
+        <source>Введите почту!</source>
+        <target>Введіть пошту</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Генератор">
+        <source>Генератор</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ДИЗАЙН">
+        <source>ДИЗАЙН</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Декабрь">
+        <source>Декабрь</source>
+        <target>Грудень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Заказать расчет">
+        <source>Заказать расчет</source>
+        <target>Замовити розрахунок</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Заполнить анкету">
+        <source>Заполнить анкету</source>
+        <target>Заповнити анкету</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Знаменитости">
+        <source>Знаменитости</source>
+        <target>Знаменитості</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Июль">
+        <source>Июль</source>
+        <target>Липень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Июнь">
+        <source>Июнь</source>
+        <target>Червень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ЛИЧНОСТЬ">
+        <source>ЛИЧНОСТЬ</source>
+        <target>ОСОБИСТІСТЬ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Май">
+        <source>Май</source>
+        <target>Травень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Манифестирующий генератор">
+        <source>Манифестирующий генератор</source>
+        <target>Маніфестуючий генератор</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Манифестор">
+        <source>Манифестор</source>
+        <target>Маніфестор</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Март">
+        <source>Март</source>
+        <target>Березень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ноябрь">
+        <source>Ноябрь</source>
+        <target>Листопад</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Октябрь">
+        <source>Октябрь</source>
+        <target>Жовтень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ошибка">
+        <source>Ошибка</source>
+        <target>Помилка</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Проверьте введенные данные">
+        <source>Проверьте введенные данные</source>
+        <target>Провірте введені дані</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Проверьте соединение">
+        <source>Проверьте соединение</source>
+        <target>Провірте з'єднання</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Проектор">
+        <source>Проектор</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Рассчитать бодиграф">
+        <source>Рассчитать бодиграф</source>
+        <target>Розрахувати бодіграф</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Рефлектор">
+        <source>Рефлектор</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Россия">
+        <source>Россия</source>
+        <target>Росія</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Сентябрь">
+        <source>Сентябрь</source>
+        <target>Вересень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Смотреть все">
+        <source>Смотреть все</source>
+        <target>Дивитись всі</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Украина">
+        <source>Украина</source>
+        <target>Україна</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Февраль">
+        <source>Февраль</source>
+        <target>Лютий</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Хотите персональный расчет карты?">
+        <source>Хотите персональный расчет карты?</source>
+        <target>Бажаєте персональний розрахунок карти?</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Январь">
+        <source>Январь</source>
+        <target>Січень</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

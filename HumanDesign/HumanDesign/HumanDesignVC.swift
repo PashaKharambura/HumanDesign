@@ -44,7 +44,6 @@ class HumanDesignVC: UIViewController {
     
     private func initialConfigurations() {
         configureTableView()
-        yourGraphTitle.text = "Расчет бодиграфа"
     }
     
     private func configureTableView() {
@@ -109,7 +108,8 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesHeaderTextInfoTableViewCell.rawValue, for: indexPath) as? TypesHeaderTextInfoTableViewCell else {return UITableViewCell()}
             
-            cell.TitleLabel.text = "Ваш бодиграф"
+            let yourBodyGraph = NSLocalizedString("Ваш бодиграф", comment: "")
+            cell.TitleLabel.text = yourBodyGraph
             
             let bInfo = "\(String(format: "%02d",presenter?.getUser().birthDay ?? 0)).\(String(format: "%02d",presenter?.getUser().birthMonth ?? 0)).\(String(format: "%04d",presenter?.getUser().birthYear ?? 0)), \(String(format: "%02d",presenter?.getUser().birthHour ?? 0)):\(String(format: "%02d", presenter?.getUser().birthMinute ?? 0)), \(presenter?.getUser().city ?? "")"
             cell.lastCalculationLabel.text = bInfo
@@ -165,7 +165,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TitleTableViewCell.rawValue, for: indexPath) as? TitleTableViewCell else {return UITableViewCell()}
-            
+            cell.titleLabel.text = NSLocalizedString("Типы личности", comment: "")
             return cell
         case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}

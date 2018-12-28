@@ -12,8 +12,11 @@ class HelperViewTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var mainView: UIView! {didSet{mainView.layer.cornerRadius = 10}}
-    @IBOutlet weak var headerLabel: UILabel!
-    @IBOutlet weak var button: UIButton!{didSet{button.layer.cornerRadius = 25}}
+    @IBOutlet weak var headerLabel: UILabel! {didSet{headerLabel.text = NSLocalizedString("Хотите персональный расчет карты?", comment: "")}}
+    @IBOutlet weak var button: UIButton!{didSet{
+        button.layer.cornerRadius = 25
+        button.setTitle(NSLocalizedString("Заполнить анкету", comment: ""), for: .normal)
+        }}
 
     
     override func awakeFromNib() {

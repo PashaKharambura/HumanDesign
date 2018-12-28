@@ -17,6 +17,7 @@ class TypesVC: UIViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
+    var presenter: HumanDesignPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class TypesVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.black
+        presenter = HumanDesignPresenter.shared
     }
     
     private func initialConfigurations() {
@@ -70,6 +72,9 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesHeaderTextInfoTableViewCell.rawValue, for: indexPath) as? TypesHeaderTextInfoTableViewCell else {return UITableViewCell()}
+            cell.TitleLabel.text = NSLocalizedString("Типы личностей", comment: "")
+            cell.lastCalculationLabel.text = "\(NSLocalizedString("Последний расчет", comment: "")): \(UserProfileTypeManager.getType(by: presenter.getUser().info?.type ?? "")?.name ?? "\(NSLocalizedString("Проведите расчет", comment: ""))")"
+            cell.additionalInfoLabel.text = NSLocalizedString("Тип является одним из ключевых понятий дизайна человека. Каждый генетический тип имеет свою уникальную стратегию в жизни.", comment: "")
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}

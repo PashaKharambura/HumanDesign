@@ -50,6 +50,7 @@
 		29A8446821C822FD00D24DBA /* HumanDesignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446721C822FD00D24DBA /* HumanDesignVC.swift */; };
 		29A8446F21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */; };
 		29A8447021C8343C00D24DBA /* TripleSpecificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A8446E21C8343C00D24DBA /* TripleSpecificationTableViewCell.xib */; };
+		29BB467021D68AEE00AA40E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29BB466E21D68AEE00AA40E5 /* Localizable.strings */; };
 		29D6753621C56B920059A398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753521C56B920059A398 /* AppDelegate.swift */; };
 		29D6753821C56B920059A398 /* ComputationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753721C56B920059A398 /* ComputationVC.swift */; };
 		29D6753B21C56B920059A398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753921C56B920059A398 /* Main.storyboard */; };
@@ -109,6 +110,9 @@
 		29A8446721C822FD00D24DBA /* HumanDesignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesignVC.swift; sourceTree = "<group>"; };
 		29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleSpecificationTableViewCell.swift; sourceTree = "<group>"; };
 		29A8446E21C8343C00D24DBA /* TripleSpecificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripleSpecificationTableViewCell.xib; sourceTree = "<group>"; };
+		29BB466921D676C400AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		29BB466A21D676C400AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		29BB466F21D68AEE00AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		29D6753221C56B920059A398 /* HumanDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D6753521C56B920059A398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D6753721C56B920059A398 /* ComputationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationVC.swift; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 				29D6753E21C56B940059A398 /* LaunchScreen.storyboard */,
 				29D6753C21C56B940059A398 /* Assets.xcassets */,
 				29D6754121C56B940059A398 /* Info.plist */,
+				29BB466E21D68AEE00AA40E5 /* Localizable.strings */,
 				2913458121D2A9E8005C9758 /* GoogleService-Info.plist */,
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
@@ -370,6 +375,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 29D6752921C56B920059A398;
 			productRefGroup = 29D6753321C56B920059A398 /* Products */;
@@ -391,6 +397,7 @@
 				294738D221C7B4C700DE262C /* TypesCollectionTableViewCell.xib in Resources */,
 				29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */,
 				592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */,
+				29BB467021D68AEE00AA40E5 /* Localizable.strings in Resources */,
 				2946868321C83A88003227B9 /* TitleTableViewCell.xib in Resources */,
 				294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */,
 				29D6753D21C56B940059A398 /* Assets.xcassets in Resources */,
@@ -516,10 +523,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		29BB466E21D68AEE00AA40E5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29BB466F21D68AEE00AA40E5 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		29D6753921C56B920059A398 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				29EBE6AE21D66C2600FE9F4A /* Base */,
+				29BB466921D676C400AA40E5 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -528,6 +544,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				29EBE6AF21D66C2600FE9F4A /* Base */,
+				29BB466A21D676C400AA40E5 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
