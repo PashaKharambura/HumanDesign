@@ -8,11 +8,18 @@
 
 import UIKit
 
-class TripleSpecificationTableViewCell: UITableViewCell {
+class TripleSpecificationTableViewCell: UITableViewCell, UITextFieldDelegate {
 
+    @IBOutlet weak var yourTypeTitle: UILabel!
+    @IBOutlet weak var yourProfileTitle: UILabel!
+    @IBOutlet weak var yourDefinitionTitle: UILabel!
+    
     @IBOutlet weak var yourTypeLabel: UILabel!
     @IBOutlet weak var yourProfileLabel: UILabel!
     @IBOutlet weak var yourDefinitionLabel: UILabel!
+    
+    @IBOutlet weak var selectTypeButton: UIButton!
+    @IBOutlet weak var selectProvileButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +31,7 @@ class TripleSpecificationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

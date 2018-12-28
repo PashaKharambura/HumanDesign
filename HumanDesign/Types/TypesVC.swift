@@ -88,7 +88,7 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 1:
-            return (self.view.frame.size.width/2)*2.5
+            return (self.view.frame.size.width/2)*3.75
         case 2:
             return (self.view.frame.size.width)*0.75
         

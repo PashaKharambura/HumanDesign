@@ -55,6 +55,7 @@
 		29D6753B21C56B920059A398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753921C56B920059A398 /* Main.storyboard */; };
 		29D6753D21C56B940059A398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753C21C56B940059A398 /* Assets.xcassets */; };
 		29D6754021C56B940059A398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D6753E21C56B940059A398 /* LaunchScreen.storyboard */; };
+		29EBE6A921D64D5700FE9F4A /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBE6A821D64D5700FE9F4A /* TypeModel.swift */; };
 		592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */; };
 		592B00D621CBF57E00F4DBB1 /* BodyGraphNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */; };
 		592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */; };
@@ -111,10 +112,11 @@
 		29D6753221C56B920059A398 /* HumanDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D6753521C56B920059A398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D6753721C56B920059A398 /* ComputationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputationVC.swift; sourceTree = "<group>"; };
-		29D6753A21C56B920059A398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29D6753C21C56B940059A398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		29D6753F21C56B940059A398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D6754121C56B940059A398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EBE6A821D64D5700FE9F4A /* TypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
+		29EBE6AE21D66C2600FE9F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29EBE6AF21D66C2600FE9F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57838E3ECA75502F4F2FDE85 /* Pods-HumanDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanDesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumanDesign/Pods-HumanDesign.debug.xcconfig"; sourceTree = "<group>"; };
 		592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyGraphNumberView.swift; sourceTree = "<group>"; };
 		592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyGraphNumberView.xib; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				298E547121C9201900DF30E4 /* UACities.json */,
 				298E546F21C8FC6F00DF30E4 /* UserModel.swift */,
+				29EBE6A821D64D5700FE9F4A /* TypeModel.swift */,
 				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
 				294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */,
 				294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */,
@@ -214,7 +217,6 @@
 		29A8446221C8211100D24DBA /* HumanDesign */ = {
 			isa = PBXGroup;
 			children = (
-				294B8FF321CF93E100BA7CC5 /* Manager */,
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				29A8446721C822FD00D24DBA /* HumanDesignVC.swift */,
 				59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */,
@@ -284,6 +286,7 @@
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
 				294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */,
+				294B8FF321CF93E100BA7CC5 /* Manager */,
 				294B8FF221CF93B500BA7CC5 /* Network */,
 				29A8446221C8211100D24DBA /* HumanDesign */,
 				29A8446A21C8234500D24DBA /* PersonalMap */,
@@ -500,6 +503,7 @@
 				592B00D321CBF54B00F4DBB1 /* BodyGraphNumberView.swift in Sources */,
 				294694B021C6BFE300720049 /* TypesVC.swift in Sources */,
 				294694B221C6BFFC00720049 /* DailyVC.swift in Sources */,
+				29EBE6A921D64D5700FE9F4A /* TypeModel.swift in Sources */,
 				294738EB21C7F60F00DE262C /* DailyImageTableViewCell.swift in Sources */,
 				294B8FF921CFB0D100BA7CC5 /* InternetRechability.swift in Sources */,
 				29A8446521C8213D00D24DBA /* HumanDesingTableViewCell.swift in Sources */,
@@ -515,7 +519,7 @@
 		29D6753921C56B920059A398 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29D6753A21C56B920059A398 /* Base */,
+				29EBE6AE21D66C2600FE9F4A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -523,7 +527,7 @@
 		29D6753E21C56B940059A398 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29D6753F21C56B940059A398 /* Base */,
+				29EBE6AF21D66C2600FE9F4A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -535,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -596,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -99,21 +99,40 @@
                             </stackView>
                         </subviews>
                     </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gby-pX-iYw">
+                        <rect key="frame" x="16" y="11" width="305" height="44"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk3-bt-CNz">
+                        <rect key="frame" x="16" y="71" width="305" height="44"/>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="gby-pX-iYw" firstAttribute="leading" secondItem="76I-Zo-HKU" secondAttribute="leading" id="6sE-dg-dWe"/>
+                    <constraint firstItem="yk3-bt-CNz" firstAttribute="bottom" secondItem="s58-By-1bL" secondAttribute="bottom" id="7cX-Ji-usM"/>
+                    <constraint firstItem="yk3-bt-CNz" firstAttribute="leading" secondItem="s58-By-1bL" secondAttribute="leading" id="BCW-Ti-Q7F"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Nnm-HN-bNf" secondAttribute="bottom" id="G0d-hX-b1X"/>
+                    <constraint firstItem="yk3-bt-CNz" firstAttribute="top" secondItem="pae-UF-hj8" secondAttribute="top" id="NJt-sQ-NY3"/>
                     <constraint firstItem="Nnm-HN-bNf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QCO-4K-gfC"/>
+                    <constraint firstItem="gby-pX-iYw" firstAttribute="bottom" secondItem="76I-Zo-HKU" secondAttribute="bottom" id="S7o-pc-3cj"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Nnm-HN-bNf" secondAttribute="trailing" id="Zne-lK-UCH"/>
+                    <constraint firstItem="gby-pX-iYw" firstAttribute="top" secondItem="BrF-bk-gK1" secondAttribute="top" id="hlu-gc-xQn"/>
+                    <constraint firstItem="gby-pX-iYw" firstAttribute="trailing" secondItem="76I-Zo-HKU" secondAttribute="trailing" id="jyp-KZ-XHI"/>
+                    <constraint firstItem="yk3-bt-CNz" firstAttribute="trailing" secondItem="s58-By-1bL" secondAttribute="trailing" id="k3z-QM-MXi"/>
                     <constraint firstItem="Nnm-HN-bNf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wLJ-py-PHa"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="selectProvileButton" destination="yk3-bt-CNz" id="auU-1m-qSA"/>
+                <outlet property="selectTypeButton" destination="gby-pX-iYw" id="IQ6-vX-odM"/>
                 <outlet property="yourDefinitionLabel" destination="cak-pt-wnZ" id="lc0-dQ-2xh"/>
+                <outlet property="yourDefinitionTitle" destination="69y-QP-LjO" id="Bni-5q-qdF"/>
                 <outlet property="yourProfileLabel" destination="s58-By-1bL" id="uG8-gh-47c"/>
+                <outlet property="yourProfileTitle" destination="pae-UF-hj8" id="wCi-t8-Eea"/>
                 <outlet property="yourTypeLabel" destination="76I-Zo-HKU" id="luw-pB-EXx"/>
+                <outlet property="yourTypeTitle" destination="BrF-bk-gK1" id="t2p-u4-iKC"/>
             </connections>
             <point key="canvasLocation" x="-23.199999999999999" y="1.7991004497751126"/>
         </tableViewCell>

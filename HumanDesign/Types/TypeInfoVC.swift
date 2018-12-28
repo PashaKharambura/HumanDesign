@@ -10,7 +10,6 @@ import UIKit
 
 class TypeInfoVC: UIViewController {
 
-    
     private enum CellIDS: String {
         case TextInfoTableViewCell = "TextInfoTableViewCell"
         case DetailedTypeImageTableViewCell = "DetailedTypeImageTableViewCell"
@@ -62,7 +61,7 @@ class TypeInfoVC: UIViewController {
         self.tabBarController?.selectedIndex = 1
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
     
 }
@@ -73,13 +72,37 @@ extension TypeInfoVC: UITableViewDelegate, UITableViewDataSource {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.DetailedTypeImageTableViewCell.rawValue, for: indexPath) as? DetailedTypeImageTableViewCell else {return UITableViewCell()}
             
+            switch UserProfileTypeManager.state {
+            case .profile:
+                if let profile = UserProfileTypeManager.selectedProfile {
+                    cell.typeImage.image = profile.image
+                    cell.subtitleLabel.text = "Знаменитости: \(profile.peoples)"
+                    cell.titleLabel.text = profile.name
+                }
+            case .type:
+                if let type = UserProfileTypeManager.selectedType {
+                    cell.typeImage.image = type.image
+                    cell.subtitleLabel.text = "Знаменитости: \(type.peoples)"
+                    cell.titleLabel.text = type.name
+                }
+            }
+            
             cell.createGradientLayer()
             cell.backButton.addTarget(self, action: #selector(backAction), for: .touchUpInside)
             cell.shareButton.addTarget(self, action: #selector(shareAction), for: .touchUpInside)
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
-
+            switch UserProfileTypeManager.state {
+            case .profile:
+                if let profile = UserProfileTypeManager.selectedProfile {
+                    cell.textInfoLabel.text = profile.info
+                }
+            case .type:
+                if let type = UserProfileTypeManager.selectedType {
+                    cell.textInfoLabel.text = type.info
+                }
+            }
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}

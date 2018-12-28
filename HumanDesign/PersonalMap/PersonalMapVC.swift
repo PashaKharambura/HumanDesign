@@ -39,6 +39,10 @@ class PersonalMapVC: UIViewController {
         setInitialViewConfigurations()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
         self.presenter = HumanDesignPresenter.shared

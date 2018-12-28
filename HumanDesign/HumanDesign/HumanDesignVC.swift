@@ -38,6 +38,10 @@ class HumanDesignVC: UIViewController {
         self.tabBarController?.tabBar.barTintColor = UIColor.black
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     private func initialConfigurations() {
         configureTableView()
         yourGraphTitle.text = "Расчет бодиграфа"
@@ -62,7 +66,8 @@ class HumanDesignVC: UIViewController {
     }
     
     @IBAction func shareAction(_ sender: Any) {
-        let firstActivityItem = "Я - \(presenter?.getUser().info?.type ?? ""), профайл - \(presenter?.getUser().info?.profile ?? "") \nУзнай свой дизайн с помощью приложения - {URL будет позже} "
+        let type = UserProfileTypeManager.getType(by: presenter?.getUser().info?.type ?? "")
+        let firstActivityItem = "Я - \(type?.name ?? ""), профайл - \(presenter?.getUser().info?.profile ?? "") \nУзнай свой дизайн с помощью приложения - {URL будет позже} "
         var items: [Any] = [firstActivityItem]
         if let image = self.image {
             items.insert(image, at: 0)
@@ -72,6 +77,27 @@ class HumanDesignVC: UIViewController {
         
         self.present(activityViewController, animated: true, completion: nil)
     }
+    
+    @objc
+    private func showAllTypes() {
+        self.tabBarController?.selectedIndex = 2
+    }
+    @objc
+    private func selectProfile() {
+        UserProfileTypeManager.state = .profile
+        UserProfileTypeManager.selectedProfile = UserProfileTypeManager.getProfile(by: presenter?.getUser().info?.profile ?? "")
+
+        self.performSegue(withIdentifier: "showMyTypeInfoSegue", sender: nil)
+    }
+    @objc
+    private func selectUserType() {
+        UserProfileTypeManager.state = .type
+        UserProfileTypeManager.selectedType = UserProfileTypeManager.getType(by: presenter?.getUser().info?.type ?? "")
+        
+        self.performSegue(withIdentifier: "showMyTypeInfoSegue", sender: nil)
+    }
+    
+    
 }
 
 extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
@@ -83,7 +109,6 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesHeaderTextInfoTableViewCell.rawValue, for: indexPath) as? TypesHeaderTextInfoTableViewCell else {return UITableViewCell()}
             
-//            cell.TitleLabel.text = "Вы – \(presenter?.getUser().info?.authority ?? "")"
             cell.TitleLabel.text = "Ваш бодиграф"
             
             let bInfo = "\(String(format: "%02d",presenter?.getUser().birthDay ?? 0)).\(String(format: "%02d",presenter?.getUser().birthMonth ?? 0)).\(String(format: "%04d",presenter?.getUser().birthYear ?? 0)), \(String(format: "%02d",presenter?.getUser().birthHour ?? 0)):\(String(format: "%02d", presenter?.getUser().birthMinute ?? 0)), \(presenter?.getUser().city ?? "")"
@@ -117,13 +142,22 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
-            cell.textInfoLabel.text = "Настоящая динамо-машина с самым большим энергетическим потенциалом среди всех типов. Человек-аномалия, пятый элемент. Вы не умеете ждать, любую ситуацию вы готовы брать в свои руки и быть уверенным на все 100, что результат будет ошеломляющим. Но часто жизнь преподносит вам уроки, которые необходимо учитывать."
+            
+            if let info = presenter?.getUser().info {
+                cell.textInfoLabel.text = UserProfileTypeManager.getType(by: info.type)?.info
+            }
+            
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TripleSpecificationTableViewCell.rawValue, for: indexPath) as? TripleSpecificationTableViewCell else {return UITableViewCell()}
-            cell.yourTypeLabel.text = presenter?.getUser().info?.type
-            cell.yourProfileLabel.text = presenter?.getUser().info?.profile
-            cell.yourDefinitionLabel.text = "\(presenter?.getUser().info?.definition ?? 1)"
+            if let info = presenter?.getUser().info {
+                cell.yourTypeLabel.text = UserProfileTypeManager.getType(by: info.type)?.name
+                cell.yourProfileLabel.text = presenter?.getUser().info?.profile
+                cell.yourDefinitionLabel.text = "\(presenter?.getUser().info?.definition ?? 1)"
+                
+                cell.selectTypeButton.addTarget(self, action: #selector(selectUserType), for: .touchUpInside)
+                cell.selectProvileButton.addTarget(self, action: #selector(selectProfile), for: .touchUpInside)
+            }
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}
@@ -135,10 +169,14 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}
+    
             cell.delegate = self
+    
             return cell
         case 7:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.WhiteButtonTableViewCell.rawValue, for: indexPath) as? WhiteButtonTableViewCell else {return UITableViewCell()}
+           
+            cell.button.addTarget(self, action: #selector(showAllTypes), for: .touchUpInside)
             
             return cell
         default:
@@ -158,7 +196,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         case 5:
             return 75
         case 6:
-            return (self.view.frame.size.width/2)*(2.5)
+            return (self.view.frame.size.width/2)*(3.75)
         case 7:
             return 100
         default:

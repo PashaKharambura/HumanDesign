@@ -34,17 +34,23 @@ class TypesCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return UserProfileTypeManager.getTypesCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TypeCollectionViewCell", for: indexPath) as? TypeCollectionViewCell else {return UICollectionViewCell()}
+        
+        let type = UserProfileTypeManager.types[indexPath.row]
+        cell.titleLabel.text = type.name
+        cell.subtitleLabel.text = type.peoples
+        cell.imageView.image = type.image
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.selectType(index: indexPath.row)
+        UserProfileTypeManager.selectedType = UserProfileTypeManager.types[indexPath.row]
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
