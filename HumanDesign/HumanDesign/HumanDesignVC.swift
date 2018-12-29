@@ -146,7 +146,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
             
             if let info = presenter?.getUser().info {
-                cell.textInfoLabel.text = UserProfileTypeManager.getType(by: info.type)?.info.components(separatedBy: "\n\n").first
+                cell.textInfoLabel.text = (UserProfileTypeManager.getType(by: info.type)?.info ?? "") + "\n\n\n" + (UserProfileTypeManager.getProfile(by: info.profile)?.info ?? "")
             }
             
             return cell
@@ -173,7 +173,8 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}
     
             cell.delegate = self
-    
+            cell.state = .type
+            cell.collectionView.isScrollEnabled = false
             return cell
         case 7:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.WhiteButtonTableViewCell.rawValue, for: indexPath) as? WhiteButtonTableViewCell else {return UITableViewCell()}
@@ -198,7 +199,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
         case 5:
             return 75
         case 6:
-            return (self.view.frame.size.width/2)*(3.75)
+            return (self.view.frame.size.width/2)*(2.5)
         case 7:
             return 100
         default:

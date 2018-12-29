@@ -83,9 +83,25 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}
+            
             cell.delegate = self
+            cell.state = .type
+            
             return cell
         case 2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesHeaderTextInfoTableViewCell.rawValue, for: indexPath) as? TypesHeaderTextInfoTableViewCell else {return UITableViewCell()}
+            cell.TitleLabel.text = NSLocalizedString("Профили", comment: "")
+            cell.lastCalculationLabel.text = "\(NSLocalizedString("Последний расчет", comment: "")): \(UserProfileTypeManager.getProfile(by: presenter.getUser().info?.profile ?? "")?.name ?? "\(NSLocalizedString("Проведите расчет", comment: ""))")"
+            cell.additionalInfoLabel.text = NSLocalizedString("Это «костюм», или роль, которую вы играете на сцене жизни, когда проживаете то, что вам предназначено. Это — определение.", comment: "")
+            return cell
+        case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TypesCollectionTableViewCell.rawValue, for: indexPath) as? TypesCollectionTableViewCell else {return UITableViewCell()}
+            
+            cell.delegate = self
+            cell.state = .profile
+            
+            return cell
+        case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.HelperViewTableViewCell.rawValue, for: indexPath) as? HelperViewTableViewCell else {return UITableViewCell()}
             
             cell.button.addTarget(self, action: #selector(fillPersonalMap(_:)), for: .touchUpInside)
@@ -99,16 +115,17 @@ extension TypesVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 1:
             return (self.view.frame.size.width/2)*3.75
-        case 2:
+        case 3:
+            return (self.view.frame.size.width/2)*7.5
+        case 4:
             return (self.view.frame.size.width)*0.75
-        
         default:
             return UITableView.automaticDimension
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
 }
 
