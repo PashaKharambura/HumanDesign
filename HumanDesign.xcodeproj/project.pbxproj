@@ -200,6 +200,8 @@
 				294B8FEC21CF928800BA7CC5 /* BackendService.swift */,
 				294B8FEE21CF92B400BA7CC5 /* BackendConfiguration.swift */,
 				294B8FF021CF92E500BA7CC5 /* BackendAPIRequest.swift */,
+				294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */,
+				294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,12 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				298E547121C9201900DF30E4 /* UACities.json */,
-				298E546F21C8FC6F00DF30E4 /* UserModel.swift */,
-				29EBE6A821D64D5700FE9F4A /* TypeModel.swift */,
 				298E546D21C8FB8E00DF30E4 /* HumanDesingPresenter.swift */,
-				294B8FF421CF945900BA7CC5 /* BodyGraphAPIRequest.swift */,
-				294B8FF621CFA20900BA7CC5 /* GraphMapper.swift */,
-				29770AA521D0FC7700160F2B /* GraphFigure.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 			children = (
 				29D6753721C56B920059A398 /* ComputationVC.swift */,
 				29A8446721C822FD00D24DBA /* HumanDesignVC.swift */,
-				59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */,
 				29A8446921C8233200D24DBA /* Views */,
 			);
 			path = HumanDesign;
@@ -232,7 +228,11 @@
 		29A8446921C8233200D24DBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				592B00D421CBF55000F4DBB1 /* VIews */,
+				592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */,
+				592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */,
+				592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */,
+				592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */,
+				5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */,
 				29A8446321C8213D00D24DBA /* HumanDesingTableViewCell.swift */,
 				29A8446421C8213D00D24DBA /* HumanDesingTableViewCell.xib */,
 				29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */,
@@ -259,6 +259,17 @@
 				294694B321C6C01200720049 /* FindLoveVC.swift */,
 			);
 			path = FindLove;
+			sourceTree = "<group>";
+		};
+		29BB467421D7AEFB00AA40E5 /* ModelsAndStructures */ = {
+			isa = PBXGroup;
+			children = (
+				298E546F21C8FC6F00DF30E4 /* UserModel.swift */,
+				29EBE6A821D64D5700FE9F4A /* TypeModel.swift */,
+				29770AA521D0FC7700160F2B /* GraphFigure.swift */,
+				59564D0521CDA8E100E8C0DA /* ActiveBodyGraphNumber.swift */,
+			);
+			path = ModelsAndStructures;
 			sourceTree = "<group>";
 		};
 		29D6752921C56B920059A398 = {
@@ -291,6 +302,7 @@
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
 				294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */,
+				29BB467421D7AEFB00AA40E5 /* ModelsAndStructures */,
 				294B8FF321CF93E100BA7CC5 /* Manager */,
 				294B8FF221CF93B500BA7CC5 /* Network */,
 				29A8446221C8211100D24DBA /* HumanDesign */,
@@ -308,18 +320,6 @@
 				BEBF1B1D7ABFA1EE000BDDCD /* Pods_HumanDesign.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		592B00D421CBF55000F4DBB1 /* VIews */ = {
-			isa = PBXGroup;
-			children = (
-				592B00D221CBF54B00F4DBB1 /* BodyGraphNumberView.swift */,
-				592B00D521CBF57E00F4DBB1 /* BodyGraphNumberView.xib */,
-				592B00D921CC16F500F4DBB1 /* BodyGraphNumericSymbolBar.swift */,
-				592B00D721CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib */,
-				5956C97F21CD621200A7EC25 /* BodyGraphBackgroundView.swift */,
-			);
-			path = VIews;
 			sourceTree = "<group>";
 		};
 		DB645423249B7193A81F2324 /* Pods */ = {

@@ -110,7 +110,9 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             
             let yourBodyGraph = NSLocalizedString("Ваш бодиграф", comment: "")
             cell.TitleLabel.text = yourBodyGraph
-            
+            if let info = presenter?.getUser().info {
+                cell.TitleLabel.text = UserProfileTypeManager.getType(by: info.type)?.name
+            }
             let bInfo = "\(String(format: "%02d",presenter?.getUser().birthDay ?? 0)).\(String(format: "%02d",presenter?.getUser().birthMonth ?? 0)).\(String(format: "%04d",presenter?.getUser().birthYear ?? 0)), \(String(format: "%02d",presenter?.getUser().birthHour ?? 0)):\(String(format: "%02d", presenter?.getUser().birthMinute ?? 0)), \(presenter?.getUser().city ?? "")"
             cell.lastCalculationLabel.text = bInfo
             
@@ -144,7 +146,7 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TextInfoTableViewCell.rawValue, for: indexPath) as? TextInfoTableViewCell else {return UITableViewCell()}
             
             if let info = presenter?.getUser().info {
-                cell.textInfoLabel.text = UserProfileTypeManager.getType(by: info.type)?.info
+                cell.textInfoLabel.text = UserProfileTypeManager.getType(by: info.type)?.info.components(separatedBy: "\n\n").first
             }
             
             return cell
@@ -152,11 +154,11 @@ extension HumanDesignVC: UITableViewDataSource, UITableViewDelegate {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIDS.TripleSpecificationTableViewCell.rawValue, for: indexPath) as? TripleSpecificationTableViewCell else {return UITableViewCell()}
             if let info = presenter?.getUser().info {
                 cell.yourTypeLabel.text = UserProfileTypeManager.getType(by: info.type)?.name
-                cell.yourProfileLabel.text = presenter?.getUser().info?.profile
-                cell.yourDefinitionLabel.text = "\(presenter?.getUser().info?.definition ?? 1)"
+                cell.yourProfileLabel.text = UserProfileTypeManager.getProfile(by: presenter?.getUser().info?.profile ?? "")?.name
+                cell.yourDefinitionLabel.text = UserProfileTypeManager.getDefinition(int: presenter?.getUser().info?.definition ?? 0)
                 
-                cell.selectTypeButton.addTarget(self, action: #selector(selectUserType), for: .touchUpInside)
-                cell.selectProvileButton.addTarget(self, action: #selector(selectProfile), for: .touchUpInside)
+//                cell.selectTypeButton.addTarget(self, action: #selector(selectUserType), for: .touchUpInside)
+//                cell.selectProvileButton.addTarget(self, action: #selector(selectProfile), for: .touchUpInside)
             }
             return cell
         case 4:

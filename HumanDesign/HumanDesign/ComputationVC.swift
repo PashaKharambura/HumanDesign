@@ -10,7 +10,7 @@ import UIKit
 
 public let errorTitle = NSLocalizedString("Ошибка", comment: "")
 
-class ComputationVC: UIViewController {
+class ComputationVC: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var view1: UIView!
@@ -46,6 +46,11 @@ class ComputationVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.greyPurple
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
 
     private func initialViewConfigurations() {

@@ -8,7 +8,7 @@
 "482-BR-mST.text" = "Персональний розрахунок карти";
 
 /* Class = "UILabel"; text = "Ваш бодиграф"; ObjectID = "A89-tG-Tfh"; */
-"A89-tG-Tfh.text" = "Ваш бодіграф";
+"A89-tG-Tfh.text" = "Розрахунок графу";
 
 /* Class = "UILabel"; text = "Место"; ObjectID = "EdA-EB-ihm"; */
 "EdA-EB-ihm.text" = "Місце";

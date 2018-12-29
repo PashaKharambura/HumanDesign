@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TypesVC: UIViewController {
+class TypesVC: UIViewController, UIGestureRecognizerDelegate {
 
     private enum CellIDS: String {
         case TypesHeaderTextInfoTableViewCell = "TypesHeaderTextInfoTableViewCell"
@@ -27,7 +27,12 @@ class TypesVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.barTintColor = UIColor.black
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         presenter = HumanDesignPresenter.shared
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     private func initialConfigurations() {
