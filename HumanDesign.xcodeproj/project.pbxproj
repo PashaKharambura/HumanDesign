@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2913458221D2A9E8005C9758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2913458121D2A9E8005C9758 /* GoogleService-Info.plist */; };
 		2935924221C8035900BD0E82 /* TypeViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */; };
 		2935924321C8035900BD0E82 /* TypeViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */; };
 		2937D69C21C83D0600A8189A /* WhiteButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937D69A21C83D0600A8189A /* WhiteButtonTableViewCell.swift */; };
@@ -50,6 +49,7 @@
 		29A8446821C822FD00D24DBA /* HumanDesignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446721C822FD00D24DBA /* HumanDesignVC.swift */; };
 		29A8446F21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */; };
 		29A8447021C8343C00D24DBA /* TripleSpecificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A8446E21C8343C00D24DBA /* TripleSpecificationTableViewCell.xib */; };
+		29B90DEC21D8F20C004B3B87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29B90DEB21D8F20C004B3B87 /* GoogleService-Info.plist */; };
 		29BB467021D68AEE00AA40E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29BB466E21D68AEE00AA40E5 /* Localizable.strings */; };
 		29D6753621C56B920059A398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753521C56B920059A398 /* AppDelegate.swift */; };
 		29D6753821C56B920059A398 /* ComputationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D6753721C56B920059A398 /* ComputationVC.swift */; };
@@ -67,7 +67,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2913458121D2A9E8005C9758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2935924021C8035900BD0E82 /* TypeViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewTableViewCell.swift; sourceTree = "<group>"; };
 		2935924121C8035900BD0E82 /* TypeViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeViewTableViewCell.xib; sourceTree = "<group>"; };
 		2937D69A21C83D0600A8189A /* WhiteButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +109,7 @@
 		29A8446721C822FD00D24DBA /* HumanDesignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanDesignVC.swift; sourceTree = "<group>"; };
 		29A8446D21C8343C00D24DBA /* TripleSpecificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleSpecificationTableViewCell.swift; sourceTree = "<group>"; };
 		29A8446E21C8343C00D24DBA /* TripleSpecificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripleSpecificationTableViewCell.xib; sourceTree = "<group>"; };
+		29B90DEB21D8F20C004B3B87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		29BB466921D676C400AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
 		29BB466A21D676C400AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		29BB466F21D68AEE00AA40E5 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -297,8 +297,8 @@
 				29D6753E21C56B940059A398 /* LaunchScreen.storyboard */,
 				29D6753C21C56B940059A398 /* Assets.xcassets */,
 				29D6754121C56B940059A398 /* Info.plist */,
+				29B90DEB21D8F20C004B3B87 /* GoogleService-Info.plist */,
 				29BB466E21D68AEE00AA40E5 /* Localizable.strings */,
-				2913458121D2A9E8005C9758 /* GoogleService-Info.plist */,
 				29D6753521C56B920059A398 /* AppDelegate.swift */,
 				294738CC21C7B31C00DE262C /* Extentions.swift */,
 				294B8FF821CFB0D100BA7CC5 /* InternetRechability.swift */,
@@ -399,12 +399,12 @@
 				592B00D821CC16E700F4DBB1 /* BodyGraphNumericSymbolBar.xib in Resources */,
 				29BB467021D68AEE00AA40E5 /* Localizable.strings in Resources */,
 				2946868321C83A88003227B9 /* TitleTableViewCell.xib in Resources */,
+				29B90DEC21D8F20C004B3B87 /* GoogleService-Info.plist in Resources */,
 				294738EC21C7F60F00DE262C /* DailyImageTableViewCell.xib in Resources */,
 				29D6753D21C56B940059A398 /* Assets.xcassets in Resources */,
 				294738E021C7CF6300DE262C /* DetailedTypeImageTableViewCell.xib in Resources */,
 				29D6753B21C56B920059A398 /* Main.storyboard in Resources */,
 				294738D821C7B73800DE262C /* TypeCollectionViewCell.xib in Resources */,
-				2913458221D2A9E8005C9758 /* GoogleService-Info.plist in Resources */,
 				2937D69D21C83D0600A8189A /* WhiteButtonTableViewCell.xib in Resources */,
 				294738DC21C7C2C700DE262C /* HelperViewTableViewCell.xib in Resources */,
 				298E547221C9201A00DF30E4 /* UACities.json in Resources */,

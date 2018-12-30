@@ -181,7 +181,9 @@ class HumanDesignPresenter {
         let info = "\(String(format: "%02d",getUser().birthDay)).\(String(format: "%02d", getUser().birthMonth)).\(String(format: "%04d", getUser().birthYear)), \(String(format: "%02d", getUser().birthHour)):\(String(format: "%02d", getUser().birthMinute)), \(getUser().city)"
         
         let params = ["email": email,
-                      "info": info]
+                      "info": info,
+                      "profile": getUser().info?.profile,
+                      "type": getUser().info?.type]
         
         Database.database().reference().child(type.rawValue).child(UUID().uuidString).setValue(params) { (error, ref) in
             if let error = error {
